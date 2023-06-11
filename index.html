@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link type="image/x-icon" rel="icon" href="Image/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" rel="icon" href="Image/favicon.ico" />
     <title>Game Over</title>
   </head>
   <body>
@@ -27,18 +27,42 @@
       <section>
         <h1>У нас есть всё для классного отдыха с друзьями!</h1>
         <ul>
-          <li><img src="Image/vr.jpg" alt="VR очки" height="228" /></li>
-          <li>VR очки</li>
-          <li><img src="Image/audio.jpg" alt="Аудио-система" height="228" /></li>
-          <li>Аудио-система 5.1 с отличным звуком</li>
-          <li><img src="Image/micro.jpg" alt="Караоке" height="228" /></li>
-          <li>Караоке (4 микрофона)</li>
-          <li><img src="Image/game.jpg" alt="Настольные игры" height="228" /></li>
-          <li>Настольные игры</li>
-          <li><img src="Image/netflix.jpg" alt="Кино сервисы" height="228" /></li>
-          <li>Кино сервисы Netflix, IVI, MegoGo, КиноПонск, Okko</li>
-          <li><img src="Image/sony.jpg" alt="PlavStation 5" height="228" /></li>
-          <li>PlavStation 5</li>
+          <li>
+            <figure>
+              <img src="Image/vr.jpg" alt="VR очки" height="228" />
+              <figcaption>VR очки</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="Image/audio.jpg" alt="Аудио-система" height="228" />
+              <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="Image/micro.jpg" alt="Караоке" height="228" />
+              <figcaption>Караоке (4 микрофона)</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="Image/game.jpg" alt="Настольные игры" height="228" />
+              <figcaption>Настольные игры</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="Image/netflix.jpg" alt="Кино сервисы" height="228" />
+              <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПонск, Okko</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="Image/sony.jpg" alt="PlavStation 5" height="228" />
+              <figcaption>PlayStation 5</figcaption>
+            </figure>
+          </li>
         </ul>
       </section>
 
@@ -90,24 +114,31 @@
           </fieldset>
           <fieldset>
             <legend>Выбери дату и время</legend>
-            <label for="date">Дата</label>
-            <input type="date" name="date" id="date" required />
-            <label for="time">Время</label>
-            <input type="time" name="time" id="time" required />
-            <label for="countPeople"> Количество человек</label>
-            <input type="number" name="countPeople" id="countPeople" required />
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" required />
-            <label for="surname">Фамилия</label>
-            <input type="text" name="surname" id="surname" required />
-            <label for="telephoneNumber">Номер телефона</label>
-            <input type="number" name="telephoneNumber" id="telephoneNumber" required />
+            <div>
+              <div>
+                <input type="date" name="date" id="date" required />
+                <input type="time" name="time" id="time" required />
+              </div>
+              <input placeholder="Количество человек" name="countPeople" id="countPeople" required />
+            </div>
+            <div>
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" required />
+              <label for="surname">Фамилия</label>
+              <input type="text" name="surname" id="surname" required />
+            </div>
+            <div>
+              <label for="phone">Телефон</label>
+              <input type="number" name="userPhone" id="phone" required />
+              <label for="email">E-mail</label>
+              <input type="email" name="userEmail" id="email" required />
+            </div>
             <input type="checkbox" name="adult" value="age" id="age" />
             <label for="age">Я старше 18 лет </label>
-            <button type="submit">Забронировать</button>
             <input type="checkbox" value="armor" id="armor" required />
             <label for="armor">Согласен на обработку данных </label>
           </fieldset>
+          <button type="submit">Забронировать</button>
         </form>
       </section>
 
@@ -133,24 +164,30 @@
         <h2>Отзывы посетителей</h2>
         <ul>
           <li>
-            <img alt="fotoMaks" src="#" />
-            <p>Макс Самойлов</p>
+            <figure>
+              <img alt="fotoMaks" src="#" />
+              <figcaption>Макс Самойлов</figcaption>
+            </figure>
             <p>
               Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда
               еще я не был в таком полном игровом погружении. Сервис на высоте!
             </p>
           </li>
           <li>
-            <img alt="fotoOksana" src="#" />
-            <p>Оксана Григорьева</p>
+            <figure>
+              <img alt="fotoOksana" src="#" />
+              <figcaption>Оксана Григорьева</figcaption>
+            </figure>
             <p>
               Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
               больше нет подобных заведений
             </p>
           </li>
           <li>
-            <img alt="fotoNikita" src="#" />
-            <p>Никита Ященко</p>
+            <figure>
+              <img alt="fotoNikita" src="#" />
+              <figcaption>Никита Ященко</figcaption>
+            </figure>
             <p>
               Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал
               в атмосферу космоса
