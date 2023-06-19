@@ -6,30 +6,15 @@
   padding: 30px 70px;
   margin-bottom: 20px;
 }
-.question:nth-child(1) {
-  margin-top: 0;
-  margin-left: 0;
-}
-.question:last-child {
-  margin: 0;
-}
+
 .question:nth-child(even) {
   color: #fff;
   background-color: #440f51;
 }
 
-.question::before {
-  content: '';
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-size: contain;
-  transform: translateX(920px);
-}
-
-.question:nth-child(even)::before {
-  background-image: url('../image/icons/open.svg');
-}
-.question:nth-child(odd)::before {
-  background-image: url('../image/icons/open-purple.svg');
+.list-question {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
 }
