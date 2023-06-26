@@ -1,0 +1,37 @@
+.container {
+  width: 1180px;
+}
+
+.title-go {
+  margin: 0;
+  color: #fff;
+  text-align: left;
+  font-size: 150px;
+  font-family: Arial;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -15px;
+  text-transform: uppercase;
+}
+
+.text-img {
+  margin: 0;
+  color: #fff;
+  font-size: 28px;
+  font-family: Arial;
+
+  /* line-height: 50px; */
+}
+
+.bg-vr {
+  /* background-image: url('../image/img/vr.png'); */
+}
+
+/* .halls {
+  width: 1180px;
+  height: 3136px;
+} */
+
+.our-halla {
+  margin-top: 0;
+}

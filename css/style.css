@@ -3,6 +3,8 @@
 }
 
 .body {
+  padding: 130px 146px 130px 50px;
+  margin: 0;
   background-color: #1b1a1b;
   color: #ffffff;
 }
@@ -12,7 +14,5 @@
 }
 
 .wrapper {
-  max-width: 1200px;
-  padding: 30px;
   margin: 0 auto;
 }
