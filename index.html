@@ -14,90 +14,43 @@
     <link rel="stylesheet" href="./css/index.css" />
     <title>Game Over</title>
   </head>
-  <div class="wrapper">
-    <body class="body">
-      <img src="./image/logo.svg" alt="GO" height="75" />
-
-      <header>
-        <p>Меню</p>
-        <nav>
-          <ul>
-            <li><a href="#halls">Залы</a></li>
-            <li><a href="#aboutUs">О нас</a></li>
-            <li><a href="#booking">Бронь</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-            <li><a href="#questions">Частые вопросы</a></li>
-            <li><a href="#contact">Контакты</a></li>
-          </ul>
-        </nav>
-      </header>
-
+  <body class="body">
+    <div class="wrapper">
       <main>
-        <section>
-          <h1>У нас есть всё для классного отдыха с друзьями!</h1>
-          <ul>
-            <li>
-              <figure>
-                <img src="./image/halls/vr.jpg" alt="VR очки" height="228" />
-                <figcaption>VR очки</figcaption>
-              </figure>
+        <div class="banner">
+          <p class="title-go">Game over</p>
+          <p class="text-img">Новый формат игр и отдыха</p>
+        </div>
+
+        <section class="halls">
+          <h2 class="title-halls">Наши залы</h2>
+          <ul class="halls-item">
+            <li class="hall hall-80">
+              <p class="text-hall">80's</p>
+              <p class="text-hall">vibes</p>
             </li>
-            <li>
-              <figure>
-                <img src="./image/halls/audio.jpg" alt="Аудио-система" height="228" />
-                <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
-              </figure>
+
+            <li class="hall hall-star">
+              <p class="text-hall">star</p>
+              <p class="text-hall">wars</p>
             </li>
-            <li>
-              <figure>
-                <img src="./image/halls/micro.jpg" alt="Караоке" height="228" />
-                <figcaption>Караоке (4 микрофона)</figcaption>
-              </figure>
+
+            <li class="hall hall-wild">
+              <p class="text-hall">wild</p>
+              <p class="text-hall">west</p>
             </li>
-            <li>
-              <figure>
-                <img src="./image/halls/game.jpg" alt="Настольные игры" height="228" />
-                <figcaption>Настольные игры</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="./image/halls/netflix.jpg" alt="Кино сервисы" height="228" />
-                <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПонск, Okko</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="./image/halls/sony.jpg" alt="PlavStation 5" height="228" />
-                <figcaption>PlayStation 5</figcaption>
-              </figure>
+
+            <li class="hall hall-neon">
+              <p class="text-hall">neon</p>
+              <p class="text-hall">style</p>
             </li>
           </ul>
         </section>
 
-        <div class="container">
-          <section class="banner">
-            <h2 class="title-go">Game over</h2>
-            <p class="text-img">Новый формат игр и отдыха</p>
-            <img class="bg-vr" src="../image/img/vr.png" alt="banner" />
-          </section>
-        </div>
-
-        <div class="halls">
-          <section id="halls">
-            <h2 class="our-halla">Наши залы</h2>
-            <ol>
-              <li><a href="vibes.html">80's vibes</a></li>
-              <li><a href="starwars.html">Star wars</a></li>
-              <li><a href="wildwest.html">Wild west</a></li>
-              <li><a href="neon.html">Neon style</a></li>
-            </ol>
-          </section>
-        </div>
         <section class="booking" id="booking">
-          <h2>Забронировать зал просто</h2>
+          <h2 class="title-booking">Забронировать</h2>
           <form name="bookingHall" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <fieldset>
+            <fieldset class="booking-fieldset">
               <legend>Выбери зал</legend>
               <input type="radio" name="hall" value="80svibes" id="80svibes" />
               <label for="80svibes">80's vibes</label>
@@ -108,7 +61,7 @@
               <input type="radio" name="hall" value="neonstyle" id="neonstyle" />
               <label for="neonstyle">neon style</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="booking-fieldset">
               <legend>Собери набор развлечений</legend>
               <fieldset>
                 <legend>Приставка:</legend>
@@ -117,105 +70,72 @@
                 <label><input type="radio" name="console" value="xboxones" />OX-box One S</label>
                 <label><input type="radio" name="console" value="dendy" />Dendy</label>
               </fieldset>
-              <fieldset>
+              <fieldset class="booking-fieldset">
                 <legend>Настольные игры</legend>
                 <label><input type="checkbox" name="boardgames" value="jenga" />Jenga</label>
                 <label><input type="checkbox" name="boardgames" value="monopoly" />Monopoly</label>
                 <label><input type="checkbox" name="boardgames" value="manchkin" />Манчкин</label>
                 <label><input type="checkbox" name="boardgames" value="alias" />Alias</label>
               </fieldset>
-              <fieldset>
+              <fieldset class="booking-fieldset">
                 <legend>Дополнительно:</legend>
                 <label><input type="checkbox" name="additionalgames" value="karaoke" />Караоке</label>
                 <label><input type="checkbox" name="additionalgames" value="vr" />VR</label>
               </fieldset>
             </fieldset>
-            <fieldset>
+
+            <fieldset class="booking-fieldset">
               <legend>Выбери дату и время</legend>
-              <div>
-                <div>
-                  <input type="date" name="date" id="date" required />
-                  <input type="time" name="time" id="time" required />
-                </div>
-                <input placeholder="Количество человек" name="countPeople" id="countPeople" required />
-              </div>
-              <div>
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name" required />
-                <label for="surname">Фамилия</label>
-                <input type="text" name="surname" id="surname" required />
-              </div>
-              <div>
-                <label for="phone">Телефон</label>
-                <input type="number" name="userPhone" id="phone" required />
-                <label for="email">E-mail</label>
-                <input type="email" name="userEmail" id="email" required />
-              </div>
+
+              <label for="date">Дата*</label>
+              <input type="date" name="date" id="date" required />
+              <label for="time">Время*</label>
+              <input type="time" name="time" id="time" required />
+
+              <label for="countPeople">Колличество человек*</label>
+              <input name="countPeople" id="countPeople" required />
+
+              <label for="name">Имя*</label>
+              <input type="text" name="name" id="name" required />
+              <label for="surname">Фамилия*</label>
+              <input type="text" name="surname" id="surname" required />
+
+              <label for="phone">Номер телефона*</label>
+              <input type="number" name="userPhone" id="phone" required />
+              <label for="email">E-mail</label>
+              <input type="email" name="userEmail" id="email" required />
+
               <input type="checkbox" name="adult" value="age" id="age" />
               <label for="age">Я старше 18 лет </label>
-              <input type="checkbox" value="armor" id="armor" required />
-              <label for="armor">Согласен на обработку данных </label>
             </fieldset>
             <button type="submit">Забронировать</button>
+            <input type="checkbox" value="armor" id="armor" required />
+            <label for="armor">Согласен на обработку данных </label>
           </form>
         </section>
 
-        <section id="aboutUs">
-          <h2>О нас</h2>
-          <p>
+        <section class="about-us">
+          <h2 class="title-about-us">О нас</h2>
+          <p class="text">
             Для наших гостей мы создали<i> концептуально новое игровое пространство виртуальной реальности</i> в
             центральной части города.
           </p>
-          <p>
+          <p class="sub-text">
             Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
             разработками со всего мира.
           </p>
-          <blockquote class="quote">
-            <p><b>GAME OVER</b>&mdash;это место незабываемых впечатлений</p>
-            <p>
-              <cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
-            </p>
-          </blockquote>
+          <div class="quote">
+            <p class="quote-go quote-text">GAME OVER &mdash;</p>
+            <p class="quote-sub quote-text">это место незабываемых впечатлений</p>
+            <figure class="creator">
+              <img class="arcady-foto" src="image/halls/arcady.jpeg" alt="Аркадий Абашкин" />
+              <figcaption class="arcady">Аркадий Абакшин, создатель игровой территории GAME OVER</figcaption>
+            </figure>
+          </div>
         </section>
 
-        <section id="reviews">
-          <h2>Отзывы посетителей</h2>
-          <ul>
-            <li>
-              <figure>
-                <img alt="fotoMaks" src="#" />
-                <figcaption>Макс Самойлов</figcaption>
-              </figure>
-              <p>
-                Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда
-                еще я не был в таком полном игровом погружении. Сервис на высоте!
-              </p>
-            </li>
-            <li>
-              <figure>
-                <img alt="fotoOksana" src="#" />
-                <figcaption>Оксана Григорьева</figcaption>
-              </figure>
-              <p>
-                Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
-                больше нет подобных заведений
-              </p>
-            </li>
-            <li>
-              <figure>
-                <img alt="fotoNikita" src="#" />
-                <figcaption>Никита Ященко</figcaption>
-              </figure>
-              <p>
-                Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн,
-                попал в атмосферу космоса
-              </p>
-            </li>
-          </ul>
-        </section>
-
-        <section id="questions">
-          <h2>Частые вопросы</h2>
+        <section class="questions">
+          <h2 class="title-question">Частые вопросы</h2>
           <ul class="list">
             <li class="question">Можно ли забронировать комнату онлайн?</li>
             <li class="question">Могут ли мне вернуть деньги за бронь?</li>
@@ -225,21 +145,42 @@
           </ul>
         </section>
       </main>
-
-      <footer id="contact">
-        <h2>Контакты</h2>
+      <footer class="contact">
+        <h2 class="title-contact">Контакты</h2>
         <address>
-          <p>г.Москва ул. Аквамарина, 16</p>
-          <p><a href="tel:89509302893">8(950)930-28-93</a></p>
-          <p><a href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
+          <div class="street">
+            <img class="img-contact" src="image/icon/location.svg" alt="location" />
+            <p class="text-adress">г.Москва ул.</p>
+            <p class="text-adress">Аквамарина, 16</p>
+          </div>
+
+          <div class="telefone">
+            <img class="img-contact" src="image/icon/phone.svg" alt="phone" />
+            <p class="text-adress"><a class="link" href="tel:89509302893">8(950)930-28-93</a></p>
+          </div>
+
+          <div class="email">
+            <img class="img-contact" src="image/icon/mail.svg" alt="mail" />
+            <p class="text-adress"><a class="link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
+          </div>
         </address>
         <nav>
-          <ul>
-            <li><a href="vk.com" target="_blank">Vkontakte</a></li>
-            <li><a href="telegram.org" target="_blank">Telegram</a></li>
+          <ul class="social">
+            <li class="social-link">
+              <a href="vk.com" target="_blank"><img src="image/icon/vk.svg" alt="vk" /></a>
+            </li>
+            <li class="social-link">
+              <a href="telegram.org" target="_blank"><img src="image/icon/telegram.svg" alt="telegram" /></a>
+            </li>
+            <li class="social-link">
+              <a href="pinterest.com" target="_blank"><img src="image/icon/pinterest.svg" alt="pinterest" /></a>
+            </li>
+            <li class="social-link">
+              <a href="stumbleupon.com" target="_blank"><img src="image/icon/stumbleupon.svg" alt="stumbleupon" /></a>
+            </li>
           </ul>
         </nav>
       </footer>
-    </body>
-  </div>
+    </div>
+  </body>
 </html>

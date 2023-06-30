@@ -3,16 +3,13 @@
 }
 
 .body {
-  padding: 130px 146px 130px 50px;
-  margin: 0;
+  margin: 0 auto;
   background-color: #1b1a1b;
   color: #ffffff;
 }
 
-.quote {
-  text-transform: uppercase;
-}
-
 .wrapper {
-  margin: 0 auto;
+  padding: 146px 130px 50px 130px;
+  margin: 0;
+  /* text-align: justify; */
 }
