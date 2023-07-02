@@ -3,16 +3,17 @@
   max-width: 1180px;
   min-height: 823px;
   margin: 0;
-  background-position: right 60px bottom;
+  background-position: right  bottom;
   background-repeat: no-repeat;
   margin-bottom: 100px;
+  
+  
 }
 
 .title-go {
   color: #fff;
   text-align: left;
-  font-size: 150px;
-  font-family: Arial;
+  font-size: 160px;
   font-weight: 900;
   line-height: 100%;
   letter-spacing: -15px;
@@ -20,14 +21,15 @@
   margin: 0;
   z-index: -1;
   position: relative;
+
+
+ 
 }
 
 .text-img {
   margin: 0;
   color: #fff;
   font-size: 28px;
-  font-family: Arial;
-  line-height: 50px;
   text-align: center;
   padding-right: 600px;
 }
@@ -71,13 +73,11 @@
 
 .hall {
   padding: 275px 485px 275px 484px;
-
   text-align: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  min-width: 1180px;
-  min-height: 710px;
+  max-width: 1180px;
   margin-bottom: 60px;
   list-style-type: none;
 }
