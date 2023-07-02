@@ -3,13 +3,14 @@
 }
 
 .body {
-  margin: 0 auto;
+  margin: 0;
   background-color: #1b1a1b;
   color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
-  padding: 146px 130px 50px 130px;
+  max-width: 1200px;
+  padding: 30px;
   margin: 0;
-  /* text-align: justify; */
 }

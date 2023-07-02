@@ -1,12 +1,25 @@
-.title-go {
+.header {
+  background: url('../image/halls/vr.png');
+  max-width: 1180px;
+  min-height: 823px;
   margin: 0;
+  background-position: right 35px bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+.title-go {
   color: #fff;
   text-align: left;
   font-size: 150px;
   font-family: Arial;
   font-weight: 900;
+  line-height: 100%;
   letter-spacing: -15px;
   text-transform: uppercase;
+  margin: 0;
+  z-index: -1;
+  position: relative;
 }
 
 .text-img {
@@ -14,27 +27,15 @@
   color: #fff;
   font-size: 28px;
   font-family: Arial;
+  line-height: 50px;
   text-align: center;
   padding-right: 600px;
-}
-
-.banner {
-  background: url('../image/halls/vr.png');
-  max-width: 1180px;
-  min-height: 762px;
-  margin: 0 auto;
-  position: relative;
-  background-position: right;
-  background-repeat: no-repeat;
-
-  margin-bottom: 100px;
 }
 
 .title-halls {
   color: #fff;
   text-align: center;
   font-size: 40px;
-  font-family: Arial;
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
@@ -62,8 +63,15 @@
   margin-bottom: 100px;
 }
 
+.halls-item {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
 .hall {
   padding: 275px 485px 275px 484px;
+
   text-align: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -81,11 +89,11 @@
 .text-hall {
   color: #fff;
   font-size: 70px;
-  font-family: Arial;
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
   margin: 0;
+  max-width: 252px;
 }
 
 .title-booking {
@@ -93,7 +101,6 @@
   color: #fff;
   text-align: center;
   font-size: 40px;
-  font-family: Arial;
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
@@ -112,7 +119,6 @@
   color: #fff;
   text-align: center;
   font-size: 40px;
-  font-family: Arial;
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
@@ -123,9 +129,16 @@
 .text {
   margin: 0;
   margin-bottom: 28px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
 }
 
-.sub-text {
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.content {
   margin: 0;
   margin-bottom: 78px;
 }
@@ -135,65 +148,58 @@
 }
 
 .quote {
-  text-transform: uppercase;
   margin: 0;
-  text-align: right;
 }
 
 .quote-text {
-  margin: 0;
   color: #fff;
   font-size: 44px;
-  font-family: Arial;
   line-height: 50px;
   text-transform: uppercase;
-  text-align: left;
-}
-
-.quote-sub {
-  margin-bottom: 40px;
-}
-
-.quote-go:before,
-.quote-sub:after {
-  content: '';
-  display: inline-block;
-  width: 38.984px;
-  height: 34.406px;
-  color: #6c0287;
-  background-size: contain;
+  margin: 0 0 40px;
+  padding: 0 0 0 55px;
+  white-space: pre-line;
+  position: relative;
 }
 
 .quote-go:before {
-  background-image: url('../image/icon/“.svg');
+  color: #6c0287;
+  content: '“';
+  font-weight: 900;
+  position: absolute;
+  top: -8px;
+  left: 0;
 }
 
-.quote-sub:after {
-  background-image: url('../image/icon/“.svg');
-  transform: rotate(180deg);
+.quote-go:after {
+  content: '“';
+  color: #6c0287;
+  font-weight: 900;
 }
 
 .arcady-foto {
-  border-radius: 80%;
-  max-height: 80px;
-  max-width: 80px;
-
-  margin-right: 50px;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-right: 30px;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
 }
 
 .creator {
   margin: 0;
-  display: inline-block;
+  text-align: right;
 }
 
 .arcady {
   color: #fff;
   font-size: 20px;
-  font-family: Arial;
   line-height: 28px;
+  max-width: 250px;
+  display: inline-block;
+  vertical-align: middle;
   text-align: left;
-  max-width: 280px;
-  max-height: 84px;
 }
 
 .title-contact {
@@ -201,7 +207,6 @@
   color: #fff;
   text-align: center;
   font-size: 40px;
-  font-family: Arial;
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
@@ -211,18 +216,43 @@
   margin: 0;
   color: #fff;
   font-size: 24px;
-  font-family: Arial;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.text-adress {
+  padding: 0 0 0 66px;
+  max-width: 300px;
+  font-style: normal;
+  color: #fff;
+  font-size: 24px;
   font-weight: 700;
   line-height: 28px;
 }
 
 .street {
   margin-bottom: 38px;
+  background: url('../image/icon/location.svg');
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
-.img-contact {
-  float: left;
-  margin-right: 30px;
+.telefone {
+  margin-bottom: 11px;
+  background: url('../image/icon/phone.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.email {
+  margin-bottom: 39px;
+  background: url('../image/icon/mail.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.title-contact {
+  margin-bottom: 54px;
 }
 
 .link {
@@ -232,14 +262,10 @@
 
 .social-link {
   display: inline;
-  margin-right: 26px;
+  padding-right: 26px;
 }
 
 .social {
   margin: 0;
   padding: 0;
-}
-
-.social-link:last-child {
-  margin-bottom: 39px;
 }
