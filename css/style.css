@@ -1,16 +1,65 @@
-* {
+
+html {
+  position: relative;
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .body {
-  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
   background-color: #1b1a1b;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper {
+.container {
   max-width: 1200px;
-  padding: 30px;
+  padding:  30px;
   margin: 0;
 }
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+img, svg {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  cursor: pointer; 
+  border: none;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+
+
