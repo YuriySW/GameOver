@@ -28,12 +28,6 @@
   background-image: url('../image/icon/open.svg');
 }
 
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .title-question {
   margin: 0;
   margin-bottom: 40px;
@@ -43,8 +37,4 @@
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
-}
-
-.questions {
-  margin-bottom: 100px;
 }

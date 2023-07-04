@@ -15,34 +15,33 @@
     <title>Game Over</title>
   </head>
   <body class="body">
-    <div class="container">
-      <header class="header">
-        <h1 class="title-go">Game over</h1>
-        <p class="text-img">Новый формат игр и отдыха</p>
-      </header>
-      <main>
-        <section class="halls">
+    <section class="section header">
+      <div class="container container-header">
+        <div class="container-elements">
+          <h1 class="title-go">Game over</h1>
+          <p class="text-img">Новый формат игр и отдыха</p>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="section halls">
+        <div class="container">
           <h2 class="title-halls">Наши залы</h2>
           <ul class="halls-item">
-            <li class="hall hall-80">
-              <p class="text-hall">80's vibes</p>
-            </li>
+            <li class="text-hall hall-80">80's vibes</li>
 
-            <li class="hall hall-star">
-              <p class="text-hall"> star wars</p>
-            </li>
+            <li class="text-hall hall-star">star wars</li>
 
-            <li class="hall hall-wild">
-              <p class="text-hall">wild west</p>
-            </li>
+            <li class="text-hall hall-wild">wild west</li>
 
-            <li class="hall hall-neon">
-              <p class="text-hall">neon style</p>
-            </li>
+            <li class="text-hall hall-neon">neon style</li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="booking" id="booking">
+      <section class="section booking" id="booking">
+        <div class="container">
           <h2 class="title-booking">Забронировать</h2>
           <form name="bookingHall" action="https://jsonplaceholder.typicode.com/posts" method="POST">
             <fieldset class="booking-fieldset">
@@ -97,7 +96,7 @@
 
               <label for="phone">Номер телефона*</label>
               <input type="number" name="userPhone" id="phone" required />
-              
+
               <input type="checkbox" name="adult" value="age" id="age" />
               <label for="age">Я старше 18 лет </label>
             </fieldset>
@@ -105,9 +104,11 @@
             <input type="checkbox" value="armor" id="armor" required />
             <label for="armor">Согласен на обработку данных </label>
           </form>
-        </section>
+        </div>
+      </section>
 
-        <section class="about-us">
+      <section class="section about-us">
+        <div class="container">
           <h2 class="title-about-us">О нас</h2>
           <div class="content">
             <p class="text">
@@ -122,15 +123,17 @@
 
           <blockquote class="quote">
             <p class="quote-go quote-text">GAME OVER &mdash; 
-              это место незабываемых впечатлений</p>
+            это место незабываемых впечатлений</p>
             <figure class="creator">
               <img class="arcady-foto" src="image/halls/arcady.jpeg" alt="Аркадий Абашкин" />
               <figcaption class="arcady">Аркадий Абакшин, создатель игровой территории GAME OVER</figcaption>
             </figure>
           </blockquote>
-        </section>
+        </div>
+      </section>
 
-        <section class="questions">
+      <section class="section questions">
+        <div class="container">
           <h2 class="title-question">Частые вопросы</h2>
           <ul class="list">
             <li class="question">Можно ли забронировать комнату онлайн?</li>
@@ -139,33 +142,37 @@
             <li class="question">Как получить VIP карту?</li>
             <li class="question">Какая комната самая не популярная?</li>
           </ul>
-        </section>
-      </main>
-      <footer class="contact">
-        <h2 class="title-contact">Контакты</h2>
-        <address>
-          <p class="street text-adress">г. Москва ул.&nbsp;Аквамарина, 16</p>
-          <p class="telefone text-adress"><a class="link" href="tel:89509302893">8(950)930-28-93</a></p>
-          <p class="email text-adress"><a class="link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
-        </address>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="section contact">
+        <div class="container container-footer">
+          <h2 class="title-contact">Контакты</h2>
+          <address>
+            <p class="street text-adress">г. Москва ул.&nbsp;Аквамарина, 16</p>
+            <p class="telefone text-adress"><a class="link" href="tel:89509302893">8(950)930-28-93</a></p>
+            <p class="email text-adress"><a class="link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
+          </address>
 
-        <nav>
-          <ul class="social">
-            <li class="social-link">
-              <a href="vk.com" target="_blank"><img src="image/icon/vk.svg" alt="vk" /></a>
-            </li>
-            <li class="social-link">
-              <a href="telegram.org" target="_blank"><img src="image/icon/telegram.svg" alt="telegram" /></a>
-            </li>
-            <li class="social-link">
-              <a href="pinterest.com" target="_blank"><img src="image/icon/pinterest.svg" alt="pinterest" /></a>
-            </li>
-            <li class="social-link">
-              <a href="stumbleupon.com" target="_blank"><img src="image/icon/stumbleupon.svg" alt="stumbleupon" /></a>
-            </li>
-          </ul>
-        </nav>
-      </footer>
-    </div>
+          <nav>
+            <ul class="social">
+              <li class="social-link">
+                <a href="vk.com" target="_blank"><img src="image/icon/vk.svg" alt="vk" /></a>
+              </li>
+              <li class="social-link">
+                <a href="telegram.org" target="_blank"><img src="image/icon/telegram.svg" alt="telegram" /></a>
+              </li>
+              <li class="social-link">
+                <a href="pinterest.com" target="_blank"><img src="image/icon/pinterest.svg" alt="pinterest" /></a>
+              </li>
+              <li class="social-link">
+                <a href="stumbleupon.com" target="_blank"><img src="image/icon/stumbleupon.svg" alt="stumbleupon" /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

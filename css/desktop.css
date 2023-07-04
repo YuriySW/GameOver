@@ -1,30 +1,38 @@
-.header {
+.container-elements {
   background: url('../image/halls/vr.png');
-  max-width: 1180px;
-  min-height: 823px;
-  background-position: right  bottom;
   background-repeat: no-repeat;
-  margin-bottom: 100px;
+  background-position: right 75px bottom;
+  line-height: 100%;
+  min-height: 823px;
+  max-width: 1180px;
+}
+
+.header:first-child {
+  padding-top: 146px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .title-go {
+  text-transform: uppercase;
+  margin: 0;
   color: #fff;
-  text-align: left;
-  font-size: 160px;
+  font-size: 150px;
   font-weight: 900;
   line-height: 100%;
   letter-spacing: -15px;
-  text-transform: uppercase;
-  margin: 0;
-  z-index: -1;
-  position: relative;
 }
 
 .text-img {
   color: #fff;
   font-size: 28px;
-  text-align: center;
-  padding-right: 600px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  padding-left: 100px;
 }
 
 .title-halls {
@@ -40,7 +48,6 @@
 
 .hall-80 {
   background-image: url('../image/halls/80s.jpg');
-
 }
 
 .hall-star {
@@ -55,37 +62,31 @@
   background-image: url('../image/halls/neonstyle.png');
 }
 
-.halls {
-  margin-bottom: 100px;
-  text-align: center;
-}
-
 .halls-item {
   list-style-position: inside;
   padding: 0;
 }
 
-.hall {
+.text-hall {
   padding: 275px 475px 275px 445px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  max-width: 1180px;
+  text-align: center;
   margin-bottom: 60px;
-}
-
-.hall:last-child {
-  margin-bottom: 0;
-}
-
-.text-hall {
   color: #fff;
   font-size: 70px;
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
-  min-width: 252px; 
+}
 
+.text-hall:last-child {
+  margin-bottom: 0;
+}
+
+.hall:last-child {
+  margin-bottom: 0;
 }
 
 .title-booking {
@@ -97,10 +98,6 @@
   line-height: 50px;
   text-transform: uppercase;
   margin-bottom: 50px;
-}
-
-.booking {
-  margin-bottom: 100px;
 }
 
 .title-about-us {
@@ -128,10 +125,6 @@
   margin-bottom: 78px;
 }
 
-.about-us {
-  margin-bottom: 100px;
-}
-
 .quote {
   margin: 0;
 }
@@ -157,7 +150,7 @@
 }
 
 .quote-go:after {
-  content: '“';
+  content: ' ”';
   color: #6c0287;
   font-weight: 900;
 }
@@ -168,7 +161,7 @@
   width: 80px;
   margin-right: 30px;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   vertical-align: middle;
 }
 
@@ -247,4 +240,3 @@
   display: inline;
   padding-right: 26px;
 }
-
