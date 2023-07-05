@@ -1,7 +1,7 @@
-.container-elements {
+.container-header {
   background: url('../image/halls/vr.png');
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right 30px bottom;
   line-height: 100%;
   min-height: 823px;
 }
@@ -18,12 +18,11 @@
 .title-go {
   text-transform: uppercase;
   margin: 0;
-  color: #fff;
-  font-size: 164px;
-  font-weight: 900;
+  font-size: 150px;
   line-height: 100%;
   letter-spacing: -15px;
-
+ 
+ 
 }
 
 .text-img {
