@@ -1,10 +1,9 @@
 .container-elements {
   background: url('../image/halls/vr.png');
   background-repeat: no-repeat;
-  background-position: right  bottom;
+  background-position: right bottom;
   line-height: 100%;
   min-height: 823px;
-  min-width: 1180px; 
 }
 
 .header:first-child {
@@ -24,6 +23,7 @@
   font-weight: 900;
   line-height: 100%;
   letter-spacing: -15px;
+
 }
 
 .text-img {
