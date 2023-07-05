@@ -1,10 +1,10 @@
 .container-elements {
   background: url('../image/halls/vr.png');
   background-repeat: no-repeat;
-  background-position: right 75px bottom;
+  background-position: right  bottom;
   line-height: 100%;
   min-height: 823px;
-  max-width: 1180px;
+  min-width: 1180px; 
 }
 
 .header:first-child {
@@ -20,7 +20,7 @@
   text-transform: uppercase;
   margin: 0;
   color: #fff;
-  font-size: 150px;
+  font-size: 164px;
   font-weight: 900;
   line-height: 100%;
   letter-spacing: -15px;
@@ -168,6 +168,7 @@
 .creator {
   margin: 0;
   text-align: right;
+  padding-right: 30px;
 }
 
 .arcady {
@@ -239,4 +240,9 @@
 .social-link {
   display: inline;
   padding-right: 26px;
+}
+
+.social{
+  max-height: 50px;
+
 }
