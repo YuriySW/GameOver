@@ -1,0 +1,10 @@
+.about-us__quote-text {
+  color: #fff;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+  padding: 0 0 0 55px;
+  white-space: pre-line;
+  position: relative;
+}

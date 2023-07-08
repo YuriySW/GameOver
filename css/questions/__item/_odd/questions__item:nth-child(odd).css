@@ -1,0 +1,5 @@
+.questions__item:nth-child(odd) {
+  background-color: #fff;
+  color: #1c1a1a;
+  background-image: url('/image/icon/open-purple.svg');
+}

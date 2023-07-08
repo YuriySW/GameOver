@@ -1,0 +1,13 @@
+.halls__item {
+  padding: 275px 475px 275px 475px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+}

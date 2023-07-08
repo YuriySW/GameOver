@@ -1,0 +1,5 @@
+.questions__item:nth-child(even) {
+  color: #fff;
+  background-color: #440f51;
+  background-image: url('/image/icon/open.svg');
+}

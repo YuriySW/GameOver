@@ -1,0 +1,9 @@
+.questions__item {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 30px 70px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: 46px;
+  background-position: right 70px bottom 20px;
+}

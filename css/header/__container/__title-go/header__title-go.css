@@ -1,0 +1,9 @@
+.header__title-go {
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 100%;
+  letter-spacing: -15px;
+  font-family: Arial Black;
+}

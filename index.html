@@ -14,35 +14,36 @@
     <link rel="stylesheet" href="./css/index.css" />
     <title>Game Over</title>
   </head>
+
   <body class="body">
-    <section class="section header">
-      <div class="container container-header">
-        <h1 class="title-go">Game over</h1>
-        <p class="text-img">Новый формат игр и отдыха</p>
+    <section class="header section">
+      <div class="header__container container">
+        <h1 class="header__title-go">Game over</h1>
+        <p class="header__text-img">Новый формат игр и отдыха</p>
       </div>
     </section>
 
     <main>
-      <section class="section halls">
+      <section class="halls section">
         <div class="container">
-          <h2 class="title-halls">Наши залы</h2>
-          <ul class="halls-item">
-            <li class="text-hall hall-80">80's vibes</li>
+          <h2 class="halls__title">Наши залы</h2>
+          <ul class="halls__list">
+            <li class="halls__item halls__item_bg_80">80's vibes</li>
 
-            <li class="text-hall hall-star">star wars</li>
+            <li class="halls__item halls__item_bg_star">star wars</li>
 
-            <li class="text-hall hall-wild">wild west</li>
+            <li class="halls__item halls__item_bg_wild">wild west</li>
 
-            <li class="text-hall hall-neon">neon style</li>
+            <li class="halls__item halls__item_bg_neon">neon style</li>
           </ul>
         </div>
       </section>
 
-      <section class="section booking" id="booking">
+      <section class="booking section" id="booking">
         <div class="container">
-          <h2 class="title-booking">Забронировать</h2>
+          <h2 class="booking__title">Забронировать</h2>
           <form name="bookingHall" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <fieldset class="booking-fieldset">
+            <fieldset class="booking__fieldset">
               <legend>Выбери зал</legend>
               <input type="radio" name="hall" value="80svibes" id="80svibes" />
               <label for="80svibes">80's vibes</label>
@@ -53,7 +54,7 @@
               <input type="radio" name="hall" value="neonstyle" id="neonstyle" />
               <label for="neonstyle">neon style</label>
             </fieldset>
-            <fieldset class="booking-fieldset">
+            <fieldset class="booking__fieldset">
               <legend>Собери набор развлечений</legend>
               <fieldset>
                 <legend>Приставка:</legend>
@@ -62,21 +63,21 @@
                 <label><input type="radio" name="console" value="xboxones" />OX-box One S</label>
                 <label><input type="radio" name="console" value="dendy" />Dendy</label>
               </fieldset>
-              <fieldset class="booking-fieldset">
+              <fieldset class="booking__fieldset">
                 <legend>Настольные игры</legend>
                 <label><input type="checkbox" name="boardgames" value="jenga" />Jenga</label>
                 <label><input type="checkbox" name="boardgames" value="monopoly" />Monopoly</label>
                 <label><input type="checkbox" name="boardgames" value="manchkin" />Манчкин</label>
                 <label><input type="checkbox" name="boardgames" value="alias" />Alias</label>
               </fieldset>
-              <fieldset class="booking-fieldset">
+              <fieldset class="booking__fieldset">
                 <legend>Дополнительно:</legend>
                 <label><input type="checkbox" name="additionalgames" value="karaoke" />Караоке</label>
                 <label><input type="checkbox" name="additionalgames" value="vr" />VR</label>
               </fieldset>
             </fieldset>
 
-            <fieldset class="booking-fieldset">
+            <fieldset class="booking__fieldset">
               <legend>Выбери дату и время</legend>
 
               <label for="date">Дата*</label>
@@ -105,66 +106,71 @@
         </div>
       </section>
 
-      <section class="section about-us">
+      <section class="about-us section">
         <div class="container">
-          <h2 class="title-about-us">О нас</h2>
-          <div class="content">
-            <p class="text">
-              Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной
-              части города.
-            </p>
-            <p class="text">
-              Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
-              разработками со всего мира.
-            </p>
-          </div>
+          <h2 class="about-us__title">О нас</h2>
 
-          <blockquote class="quote">
-            <p class="quote-go quote-text">GAME OVER &mdash; 
-            это место незабываемых впечатлений</p>
-            <figure class="creator">
-              <img class="arcady-foto" src="image/halls/arcady.jpeg" alt="Аркадий Абашкин" />
-              <figcaption class="arcady">Аркадий Абакшин, создатель игровой территории GAME OVER</figcaption>
+          <p class="about-us__text">
+            Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной
+            части города.
+          </p>
+          <p class="about-us__text about-us__text_sub">
+            Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
+            разработками со всего мира.
+          </p>
+
+          <blockquote class="about-us__quote">
+            <p class="about-us__quote-text">GAME OVER &mdash; 
+              это место незабываемых впечатлений</p>
+            <figure class="about-us__quote-creator">
+              <img class="about-us__quote-arcady-foto" src="image/halls/arcady.jpeg" alt="Аркадий Абашкин" />
+              <figcaption class="about-us__quote-arcady">
+                Аркадий Абакшин, создатель игровой территории GAME OVER
+              </figcaption>
             </figure>
           </blockquote>
         </div>
       </section>
 
-      <section class="section questions">
+      <section class="questions section">
         <div class="container">
-          <h2 class="title-question">Частые вопросы</h2>
-          <ul class="list">
-            <li class="question">Можно ли забронировать комнату онлайн?</li>
-            <li class="question">Могут ли мне вернуть деньги за бронь?</li>
-            <li class="question">Какая комната самая популярная?</li>
-            <li class="question">Как получить VIP карту?</li>
-            <li class="question">Какая комната самая не популярная?</li>
+          <h2 class="questions__title">Частые вопросы</h2>
+          <ul class="questions__list">
+            <li class="questions__item">Можно ли забронировать комнату онлайн?</li>
+            <li class="questions__item">Могут ли мне вернуть деньги за бронь?</li>
+            <li class="questions__item">Какая комната самая популярная?</li>
+            <li class="questions__item">Как получить VIP карту?</li>
+            <li class="questions__item questions__item_last-child">Какая комната самая не популярная?</li>
           </ul>
         </div>
       </section>
     </main>
     <footer>
-      <section class="section contact">
-        <div class="container container-footer">
-          <h2 class="title-contact">Контакты</h2>
+      <section class="contact section">
+        <div class="container">
+          <h2 class="contact__title">Контакты</h2>
           <address>
-            <p class="street text-adress">г. Москва ул.&nbsp;Аквамарина, 16</p>
-            <p class="telefone text-adress"><a class="link" href="tel:89509302893">8(950)930-28-93</a></p>
-            <p class="email text-adress"><a class="link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
+            <p class="contact__text-adress contact__text-adress_icon-location">г. Москва ул.&nbsp;Аквамарина, 16</p>
+            <p class="contact__text-adress contact__text-adress_icon-telefone">
+              <a class="link" href="tel:89509302893">8(950)930-28-93</a>
+            </p>
+            <p class="contact__text-adress contact__text-adress_icon-email">
+              <a class="link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
+            </p>
           </address>
 
           <nav class="navigation">
-            <ul class="social">
-              <li class="social-link">
+            <ul class="navigation__social">
+              <li class="navigation__link">
                 <a href="vk.com" target="_blank"><img src="image/icon/vk.svg" alt="vk" /></a>
               </li>
-              <li class="social-link">
+              <li class="navigation__link">
                 <a href="telegram.org" target="_blank"><img src="image/icon/telegram.svg" alt="telegram" /></a>
               </li>
-              <li class="social-link">
+              <li class="navigation__link">
                 <a href="pinterest.com" target="_blank"><img src="image/icon/pinterest.svg" alt="pinterest" /></a>
               </li>
-              <li class="social-link">
+              <li class="navigation__link">
                 <a href="stumbleupon.com" target="_blank"><img src="image/icon/stumbleupon.svg" alt="stumbleupon" /></a>
               </li>
             </ul>
