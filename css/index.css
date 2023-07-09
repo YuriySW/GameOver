@@ -1,6 +1,7 @@
 @import 'style.css';
 @import 'normalize.css';
-@import 'header/header.css';
+/* @import './header/header.css'; */
+@import url('./header/header.css');
 @import 'header/__container/header__container.css';
 @import 'header/__container/__title-go/header__title-go.css';
 @import 'header/__container/__text-img/header__text-img.css';
