@@ -8,3 +8,18 @@
   white-space: pre-line;
   position: relative;
 }
+
+.about-us__quote-text:after {
+  content: ' ”';
+  color: #6c0287;
+  font-weight: 900;
+}
+
+.about-us__quote-text:before {
+  color: #6c0287;
+  content: '“';
+  font-weight: 900;
+  position: absolute;
+  top: -8px;
+  left: 0;
+}
