@@ -1,4 +1,4 @@
-.contact__text-adress {
+.contact__adress {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
@@ -6,4 +6,5 @@
   padding: 0 0 0 66px;
   max-width: 300px;
   font-style: normal;
+  display: block;
 }

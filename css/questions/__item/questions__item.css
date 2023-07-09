@@ -7,3 +7,7 @@
   background-size: 46px;
   background-position: right 70px bottom 20px;
 }
+
+.questions__item:last-child {
+  margin: 0;
+}
