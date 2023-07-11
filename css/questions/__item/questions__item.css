@@ -15,11 +15,11 @@
 .questions__item:nth-child(even) {
   color: #fff;
   background-color: #440f51;
-  background-image: url('/image/icon/open.svg');
+  background-image: url('../../../image/icon/open.svg');
 }
 
 .questions__item:nth-child(odd) {
   background-color: #fff;
   color: #1c1a1a;
-  background-image: url('/image/icon/open-purple.svg');
+  background-image: url('../../../image/icon/open-purple.svg');
 }
