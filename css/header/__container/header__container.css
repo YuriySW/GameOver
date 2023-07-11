@@ -1,5 +1,5 @@
 .header__container {
-  background: url('/../image/halls/vr.png');
+  background-image: url('/image/halls/vr.png');
   background-repeat: no-repeat;
   background-position: right 30px bottom;
   line-height: 100%;
