@@ -4,8 +4,8 @@
 @import url('./header/header.css');
 /* @import 'header/__container/header__container.css'; */
 @import url('./header/__container/header__container.css');
-@import '../css/header/__container/__title-go/header__title-go.css';
-@import '/css/header/__container/__text-img/header__text-img.css';
+@import './css/header/__container/__title-go/header__title-go.css';
+@import './css/header/__container/__text-img/header__text-img.css';
 @import 'halls/__title/halls__title.css';
 @import 'halls/__list/halls__list.css';
 @import 'halls/__item/halls__item.css';
