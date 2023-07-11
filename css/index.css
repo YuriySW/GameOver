@@ -1,11 +1,9 @@
 @import 'style.css';
 @import 'normalize.css';
-/* @import './header/header.css'; */
-@import url('./header/header.css');
-/* @import 'header/__container/header__container.css'; */
-@import url('./header/__container/header__container.css');
-@import './css/header/__container/__title-go/header__title-go.css';
-@import './css/header/__container/__text-img/header__text-img.css';
+@import 'header/header.css'; 
+@import 'header/__container/header__container.css'; 
+@import 'header/__container/__title-go/header__title-go.css';
+@import 'header/__container/__text-img/header__text-img.css';
 @import 'halls/__title/halls__title.css';
 @import 'halls/__list/halls__list.css';
 @import 'halls/__item/halls__item.css';
@@ -19,15 +17,11 @@
 @import 'about-us/__text-block/about-us__text-block.css';
 @import 'about-us/__quote/about-us__quote.css';
 @import 'about-us/__quote/__quote-text/about-us__quote-text.css';
-/* @import 'about-us/__quote/__quote-text/_before/about-us__quote-text:before.css';
-@import 'about-us/__quote/__quote-text/_after/about-us__quote-text:after.css'; */
 @import 'about-us/__quote/__quote-creator/about-us__quote-creator.css';
 @import 'about-us/__quote/__quote-arcady-foto/about-us__quote-arcady-foto.css';
 @import 'about-us/__quote/__quote-arcady/about-us__quote-arcady.css';
 @import 'questions/__title/questions__title.css';
 @import 'questions/__item/questions__item.css';
-/* @import 'questions/__item/_odd/questions__item:nth-child\(odd\).css';
-@import 'questions/__item/_even/questions__item:nth-child\(even\).css'; */
 @import 'contact/__title/contact__title.css';
 @import 'contact/__adress/contact__adress.css';
 @import 'contact/__adress/_icon-location/contact__adress_type-icon_location.css';
