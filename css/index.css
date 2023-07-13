@@ -1,7 +1,7 @@
 @import 'style.css';
 @import 'normalize.css';
-@import 'header/header.css'; 
-@import 'header/__container/header__container.css'; 
+@import 'header/header.css';
+@import 'header/__container/header__container.css';
 @import 'header/__container/__title-go/header__title-go.css';
 @import 'header/__container/__text-img/header__text-img.css';
 @import 'halls/__title/halls__title.css';
@@ -29,3 +29,5 @@
 @import 'contact/__adress/_icon-email/contact__adress_type-icon_email.css';
 @import 'contact/navigation/__social/navigation__social.css';
 @import 'contact/navigation/__link/navigation__link.css';
+@import 'about-us/__img/about-us__img.css';
+@import 'about-us/__block/about-us__block.css';

@@ -3,4 +3,11 @@
   color: #fff;
   font-size: 20px;
   line-height: 28px;
+  max-width: 490px;
+  white-space: pre-line;
+
+}
+
+.about-us__text:last-child {
+  margin: 0;
 }

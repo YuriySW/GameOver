@@ -3,10 +3,11 @@
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
-  margin: 0 0 40px;
-  padding: 0 0 0 55px;
+  margin-bottom: 40px;
+  padding: 0 0 0 35px;
   white-space: pre-line;
   position: relative;
+  max-width: 469px;
 }
 
 .about-us__quote-text:after {
@@ -20,6 +21,6 @@
   content: '“';
   font-weight: 900;
   position: absolute;
-  top: -8px;
-  left: 0;
+  top: 0;
+  left: 10px;
 }
