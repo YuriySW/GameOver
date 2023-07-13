@@ -6,4 +6,6 @@
   line-height: 100%;
   letter-spacing: -15px;
   font-family: Arial Black;
+  position: relative;
+  z-index: -1;
 }
