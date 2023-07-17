@@ -1,0 +1,9 @@
+.reviews__item{
+   margin-bottom: 50px;
+   display: inline-block;
+
+}
+
+.reviews__item:last-child{
+   margin: 0;
+}

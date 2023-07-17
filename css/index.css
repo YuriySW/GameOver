@@ -31,3 +31,9 @@
 @import 'contact/navigation/__link/navigation__link.css';
 @import 'about-us/__img/about-us__img.css';
 @import 'about-us/__block/about-us__block.css';
+@import 'reviews/title/reviews__title.css';
+@import 'reviews/reviews-img/reviews__img.css';
+@import 'reviews/text/reviews__text.css';
+@import 'reviews/list/reviews__list.css';
+@import 'reviews/item/reviews__item.css';
+@import 'reviews/name/reviews__name.css';

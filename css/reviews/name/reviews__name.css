@@ -1,0 +1,11 @@
+.reviews__name {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  min-height: 28px;
+  clear: left;
+  padding-left: 60px;
+}

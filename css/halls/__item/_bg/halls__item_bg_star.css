@@ -1,3 +1,5 @@
 .halls__item_bg_star {
   background-image: url('../../../../image/halls/starwars.jpg');
+  padding-left: 82px;
+  margin-bottom: 20px;
 }

@@ -1,0 +1,11 @@
+.reviews__title{
+   color: #FFF;
+   text-align: center;
+   font-family: Arial;
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 50px; /* 125% */
+   text-transform: uppercase;
+   margin-bottom: 40px;
+}
