@@ -1,4 +1,4 @@
 .reviews__list{
-   padding: 0 100px;
-   
+  margin: 0 auto;
+  max-width: 980px;
 }

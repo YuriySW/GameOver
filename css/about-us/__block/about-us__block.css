@@ -1,4 +1,5 @@
 .about-us__block {
   display: inline-block;
   vertical-align: top;
+  max-width: 490px;
 }

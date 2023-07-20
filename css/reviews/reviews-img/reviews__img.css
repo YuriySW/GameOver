@@ -2,11 +2,9 @@
    border-radius: 50%;
    height: 280px;
    width: 280px;
-   margin-right: 20px;
    object-fit: cover;
    object-position: top;
    vertical-align: middle;
-   float: left;
    margin-bottom: 11px;
 }
 
