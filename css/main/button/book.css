@@ -1,0 +1,12 @@
+.book{
+   border-radius: 10px;
+   background: #6C0287;
+   color: #FFF;
+   font-family: Arial;
+   font-size: 26px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 30px; 
+   text-transform: uppercase;
+   padding: 25px 69px;
+}

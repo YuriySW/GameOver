@@ -1,0 +1,11 @@
+.fourhalls{
+   display: inline-flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   max-width: 193px;
+}
+
+.fourhalls:not(:last-child){
+   margin-right: 40px;
+   
+}

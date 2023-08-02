@@ -1,0 +1,6 @@
+.booking__set{
+   display: flex;
+   justify-content: center;
+   gap: 175px;
+   border: 0 none;
+}

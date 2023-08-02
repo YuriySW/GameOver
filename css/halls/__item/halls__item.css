@@ -7,10 +7,12 @@
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
-  padding: 135px 0;
+  padding: 94px 164px 95px;
   text-align: center;
-  display: inline-block;
-  width: calc(50% - 20px);
+  width: 580px;
+  height: 349px;
   margin: 10px;
+  justify-content: center;
+  display: flex;
 }
 

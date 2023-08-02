@@ -1,0 +1,7 @@
+.booking__data{
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   border: 0 none;
+   
+}

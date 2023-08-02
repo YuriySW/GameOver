@@ -1,7 +1,5 @@
-.header__container {
-  background-image: url('../../../image/halls/vr.png');
-  background-repeat: no-repeat;
-  background-position: right 30px bottom;
-  line-height: 100%;
-  min-height: 823px;
+.header__container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }

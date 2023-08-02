@@ -1,0 +1,6 @@
+.container-data{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   padding-top: 16px;
+}

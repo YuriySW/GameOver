@@ -15,6 +15,7 @@ html {
   background-color: #1b1a1b;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 0 0;
 }
 
 .container {
@@ -23,9 +24,14 @@ html {
   margin: 0 auto;
 }
 
+
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.section:last-child{
+  padding-bottom: 0;
 }
 
 h1,

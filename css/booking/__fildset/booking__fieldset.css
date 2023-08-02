@@ -1,0 +1,9 @@
+.booking__fieldset{
+   border: 0 none;
+   padding: 0;
+   margin-bottom: 60px;
+}
+
+.booking__fieldset:last-child{
+ margin: 0;
+}

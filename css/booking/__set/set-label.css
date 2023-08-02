@@ -1,0 +1,11 @@
+.set-label{
+   color: #FFF;
+   font-family: Arial;
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   display: flex;
+   gap: 12px;
+}
+
