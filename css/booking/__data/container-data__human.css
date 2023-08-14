@@ -1,6 +1,6 @@
 .container-data__human{
-   width: 300px;
-   height: 52px;
+   width: 100%;
+   padding: 14px;
    text-align: center;
    color: #211E1E;
    font-family: Arial;

@@ -1,4 +1,5 @@
 .input-name{
-   width: 280px;
-   height: 52px;
+   width: 100%;
+   padding: 17px;
+   font-size: 18px;
 }

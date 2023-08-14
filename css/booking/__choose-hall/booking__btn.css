@@ -10,5 +10,7 @@
    border-radius: 8px;
    background: #FFF;
    width: 250px;
-   height: 55px;
+   min-height: 55px;
+  
+   
 }

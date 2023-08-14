@@ -3,16 +3,14 @@
   background-size: cover;
   background-position: center;
   color: #fff;
+  display: flex;
   font-size: 70px;
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
   padding: 94px 164px 95px;
   text-align: center;
-  width: 580px;
-  height: 349px;
-  margin: 10px;
+  max-width: 580px;
   justify-content: center;
-  display: flex;
 }
 

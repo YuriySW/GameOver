@@ -1,6 +1,7 @@
 .container-data{
    display: flex;
    flex-direction: column;
-   gap: 30px;
-   padding-top: 16px;
+   gap: 32px;
+   padding-top: 18px;
+  
 }

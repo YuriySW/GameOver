@@ -28,7 +28,7 @@
           <li class="header__item"><a href="#contact">Контакты</a></li>
         </ul>
       </nav>
-      <button class="callback" type="submit">Заказать звонок</button>
+      <button class="callback" type="button">Заказать звонок</button>
     </div>
     </header>
    
@@ -47,12 +47,12 @@
           <p class="fourhalls__text">Новейшая аппаратура</p>
         </div>
       </div>
-        <button  class="book" type="submit">Забронировать</button>
-        <a class="down-button" href="#"><img  src="image/icon/down.svg" alt="down"></a> 
+        <a href="#booking"  class="book" type="button">Забронировать</a>
+        <a class="down-button" href="#wehave"><img  src="image/icon/down.svg" alt="down"></a> 
       </div>
     </section>
    
-<section class="section wehave">
+<section class="section wehave" id="wehave">
   <div class="container">
     <h2 class="wehave__title">У нас есть все для классного
       отдыха с друзьями!</h2>
@@ -68,7 +68,7 @@
   </div>
 </section>
 
-      <section class="halls section">
+      <section class="halls section" id="halls">
         <div class="container">
           <h2 class="halls__title">Наши залы</h2>
           <ul class="halls__list">
@@ -80,94 +80,93 @@
         </div>
       </section>
 
-      <section class="booking section" id="booking">
-       <div class="booking__container">
+      <section class="booking section" >
+       <div class="booking__container" id="booking">
         <div class="container">
           <h2 class="booking__title">Забронировать зал просто</h2>
           <form name="bookingHall" action="https://jsonplaceholder.typicode.com/posts" method="POST">
             <fieldset class="booking__fieldset booking__choose-hall">
               <legend class="booking__legend">Выбери зал</legend>
-              <button class="booking__btn" type="submit">80's vibes</button>
-              <button class="booking__btn" type="submit">star wars</button>
-              <button class="booking__btn" type="submit">wild west</button>
-              <button class="booking__btn" type="submit">neon style</button>
+           
+              <input type="radio" name="hall" value="80svibes" id="80svibes" required/>
+              <label class="booking__btn" for="80svibes">80's vibes</label>
+              <input type="radio" name="hall" value="starwars" id="starwars" required/>
+              <label class="booking__btn" for="starwars">star wars</label>
+              <input type="radio" name="hall" value="wildwest" id="wildwest" required/>
+              <label class="booking__btn" for="wildwest">wild west</label>
+              <input type="radio" name="hall" value="neonstyle" id="neonstyle" required/>
+              <label class="booking__btn" for="neonstyle">neon style</label>
             </fieldset>
 
             <fieldset class="booking__fieldset booking__set">
-              <legend class="booking__legend ">Собери набор развлечений</legend>
+              <legend class="booking__legend">Собери набор развлечений</legend>
               <fieldset class="set">
                 <legend class="booking__set-legend" >Приставка:</legend>
-                <label class="set-label"> <input type="radio" name="console" value="playStation" class="input-console"/>PlayStation 5</label>
+                <label class="set-label"> <input type="radio" name="console" value="playStation" class="input-console" required/>PlayStation 5</label>
                 <label class="set-label">
-                <input  type="radio" name="console" value="segamegadrive"  class="input-console" />Sega Mega Drive</label>
-                <label class="set-label"><input type="radio" name="console" value="xboxones"  class="input-console" />OX-box One S</label>
-                <label class="set-label"><input type="radio" name="console" value="dendy"  class="input-console" />Dendy</label>
+                <input  type="radio" name="console" value="segamegadrive"  class="input-console" required/>Sega Mega Drive</label>
+                <label class="set-label"><input type="radio" name="console" value="xboxones"  class="input-console" required/>X-box One S</label>
+                <label class="set-label"><input type="radio" name="console" value="dendy"  class="input-console" required/>Dendy</label>
               </fieldset>
 
               <fieldset class="set">
                 <legend class="booking__set-legend">Настольные игры</legend>
                 <label class="set-label"><input type="checkbox" name="boardgames" value="jenga" class="input-checkbox" />Jenga</label>
                 <label class="set-label"><input type="checkbox" name="boardgames" value="monopoly" class="input-checkbox"  />Monopoly</label>
-                <label class="set-label"><input type="checkbox" name="boardgames" value="manchkin" class="input-checkbox"  />Манчкин</label>
-                <label class="set-label"><input type="checkbox" name="boardgames" value="alias" class="input-checkbox"  />Alias</label>
+                <label class="set-label"><input type="checkbox" name="boardgames" value="manchkin" class="input-checkbox" />Манчкин</label>
+                <label class="set-label"><input type="checkbox" name="boardgames" value="alias" class="input-checkbox" />Alias</label>
               </fieldset>
 
               <fieldset class="set">
                 <legend class="booking__set-legend" >Дополнительно:</legend>
-                <label class="set-label"><input type="checkbox" name="additionalgames" value="karaoke" class="input-checkbox"  />Караоке</label>
-                <label class="set-label"><input type="checkbox" name="additionalgames" value="vr" class="input-checkbox"  />VR</label>
+               <label class="set-label"><input  type="checkbox" name="additionalgames" value="karaoke" class="input-checkbox"/>Караоке</label>
+                <label class="set-label"><input type="checkbox" name="additionalgames" value="vr" class="input-checkbox" />VR</label>
               </fieldset>
             </fieldset>
 
             <fieldset class="booking__fieldset booking__data" >
               <legend class="booking__legend">Выбери дату и время</legend>
-             <div class="container-data">
+            
+              <div class="container-data">
               <div class="block-data">
-              <select class="block-data__data" name="select">
-                <option class="data" value="dat">Дата</option>
-              </select>
-              <select class="block-data__data" name="select">
-                <option class="data" value="dat">Время</option>
-              </select>
+              <input type="date" value="Дата" class="block-data__data" name="data" required>
+              <input type="time" class="block-data__data" name="time" required >
             </div>
-              <select class="container-data__human" name="select">
-                <option class="data" value="dat">Количество человек</option>
-              </select>
+              <input type="number" value="Количество человек" class="container-data__human" name="number-persons" >
             </div>
+
 
             <div class="container-name">
-               <fieldset class="booking__name">
-                <legend >Имя</legend>
-                <input class="input-name" type="text">
-               </fieldset>
-
-               <fieldset class="booking__name">
-                <legend>Фамилия</legend>
-                <input class="input-name" type="text">
-               </fieldset>
+               <div>
+                <label class="booking__name" for="name">Имя</label>
+                <input class="input-name" type="text" name="name" id="name" required>
               </div>
+                <div>
+                <label class="booking__name" for="surname" >Фамилия</label>
+                <input class="input-name" type="text" name="surname" id="surname" required>
+              </div>
+                </div>
             
               <div class="container-name">
-                <fieldset class="booking__name">
-                 <legend >Телефон</legend>
-                 <input class="input-phone" type="text">
-                </fieldset>
- 
-                <fieldset class="booking__name email-text">
-                 <legend>E-mail</legend>
-                 <input class="input-phone" type="text">
-                </fieldset>
+                  <div>
+                 <label class="booking__name" for="telephone">Телефон</label>
+                 <input class="input-phone" type="number" name="telephone" id="telephone" required>
+                 </div>
+                 <div>
+                 <label class="booking__name" for="email">E-mail</label>
+                 <input class="input-phone input-phone_sub" type="email" name="email" id="email" required>
+                </div>
                 <button class="booking-btn" type="submit">Забронировать</button>
                </div>
             </fieldset>
            
-       
+            
           </form>
         </div>
       </div>
       </section>
 
-      <section class="about-us section">
+      <section class="about-us section" id="aboutUs">
         <div class="container">
           <h2 class="about-us__title">О нас</h2>
           <img class="about-us__img" src="image/halls/collage.jpg" alt="" />
@@ -250,7 +249,7 @@
       </section>
     </main>
     <footer>
-      <section class="contact section">
+      <section class="contact section" id="contact">
         <div class="contact__container">
         <div class="container">
           <h2 class="contact__title">Контакты</h2>
@@ -290,7 +289,7 @@
         </div>
         <div class="text-block">
           <p class="contact__text">Design by Anastasia Ilina</p>
-          <p class="contact__text">  ilina9825@gmail.com</p>
+          <a href="ilina9825@gmail.com" class="contact__text">  ilina9825@gmail.com</a>
         </div>
       </div>
         
