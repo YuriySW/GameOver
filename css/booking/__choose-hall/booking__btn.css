@@ -9,8 +9,8 @@
    text-transform: uppercase;
    border-radius: 8px;
    background: #FFF;
-   width: 250px;
-   min-height: 55px;
-  
+   max-width: 250px;
+   width: 100%;
+   padding: 7px 25px 8px;
    
 }

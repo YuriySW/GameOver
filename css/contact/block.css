@@ -2,4 +2,6 @@
    display: flex;
    justify-content: space-between;
    margin-bottom: 156px;
+   /* max-block-size: 274px; */
+
 }
