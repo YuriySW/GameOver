@@ -10,3 +10,29 @@
    text-transform: uppercase;
    padding: 25px 69px;
 }
+
+.book:hover, .book:focus{
+   border-radius: 10px;
+   background: #840AA3;
+   color: #FFF;
+   font-family: Arial;
+   font-size: 26px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 30px; 
+   text-transform: uppercase;
+   padding: 25px 69px;
+}
+
+.book:active{
+   border-radius: 10px;
+   background: #640AA3;
+   color: #FFF;
+   font-family: Arial;
+   font-size: 26px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 30px; 
+   text-transform: uppercase;
+   padding: 25px 69px;
+}

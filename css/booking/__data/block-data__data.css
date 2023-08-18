@@ -18,3 +18,6 @@
 
 }
 
+.block-data__data:focus{
+   outline: 2px solid #CD06FF;
+}

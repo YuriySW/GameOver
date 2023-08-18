@@ -10,5 +10,38 @@
    text-transform: uppercase;
    max-width: 300px;
    min-height: 60px;
-  
+}
+
+.booking-btn:hover{
+   border-radius: 10px;
+   background:  #EADEED;
+   color:   #6C0287;
+   font-family: Arial;
+   font-size: 26px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 30px; 
+   text-transform: uppercase;
+   max-width: 300px;
+   min-height: 60px;
+   border: 3px solid #6C0287;
+}
+
+.booking-btn:active{
+   border-radius: 10px;
+   background:  #EADEED;
+   color:   #6C0287;
+   font-family: Arial;
+   font-size: 26px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 30px; 
+   text-transform: uppercase;
+   max-width: 300px;
+   min-height: 60px;
+   
+}
+
+.booking-btn:focus{
+   outline: 3px solid #6C0287;
 }

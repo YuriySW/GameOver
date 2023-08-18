@@ -2,3 +2,7 @@
    width: 27px;
    height: 27px;
 }
+
+.input-console:focus{
+   outline: 1px solid #CD06FF;
+}

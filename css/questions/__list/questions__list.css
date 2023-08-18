@@ -1,0 +1,48 @@
+
+.questions__link{
+   max-height: 46px;
+}
+
+
+ /* .questions__item a:hover  svg circle {
+   fill: #6C0287;
+   stroke: #6C0287;
+}  
+
+ .questions__link:hover  circle {
+   fill: #6C0287;
+  
+}  
+
+.questions__link:hover  circle{
+   fill: #6C0287;
+  
+}  */
+
+.questions__link_odd:hover {
+   background-image: url('../../../image/icon/open-hover.svg');
+}
+
+.questions__link_odd:hover svg circle{
+  stroke: #6C0287;
+}
+
+.questions__link_odd:active{
+   background-image: url('../../../image/icon/open-active.svg')
+}
+
+.questions__link_odd:active svg path{
+   opacity: 0;
+ }
+
+ .questions__link_even:hover{
+   background-image: url('../../../image/icon/open-hover-even.svg');
+ }
+
+ .questions__link_even:active{
+   background-image: url('../../../image/icon/open-active-even.svg');
+ }
+
+ .questions__link_even:active svg path{
+   opacity: 0;
+ }

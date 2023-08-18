@@ -1,6 +1,25 @@
 .down-button{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  
+   max-width: 97px;
 }
 
+.down-button:hover svg circle {
+   fill: #FFFFFF;
+}
+
+.down-button:hover svg rect {
+   fill: #6C0287;
+}
+
+.down-button:active svg circle {
+   fill: #6C0287;
+   stroke: #6C0287;
+}
+
+.down-button:active svg rect {
+   fill: #FFFFFF;
+}
+
+.down-button:focus{
+   outline: 1px solid #CD06FF;
+}

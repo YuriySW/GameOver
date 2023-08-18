@@ -1,4 +1,16 @@
-.navigation__link {
-  display: inline;
-  padding-right: 26px;
+
+.navigation__link-ico:hover svg path{
+ fill: #EADEED;
 }
+
+.navigation__link a:active svg path{
+ fill: #CD06FF;
+}
+
+ .navigation__link-ico:focus svg path{
+  fill: #EADEED;
+}  
+
+.navigation__link:focus, .navigation__link-ico:focus{
+  outline: 1px solid #CD06FF;
+} 

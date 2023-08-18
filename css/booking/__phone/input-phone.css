@@ -7,3 +7,7 @@
 .input-phone_sub{
    margin-bottom: 26px;
 }
+
+.input-phone:focus{
+  outline: 2px solid #CD06FF;
+}

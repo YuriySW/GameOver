@@ -2,3 +2,7 @@
    width: 25px;
    height: 25px;
 }
+
+.input-checkbox:focus{
+   outline: 1px solid #CD06FF;
+}
