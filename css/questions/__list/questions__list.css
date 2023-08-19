@@ -19,30 +19,30 @@
   
 }  */
 
-.questions__link_purple:hover {
+.questions__link_svg-purple:hover {
    background-image: url('../../../image/icon/open-hover.svg');
 }
 
-.questions__link_purple:hover svg circle{
+.questions__link_svg-purple:hover svg circle{
   stroke: #6C0287;
 }
 
-.questions__link_purple:active{
+.questions__link_svg-purple:active{
    background-image: url('../../../image/icon/open-active.svg')
 }
 
-.questions__link_purple:active svg path{
+.questions__link_svg-purple:active svg path{
    opacity: 0;
  }
 
- .questions__link_white:hover{
+ .questions__link_svg-white:hover{
    background-image: url('../../../image/icon/open-hover-even.svg');
  }
 
- .questions__link_white:active{
+ .questions__link_svg-white:active{
    background-image: url('../../../image/icon/open-active-even.svg');
  }
 
- .questions__link_white:active svg path{
+ .questions__link_svg-white:active svg path{
    opacity: 0;
  }
