@@ -19,30 +19,30 @@
   
 }  */
 
-.questions__link_odd:hover {
+.questions__link_purple:hover {
    background-image: url('../../../image/icon/open-hover.svg');
 }
 
-.questions__link_odd:hover svg circle{
+.questions__link_purple:hover svg circle{
   stroke: #6C0287;
 }
 
-.questions__link_odd:active{
+.questions__link_purple:active{
    background-image: url('../../../image/icon/open-active.svg')
 }
 
-.questions__link_odd:active svg path{
+.questions__link_purple:active svg path{
    opacity: 0;
  }
 
- .questions__link_even:hover{
+ .questions__link_white:hover{
    background-image: url('../../../image/icon/open-hover-even.svg');
  }
 
- .questions__link_even:active{
+ .questions__link_white:active{
    background-image: url('../../../image/icon/open-active-even.svg');
  }
 
- .questions__link_even:active svg path{
+ .questions__link_white:active svg path{
    opacity: 0;
  }
