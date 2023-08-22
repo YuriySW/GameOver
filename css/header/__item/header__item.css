@@ -6,6 +6,16 @@
    font-weight: 400;
    line-height: 50px; 
    text-transform: uppercase;
-
 }
 
+.header__item a:hover{
+  text-decoration: underline;
+  text-decoration-color: #CD06FF;
+  transition: 1s;
+  color: #d0c7d2;
+}
+
+
+.header__item a:active, .header__item a:focus{
+   color: #CD06FF;
+ }

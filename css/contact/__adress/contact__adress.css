@@ -8,3 +8,16 @@
   font-style: normal;
   display: block;
 }
+
+
+.contact__adress_effects:hover{
+  color: #EADEED;
+} 
+
+ .contact__adress_effects:active{
+  color: #CD06FF;
+} 
+
+.contact__adress_effects:focus{
+  outline:  1px solid #CD06FF;
+}

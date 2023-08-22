@@ -9,8 +9,10 @@
 
  .navigation__link-ico:focus svg path{
   fill: #EADEED;
+  
 }  
 
-.navigation__link:focus, .navigation__link-ico:focus{
+.navigation__link-ico:focus svg{
   outline: 1px solid #CD06FF;
 } 
+
