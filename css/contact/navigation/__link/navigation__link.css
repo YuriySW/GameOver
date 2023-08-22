@@ -1,6 +1,8 @@
 
 .navigation__link-ico:hover svg path{
  fill: #EADEED;
+ transition-duration: 0.5s;
+
 }
 
 .navigation__link a:active svg path{

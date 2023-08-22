@@ -12,10 +12,13 @@
 
 .contact__adress_effects:hover{
   color: #EADEED;
+  
 } 
 
  .contact__adress_effects:active{
   color: #CD06FF;
+  transition-duration: 0.5s;
+  
 } 
 
 .contact__adress_effects:focus{

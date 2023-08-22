@@ -12,6 +12,11 @@
    justify-content: start;
    width: 100%;
    max-width: 380px;
-
+   transition: 0.4s;
 }
 
+.wehave__item:hover{
+   transform: scale(1.1);
+   transition: 0.5s;
+   box-shadow: 0 0 3px 1px #fff;
+}

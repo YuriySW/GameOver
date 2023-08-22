@@ -5,4 +5,5 @@
 
 .input-console:focus{
    outline: 1px solid #CD06FF;
+   transition-duration: 0.2s;
 }

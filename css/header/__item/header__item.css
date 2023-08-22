@@ -8,14 +8,23 @@
    text-transform: uppercase;
 }
 
-.header__item a:hover{
-  text-decoration: underline;
-  text-decoration-color: #CD06FF;
-  transition: 1s;
-  color: #d0c7d2;
+/* .header__item {
+   border: 1px solid transparent;
+} */
+
+.header__item a:hover {
+  display: table; 
+  border-bottom: 1px solid #CD06FF;
+  line-height: 36px;
+  transition: 465ms;
+  will-change: width;
+  /* border: 1px solid transparent;
+  border-image: linear-gradient(to right top, #CD06FF 10%,  transparent 30%, transparent 70%,  #CD06FF 90%);
+  border-image-slice: 1; */
 }
 
 
 .header__item a:active, .header__item a:focus{
    color: #CD06FF;
+   transition-duration: 0.2s;
  }

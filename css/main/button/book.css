@@ -22,6 +22,8 @@
    line-height: 30px; 
    text-transform: uppercase;
    padding: 25px 69px;
+   transition-duration: 0.4s;
+   transition-property: background-color;
 }
 
 .book:active{
@@ -35,4 +37,6 @@
    line-height: 30px; 
    text-transform: uppercase;
    padding: 25px 69px;
+   transition-duration: 0.4s;
+   transition-property: background-color;
 }

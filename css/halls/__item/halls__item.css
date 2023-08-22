@@ -12,5 +12,11 @@
   text-align: center;
   max-width: 580px;
   justify-content: center;
+  transition: 0.4s;
 }
 
+.halls__item:hover{
+  transform: scale(1.06);
+  transition:  0.5s;
+  box-shadow: 0 0 3px 1px #fff;
+}

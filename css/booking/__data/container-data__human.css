@@ -11,4 +11,5 @@
 
 .container-data__human:focus{
    outline: 2px solid #CD06FF;
+   transition-duration: 0.2s;
 }

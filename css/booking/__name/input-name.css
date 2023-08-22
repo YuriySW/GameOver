@@ -6,4 +6,5 @@
 
 .input-name:focus{
    outline: 2px solid #CD06FF;
+   transition-duration: 200ms;
 }
