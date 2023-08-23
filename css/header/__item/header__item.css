@@ -19,7 +19,7 @@
   line-height: 36px; 
   transition: 465ms; */
   transform: scale(1.08);
-  transition: 0.6s;
+  transition-duration: 0.6s;
   /* border: 1px solid transparent;
   border-image: linear-gradient(to right top, #CD06FF 10%,  transparent 30%, transparent 70%,  #CD06FF 90%);
   border-image-slice: 1; */

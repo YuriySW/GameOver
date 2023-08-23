@@ -1,12 +1,18 @@
 
+.navigation__link-ico:hover svg{
+  transform: scale(105%);
+  transition-duration: 0.2s;
+}
+
 .navigation__link-ico:hover svg path{
  fill: #EADEED;
- transition-duration: 0.5s;
+ transition-duration: 0.2s;
 
 }
 
 .navigation__link a:active svg path{
  fill: #CD06FF;
+ transition-duration: 0.2s;
 }
 
  .navigation__link-ico:focus svg path{
