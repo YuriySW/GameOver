@@ -25,8 +25,9 @@
    max-width: 300px;
    min-height: 60px;
    border: 3px solid #6C0287;
-   transition: all 0.2s ease;
-   
+   /* transition: all 0.2s ease; */
+   transition-duration: 0.2s;
+   transition-property: background-color, border;
   
 }
 
@@ -44,10 +45,11 @@
    min-height: 60px;
    border: 3px solid #EADEED;
    transition: all 0.5s ease;
-
+  
 }
 
 .booking-btn:focus{
-   border: 3px solid #6C0287;
   
+   border: 3px solid #6C0287;
+  transition: 0.2s;
 }

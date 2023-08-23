@@ -1,9 +1,17 @@
 .down-button{
    max-width: 97px;
+  
 }
 
 .down-button:hover svg circle {
    fill: #FFFFFF;
+  
+}
+
+.down-button:hover svg{
+   transform: scale(108%);
+   transition: 0.8s;
+
 }
 
 .down-button:hover svg rect {
@@ -14,6 +22,7 @@
 .down-button:active svg circle {
    fill: #6C0287;
    stroke: #6C0287;
+   transition: 0.4s;
 }
 
 .down-button:active svg rect {
