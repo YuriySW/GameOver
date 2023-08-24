@@ -93,15 +93,18 @@
           <form name="bookingHall" action="https://jsonplaceholder.typicode.com/posts" method="POST">
             <fieldset class="booking__fieldset booking__choose-hall">
               <legend class="booking__legend">Выбери зал</legend>
-           
-              <input type="radio" name="hall" value="80svibes" id="80svibes" hidden/>
-              <label class="booking__btn" for="80svibes" tabindex="0">80's vibes</label>
-              <input type="radio" name="hall" value="starwars" id="starwars"  hidden/>
-              <label class="booking__btn" for="starwars" tabindex="0">star wars</label>
+              
+              <input class="booking__input" type="radio" name="hall" value="80svibes" id="80svibes" hidden/>
+              <label class="booking__btn" for="80svibes" tabindex="-1">80's vibes</label>
+            
+              <input class="booking__input" type="radio" name="hall" value="starwars" id="starwars"  hidden/>
+              <label class="booking__btn" for="starwars" tabindex="-1">star wars</label>
+
               <input type="radio" name="hall" value="wildwest" id="wildwest"  hidden/>
-              <label class="booking__btn" for="wildwest" tabindex="0">wild west</label>
+              <label class="booking__btn" for="wildwest" tabindex="-1">wild west</label>
+
               <input type="radio" name="hall" value="neonstyle" id="neonstyle"  hidden/>
-              <label class="booking__btn" for="neonstyle" tabindex="0">neon style</label>
+              <label class="booking__btn" for="neonstyle" tabindex="-1">neon style</label>
             </fieldset>
 
             <fieldset class="booking__fieldset booking__set">
