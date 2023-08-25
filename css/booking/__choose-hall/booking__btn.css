@@ -12,7 +12,26 @@
    max-width: 250px;
    width: 100%;
    padding: 7px 25px 8px;
-   
+   transition: 0.5s;
+}
+
+.booking__input:checked + .booking__btn{
+   color: #FFFFFF;
+   text-align: center;
+   font-family: Arial;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 40px; 
+   text-transform: uppercase;
+   border-radius: 8px;
+   background: #6C0287; 
+   max-width: 250px;
+   width: 100%;
+   padding: 7px 25px 8px;
+   outline: 3px solid #ffffff;
+   transition-duration: 0.3s;
+   transition-property: background-color;
 }
 
 .booking__btn:hover{
@@ -30,12 +49,12 @@
    width: 100%;
    padding: 7px 25px 8px;
    outline: 3px solid #640AA3;
-   transition: 0.2s ;
-   
+   transition: 0.3s ;
+
   
 }
 
-.booking__btn:active, .booking__btn:focus{
+.booking__btn:active{
    color: #FFFFFF;
    text-align: center;
    font-family: Arial;
@@ -50,6 +69,6 @@
    width: 100%;
    padding: 7px 25px 8px;
    outline: 3px solid #ffffff;
-   transition-duration: 0.8s;
+   transition-duration: 0.4s;
    transition-property: background-color;
-}
+} 

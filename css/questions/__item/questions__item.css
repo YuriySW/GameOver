@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+  cursor: pointer;
 }
 
 .questions__item:last-child {
