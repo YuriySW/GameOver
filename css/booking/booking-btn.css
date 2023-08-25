@@ -26,7 +26,7 @@
    min-height: 60px;
    border: 3px solid #6C0287;
    /* transition: all 0.2s ease; */
-   transition-duration: 0.2s;
+   transition-duration: 200ms;
    transition-property: background-color, border;
   
 }

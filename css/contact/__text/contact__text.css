@@ -7,3 +7,16 @@
    line-height: 16px; 
    text-align: right;
 }
+
+.contact__text:hover{
+   color: #EADEED;
+}
+
+.contact__text:active{
+   color: #CD06FF;
+   transition-duration: 0.5s; 
+}
+
+.contact__text:focus{
+   outline:  1px solid #CD06FF;
+}
