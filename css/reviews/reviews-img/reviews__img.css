@@ -2,13 +2,31 @@
    border-radius: 50%;
    height: 280px;
    width: 280px;
-   object-fit: cover;
+   /* object-fit: cover;
    object-position: top;
    vertical-align: middle;
-   margin-bottom: 11px;
+   margin-bottom: 11px; */
+
 }
 
-.img-nikita{
-   object-position: center;
+.reviews__img_maks{
+   background-image: var(--color-gradient), url('../../../image/visitors/maks.jpeg');
+   background-size: cover;
+
 }
+
+.reviews__img_oksana{
+   background-image:  var(--color-gradient), url('../../../image/visitors/oksana.jpeg');
+   background-size: cover;
+ 
+}
+
+.reviews__img_nikita{
+   background-image:  var(--color-gradient), url('../../../image/visitors/nikita.jpeg');
+   background-size: cover;
+   background-position: center;
+}
+
+
+
 

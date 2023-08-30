@@ -1,6 +1,6 @@
 .callback{
-   color: #FFF;
-   background: #1B1A1B;
+   color: var(--color-white);
+   background: var(--color-background);
    font-family: Arial;
    font-size: 22px;
    font-style: normal;
@@ -8,13 +8,13 @@
    line-height: 30px; 
    text-transform: uppercase;
    border-radius: 10px;
-   border: 3px solid #CD06FF;
+   border: 3px solid var(--color-pink);
    padding: 12px 32px 13px;
 }
 
 .callback:hover, .callback:focus{
-   color: #FFF;
-   background: #6C0287;
+   color: var(--color-white);
+   background: var(--color-button);
    font-family: Arial;
    font-size: 22px;
    font-style: normal;
@@ -22,14 +22,14 @@
    line-height: 30px; 
    text-transform: uppercase;
    border-radius: 10px;
-   border: 3px solid #6C0287;
+   border: 3px solid var(--color-button);
    padding: 12px 32px 13px;
    transition-duration: 0.4s;
    transition-property: background-color;
 }
 
 .callback:active{
-   color: #FFF;
+   color: var(--color-white);
    background: #640AA3;
    font-family: Arial;
    font-size: 22px;
@@ -38,8 +38,8 @@
    line-height: 30px; 
    text-transform: uppercase;
    border-radius: 10px;
-   border: 1px solid #000000;
-   padding: 14px 34px 15px;
+   border: 3px solid #640AA3;
+   padding: 12px 32px 13px;
    transition-duration: 0.5s;
    transition-property: background-color;
 }

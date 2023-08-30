@@ -4,6 +4,19 @@
   font-size: 0; 
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 20px;
- 
+  gap: 20px;
+}
+
+.wehave__list-sub{
+  list-style-position: inside;
+  padding: 0;
+  font-size: 0; 
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px ;
+  max-width: 380px;
+}
+
+.wehave__list-sub_midst{
+  padding-top: 70px;
 }

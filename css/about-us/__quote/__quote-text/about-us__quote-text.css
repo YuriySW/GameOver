@@ -1,5 +1,5 @@
 .about-us__quote-text {
-  color: #fff;
+  color: var(--color-white);
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;

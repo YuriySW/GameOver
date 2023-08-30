@@ -1,7 +1,7 @@
 .booking-btn{
    border-radius: 10px;
-   background:  #FFF;
-   color:   #6C0287;
+   background:  var(--color-white);
+   color:   var(--color-button);
    font-family: Arial;
    font-size: 26px;
    font-style: normal;
@@ -15,7 +15,7 @@
 .booking-btn:hover{
    border-radius: 10px;
    background:  #EADEED;
-   color:   #6C0287;
+   color:   var(--color-button);
    font-family: Arial;
    font-size: 26px;
    font-style: normal;
@@ -24,7 +24,7 @@
    text-transform: uppercase;
    max-width: 300px;
    min-height: 60px;
-   border: 3px solid #6C0287;
+   border: 3px solid var(--color-button);
    /* transition: all 0.2s ease; */
    transition-duration: 200ms;
    transition-property: background-color, border;
@@ -34,7 +34,7 @@
 .booking-btn:active:focus-within{
    border-radius: 10px;
    background:  #EADEED;
-   color:   #6C0287;
+   color:   var(--color-button);
    font-family: Arial;
    font-size: 26px;
    font-style: normal;
@@ -50,6 +50,6 @@
 
 .booking-btn:focus{
   
-   border: 3px solid #6C0287;
+   border: 3px solid var(--color-button);
   transition: 0.2s;
 }

@@ -2,17 +2,20 @@
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   color: #fff;
    display: flex;
+   justify-content: start;
+   align-items: center;
+   color: var(--color-white);
    font-size: 20px;
    font-style: normal;
    font-weight: 700;
    line-height: 28px;
    padding: 164px 40px 6px ;
-   justify-content: start;
    width: 100%;
    max-width: 380px;
    transition: 0.4s;
+   min-height: 228px;
+   
 }
 
 .wehave__item:hover{
@@ -20,3 +23,4 @@
    transition: 0.5s;
    box-shadow: 0 0 3px 1px #fff;
 }
+

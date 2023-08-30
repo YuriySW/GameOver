@@ -1,5 +1,5 @@
 .fourhalls__text{
-   color: #FFF;
+   color: var(--color-white);
    text-align: center;
    font-family: Arial;
    font-size: 30px;

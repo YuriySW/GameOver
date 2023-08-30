@@ -1,5 +1,5 @@
 .fourhalls__number{
-   color: #CD06FF;
+   color: var(--color-pink);
    font-family: Arial Black;
    font-size: 100px;
    font-style: normal;

@@ -1,0 +1,9 @@
+:root{
+   --color-black: #000000;
+   --color-pink: #CD06FF;
+   --color-white: #FFFFFF;
+   --color-purple: #440F51;
+   --color-button: #6C0287;
+   --color-background: #1B1A1B;
+   --color-gradient: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%);
+}

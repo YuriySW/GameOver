@@ -1,5 +1,5 @@
 .booking__set-legend{
-   color: #FFF;
+   color: var(--color-white);
    font-family: Arial;
    font-size: 24px;
    font-style: normal;

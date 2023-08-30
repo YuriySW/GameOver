@@ -1,5 +1,5 @@
 .contact__adress {
-  color: #fff;
+  color: var(--color-white);
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;

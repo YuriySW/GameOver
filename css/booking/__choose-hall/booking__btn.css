@@ -1,5 +1,5 @@
 .booking__btn{
-   color: #000;
+   color: var(--color-black);
    text-align: center;
    font-family: Arial;
    font-size: 30px;
@@ -8,7 +8,7 @@
    line-height: 40px; 
    text-transform: uppercase;
    border-radius: 8px;
-   background: #FFF;
+   background: var(--color-white);
    max-width: 250px;
    width: 100%;
    padding: 7px 25px 8px;

@@ -1,5 +1,5 @@
 .about-us__quote-arcady {
-  color: #fff;
+  color: var(--color-white);
   font-size: 20px;
   line-height: 28px;
   max-width: 250px;

@@ -1,6 +1,6 @@
 .booking__name{
    border: 0 none;
-   color: #FFF;
+   color: var(--color-white);
    font-family: Arial;
    font-size: 14px;
    font-style: normal;

@@ -1,4 +1,4 @@
 .booking__container{
-   background: #440F51;
+   background: var(--color-purple);
   padding: 80px 0 80px;
 }

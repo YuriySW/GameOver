@@ -1,5 +1,5 @@
 .set-label{
-   color: #FFF;
+   color: var(--color-white);
    font-family: Arial;
    font-size: 22px;
    font-style: normal;
