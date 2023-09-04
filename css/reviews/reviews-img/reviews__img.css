@@ -10,7 +10,7 @@
    z-index: -1;
 }
 
-.gradient-img{
+.reviews__people_gradient-img{
    background: radial-gradient( 50% 50% at 50% 50%, rgba(196, 196, 196, 0.00) 30%, rgba(108, 2, 135, 0.50) 100%);
    border-radius: 50%;
    height: 280px;
