@@ -5,11 +5,17 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  display: inline-flex;
-  gap: 12px;
+  /* display: inline-flex;
+  gap: 12px; */
 
   margin: 0;
   padding: 0;
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 @media (max-width: 896px) {
