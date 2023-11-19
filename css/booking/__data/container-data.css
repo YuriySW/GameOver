@@ -9,7 +9,7 @@
   .container-data {
     flex-direction: row;
     justify-content: space-between;
-    /* gap: 92px; */
+
     padding: 0;
     width: 100%;
   }

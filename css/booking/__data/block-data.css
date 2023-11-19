@@ -13,6 +13,7 @@
 @media (max-width: 710px) {
   .block-data {
     max-width: none;
+    flex-wrap: wrap;
   }
 }
 

@@ -110,3 +110,11 @@ ul {
 iframe {
   border: none;
 }
+
+input[type='radio'] {
+  -webkit-appearance: radio;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: checkbox;
+}
