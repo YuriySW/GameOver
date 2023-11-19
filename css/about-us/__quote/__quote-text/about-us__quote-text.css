@@ -5,7 +5,7 @@
   text-transform: uppercase;
   margin-bottom: 40px;
   padding: 0 0 0 35px;
-  white-space: pre-line;
+  max-width: 450px;
   position: relative;
 }
 
