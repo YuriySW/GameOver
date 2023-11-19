@@ -1,6 +1,8 @@
 .input-console {
   width: 27px;
   height: 27px;
+  padding: 0;
+  margin: 0;
 }
 
 .input-console:focus {
