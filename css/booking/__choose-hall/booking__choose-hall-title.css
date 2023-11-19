@@ -1,5 +1,8 @@
 .booking__choose-hall-title {
   color: var(--color-white);
+  display: flex;
+  width: 100%;
+  justify-content: center;
   text-align: center;
   font-family: Arial;
   font-size: 24px;
