@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 
-.contact__text {
+.footer-block__text {
   color: #fff;
 
   font-family: Arial;
@@ -24,7 +24,7 @@
   .footer-block:last-child {
     text-align: center;
   }
-  .contact__text {
+  .footer-block__text {
     font-size: 12px;
     margin-bottom: 5px;
   }
