@@ -1,5 +1,17 @@
-.down-button-block{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.down-button-block {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1090px) {
+  .down-button-block {
+    position: relative;
+    bottom: 35px;
+  }
+}
+
+@media (max-width: 896px) {
+  .down-button-block {
+    display: none;
+  }
 }

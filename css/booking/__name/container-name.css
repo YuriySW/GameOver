@@ -1,6 +1,30 @@
-.container-name{
-   display: flex;
-   flex-direction: column;
-   max-width: 300px;
-   gap: 14px;
+.container-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  gap: 14px;
+}
+
+@media (max-width: 1090px) {
+  .container-name {
+    max-width: 251px;
+  }
+}
+@media (max-width: 896px) {
+  .container-name {
+    max-width: 280px;
+  }
+  .container-name:last-child {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 710px) {
+  .container-name {
+    max-width: 280px;
+  }
+  .container-name:last-child {
+    max-width: 280px;
+  }
 }

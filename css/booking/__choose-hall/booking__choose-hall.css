@@ -1,5 +1,18 @@
-.booking__choose-hall{
+.booking__choose-hall {
   display: flex;
   justify-content: space-between;
-  
 }
+
+@media (max-width: 710px) {
+  .booking__choose-hall {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 14px;
+  }
+}
+
+/* @media (max-width: 640px) {
+  .booking__choose-hall {
+    flex-direction: wrap;
+  }
+} */

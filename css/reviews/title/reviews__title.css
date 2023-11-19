@@ -1,11 +1,35 @@
-.reviews__title{
-   color: #FFF;
-   text-align: center;
-   font-family: Arial;
-   font-size: 40px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 50px; /* 125% */
-   text-transform: uppercase;
-   margin-bottom: 40px;
+.reviews__title {
+  color: var(--color-white);
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1090px) {
+  .reviews__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 896px) {
+  .reviews__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 31px;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews__title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
 }

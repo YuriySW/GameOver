@@ -1,10 +1,27 @@
-.fourhalls__number{
-   color: var(--color-pink);
-   font-family: Arial Black;
-   font-size: 100px;
-   font-style: normal;
-   font-weight: 900;
-   line-height: normal;
-   text-align: center;
-   
+.fourhalls__number {
+  color: var(--color-pink);
+  font-family: Arial Black;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+
+@media (max-width: 1090px) {
+  .fourhalls__number {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 896px) {
+  .fourhalls__number {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .fourhalls__number {
+    font-size: 26px;
+  }
 }

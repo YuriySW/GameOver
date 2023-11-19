@@ -6,5 +6,28 @@
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1090px) {
+  .booking__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 896px) {
+  .booking__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .booking__title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
 }

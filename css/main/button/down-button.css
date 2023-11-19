@@ -1,36 +1,38 @@
-.down-button{
-   max-width: 97px;
-  
+.down-button {
+  max-width: 97px;
 }
 
 .down-button:hover svg circle {
-   fill: #FFFFFF;
-  
+  fill: #ffffff;
 }
 
-.down-button:hover svg{
-   transform: scale(108%);
-   transition: 0.8s;
-
+.down-button:hover svg {
+  transform: scale(108%);
+  transition: 0.8s;
 }
 
 .down-button:hover svg rect {
-   fill: #6C0287;
-   transition: 0.8s ;
+  fill: #6c0287;
+  transition: 0.8s;
 }
 
 .down-button:active svg circle {
-   fill: #6C0287;
-   stroke: #6C0287;
-   transition: 0.4s;
+  fill: #6c0287;
+  stroke: #6c0287;
+  transition: 0.4s;
 }
 
 .down-button:active svg rect {
-   fill: #FFFFFF;
+  fill: #ffffff;
 }
 
-.down-button:focus{
-   outline: 1px solid #CD06FF;
-   transition-duration: 0.4s;
-   
+.down-button:focus {
+  outline: 1px solid #cd06ff;
+  transition-duration: 0.4s;
+}
+
+@media (max-width: 1090px) {
+  .down-button {
+    max-width: 67px;
+  }
 }

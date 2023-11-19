@@ -1,23 +1,47 @@
-.reviews__img{
-   border-radius: 50%;
-   height: 280px;
-   width: 280px;
-   object-fit: cover;
-   object-position: top;
-   vertical-align: middle;
-   margin-bottom: 11px;
-   position: relative;
-   z-index: -1;
+.reviews__img {
+  border-radius: 50%;
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+  object-position: top;
+  vertical-align: middle;
+  margin-bottom: 11px;
+  position: relative;
+  z-index: -1;
 }
 
-.reviews__people_gradient-img{
-   background: radial-gradient( 50% 50% at 50% 50%, rgba(196, 196, 196, 0.00) 30%, rgba(108, 2, 135, 0.50) 100%);
-   border-radius: 50%;
-   height: 280px;
-   width: 280px;
+.reviews__people_gradient-img {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 30%, rgba(108, 2, 135, 0.5) 100%);
+  border-radius: 50%;
+  height: 280px;
+  width: 280px;
 }
 
-.reviews__img_nikita{
-   object-position: unset;
+.reviews__img_nikita {
+  object-position: unset;
 }
 
+@media (max-width: 1090px) {
+  .reviews__img,
+  .reviews__people_gradient-img {
+    height: 170px;
+    width: 170px;
+  }
+}
+
+@media (max-width: 896px) {
+  .reviews__img,
+  .reviews__people_gradient-img {
+    height: 153px;
+    width: 153px;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews__img,
+  .reviews__people_gradient-img {
+    height: 86px;
+    width: 86px;
+    margin-bottom: 9px;
+  }
+}

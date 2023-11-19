@@ -1,4 +1,31 @@
-.footer-block{
-   display: flex;
-   justify-content: space-between;
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__text {
+  color: #fff;
+
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (max-width: 640px) {
+  .footer-block {
+    align-items: center;
+    flex-direction: column;
+  }
+  .text-block:first-child {
+    margin-bottom: 19px;
+  }
+  .footer-block:last-child {
+    text-align: center;
+  }
+  .contact__text {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
 }

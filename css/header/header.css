@@ -1,3 +1,15 @@
-.header{
-   padding-top: 30px;
+.header {
+  padding-top: 30px;
+}
+
+@media (max-width: 896px) {
+  .header {
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-top: 20px;
+  }
 }

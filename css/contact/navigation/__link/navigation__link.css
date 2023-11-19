@@ -1,26 +1,46 @@
-
-.navigation__link-ico:hover svg{
+.navigation__link-ico:hover svg {
   transform: scale(105%);
   transition-duration: 0.2s;
 }
 
-.navigation__link-ico:hover svg path{
- fill: #EADEED;
- transition-duration: 0.2s;
-
+.navigation__link-ico:hover svg path {
+  fill: #eadeed;
+  transition-duration: 0.2s;
 }
 
-.navigation__link a:active svg path{
- fill: #CD06FF;
- transition-duration: 0.2s;
+.navigation__link a:active svg path {
+  fill: #cd06ff;
+  transition-duration: 0.2s;
 }
 
- .navigation__link-ico:focus svg path{
-  fill: #EADEED;
-  
-}  
+.navigation__link-ico:focus svg path {
+  fill: #eadeed;
+}
 
-.navigation__link-ico:focus svg{
-  outline: 1px solid #CD06FF;
-} 
+.navigation__link-ico:focus svg {
+  outline: 1px solid #cd06ff;
+}
 
+@media (max-width: 1090px) {
+  .navigation__link svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 896px) {
+  .navigation {
+    margin-bottom: 30px;
+  }
+}
+/* @media (max-width: 640px) {
+  .navigation {
+    padding-bottom: 10px;
+  }
+} */
+@media (max-width: 640px) {
+  .navigation__link svg {
+    width: 30px;
+    height: 30px;
+  }
+}

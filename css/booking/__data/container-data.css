@@ -1,7 +1,28 @@
-.container-data{
-   display: flex;
-   flex-direction: column;
-   gap: 32px;
-   padding-top: 18px;
-  
+.container-data {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 18px;
+}
+
+@media (max-width: 896px) {
+  .container-data {
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 92px; */
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 710px) {
+  .container-data {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .container-data {
+    max-width: 280px;
+  }
 }

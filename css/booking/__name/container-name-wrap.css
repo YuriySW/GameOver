@@ -1,0 +1,13 @@
+@media (max-width: 896px) {
+  .container-name-wrap {
+    display: flex;
+    gap: 108px;
+  }
+}
+
+@media (max-width: 710px) {
+  .container-name-wrap {
+    gap: 35px;
+    flex-direction: column;
+  }
+}

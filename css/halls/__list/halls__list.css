@@ -2,7 +2,21 @@
   list-style-position: inside;
   padding: 0;
   font-size: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
+}
+
+@media (max-width: 896px) {
+  .halls__list {
+    gap: 17px;
+  }
+}
+
+@media (max-width: 640px) {
+  .halls__list {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
 }

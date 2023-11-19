@@ -1,13 +1,23 @@
-.set-label{
-   color: var(--color-white);
-   font-family: Arial;
-   font-size: 22px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: normal;
-   display: flex;
-   gap: 12px;
-   margin: 0;
-   
-} 
+.set-label {
+  color: var(--color-white);
+  font-family: Arial;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+}
 
+@media (max-width: 896px) {
+  .set-label {
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .set-label {
+    font-size: 16px;
+  }
+}

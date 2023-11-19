@@ -1,4 +1,22 @@
-.booking__container{
-   background: var(--color-purple);
+.booking__container {
+  background: var(--color-purple);
   padding: 80px 0 80px;
+}
+
+@media (max-width: 1090px) {
+  .booking__container {
+    padding: 60px 0 60px;
+  }
+}
+
+@media (max-width: 896px) {
+  .booking__container {
+    padding: 50px 0 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .booking__container {
+    padding: 30px 0 30px;
+  }
 }

@@ -1,10 +1,23 @@
-.input-checkbox{
-   width: 25px;
-   height: 25px;
+.input-checkbox {
+  width: 25px;
+  height: 25px;
 }
 
-.input-checkbox:focus{
-   outline: 1px solid #CD06FF;
-   transition-duration: 0.2s;
-  
+.input-checkbox:focus {
+  outline: 1px solid #cd06ff;
+  transition-duration: 0.2s;
+}
+
+@media (max-width: 896px) {
+  .input-checkbox {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .input-checkbox {
+    width: 30px;
+    height: 30px;
+  }
 }

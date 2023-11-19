@@ -1,15 +1,27 @@
-.container-data__human{
-   width: 100%;
-   padding: 14px;
-   color: #211E1E;
-   font-family: Arial;
-   font-size: 18px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 28px;
+.container-data__human {
+  width: 100%;
+  padding: 14px;
+  color: #211e1e;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
 }
 
-.container-data__human:focus{
-   outline: 2px solid #CD06FF;
-   transition-duration: 0.2s;
+.container-data__human:focus {
+  outline: 2px solid #cd06ff;
+  transition-duration: 0.2s;
+}
+
+@media (max-width: 896px) {
+  .container-data__human {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container-data__human {
+    max-width: 280px;
+  }
 }

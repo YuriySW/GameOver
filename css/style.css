@@ -1,6 +1,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -15,7 +16,6 @@ html {
   background-color: #1b1a1b;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
- 
 }
 
 .container {
@@ -24,13 +24,52 @@ html {
   margin: 0 auto;
 }
 
+@media (max-width: 1090px) {
+  .container {
+    max-width: 1144;
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 896px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.section:last-child{
+@media (max-width: 1090px) {
+  .section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 896px) {
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.section:last-child {
   padding-bottom: 0;
 }
 

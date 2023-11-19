@@ -1,7 +1,12 @@
-.booking__data{
-   display: flex;
-   justify-content: center;
-   gap: 50px;
-   border: 0 none;
-   
+.booking__data {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  border: 0 none;
+}
+
+@media (max-width: 896px) {
+  .booking__data {
+    flex-wrap: wrap;
+  }
 }

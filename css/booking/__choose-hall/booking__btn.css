@@ -1,80 +1,5 @@
-.booking__btn{
-   color: var(--color-black);
-   text-align: center;
-   font-family: Arial;
-   font-size: 30px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 40px; 
-   text-transform: uppercase;
-   border-radius: 8px;
-   background: var(--color-white);
-   max-width: 250px;
-   width: 100%;
-   padding: 7px 25px 8px;
-  
-}
-
-.booking__input:checked + .booking__btn{
-   color: #FFFFFF;
-   text-align: center;
-   font-family: Arial;
-   font-size: 30px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 40px; 
-   text-transform: uppercase;
-   border-radius: 8px;
-   background: #6C0287; 
-   max-width: 250px;
-   width: 100%;
-   padding: 7px 25px 8px;
-   outline: 3px solid #ffffff;
-   transition-duration: 0.3s;
-   transition-property: background-color;
-}
-
-.booking__btn:hover{
-   color: #000;
-   text-align: center;
-   font-family: Arial;
-   font-size: 30px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 40px; 
-   text-transform: uppercase;
-   border-radius: 8px;
-   background: #EADEED;
-   max-width: 250px;
-   width: 100%;
-   padding: 7px 25px 8px;
-   outline: 3px solid #640AA3;
-   transition: 0.3s ;
-
-  
-}
-
-.booking__btn:active{
-   color: #FFFFFF;
-   text-align: center;
-   font-family: Arial;
-   font-size: 30px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 40px; 
-   text-transform: uppercase;
-   border-radius: 8px;
-   background: #6C0287; 
-   max-width: 250px;
-   width: 100%;
-   padding: 7px 25px 8px;
-   outline: 3px solid #ffffff;
-   transition-duration: 0.4s;
-   transition-property: background-color;
-} 
-
-.booking__btn:focus{
-  color: #000;
+.booking__btn {
+  color: var(--color-black);
   text-align: center;
   font-family: Arial;
   font-size: 30px;
@@ -83,6 +8,67 @@
   line-height: 40px;
   text-transform: uppercase;
   border-radius: 8px;
-  outline: 3px solid #640AA3;
-  background: #FFF;
+  background: var(--color-white);
+  max-width: 250px;
+  width: 100%;
+  padding: 7px 25px 8px;
+}
+
+@media (max-width: 1090px) {
+  .booking__btn {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 20px;
+    max-width: 180px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 896px) {
+  .booking__btn {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 20px;
+    max-width: 150px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 640px) {
+  .booking__btn {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 6px 20px;
+    border-radius: 4px;
+    max-width: 130px;
+  }
+}
+
+.booking__input:checked + .booking__btn {
+  color: #ffffff;
+  background: #6c0287;
+  outline: 3px solid #ffffff;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+
+.booking__btn:hover {
+  color: #000;
+  background: #eadeed;
+  outline: 3px solid #640aa3;
+  transition: 0.3s;
+}
+
+.booking__btn:active {
+  color: #ffffff;
+  background: #6c0287;
+  outline: 3px solid #ffffff;
+  transition-duration: 0.4s;
+  transition-property: background-color;
+}
+
+.booking__btn:focus {
+  color: #000;
+  outline: 3px solid #640aa3;
+  background: #fff;
 }

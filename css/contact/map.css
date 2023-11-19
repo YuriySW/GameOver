@@ -1,7 +1,19 @@
-.map{
-   max-width: 680px;
-   width: 100%;
-   display: block;
-   max-height: 274px;
+.map {
+  max-width: 680px;
+  width: 100%;
+  display: block;
+  max-height: 274px;
 }
 
+@media (max-width: 1090px) {
+  .map {
+    max-width: 542px;
+  }
+}
+
+@media (max-width: 975px) {
+  .map {
+    max-width: none;
+    max-height: none;
+  }
+}

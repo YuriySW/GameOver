@@ -1,7 +1,22 @@
 .contact__adress_type-icon_telefone {
   margin-bottom: 11px;
-  background: url('../../../../image/icon/phone.svg');
+  background-image: url('../../../../image/icon/phone.svg');
   background-repeat: no-repeat;
   background-position: left;
   max-width: fit-content;
+}
+
+@media (max-width: 1090px) {
+  .contact__adress_type-icon_telefone {
+    background-image: url('../../../../image/icon/phone-1024.svg');
+  }
+}
+
+@media (max-width: 640px) {
+  .contact__adress_type-icon_telefone {
+    background-image: url('../../../../image/icon/phone-320.svg');
+    margin: 0;
+    background-position: left center;
+    max-width: 160px;
+  }
 }

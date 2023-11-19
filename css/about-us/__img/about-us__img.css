@@ -1,6 +1,5 @@
-.about-us__img {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 80px;
+@media (max-width: 896px) {
+  .about-us__img {
+    margin-bottom: 41px;
+  }
 }
-

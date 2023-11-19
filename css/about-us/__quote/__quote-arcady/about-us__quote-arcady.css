@@ -7,3 +7,20 @@
   vertical-align: middle;
   text-align: left;
 }
+
+@media (max-width: 1090px) {
+  .about-us__quote-arcady {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 225px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-us__quote-arcady {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 160px;
+    font-weight: 400;
+  }
+}

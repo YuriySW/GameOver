@@ -1,4 +1,24 @@
-.block-data{
-   display: flex;
-   gap: 32px;
+.block-data {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+@media (max-width: 896px) {
+  .block-data {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 710px) {
+  .block-data {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .block-data {
+    max-width: 280px;
+    gap: 0;
+  }
 }

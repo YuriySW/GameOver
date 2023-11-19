@@ -1,0 +1,19 @@
+@media (max-width: 1090px) {
+  .section-main {
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 896px) {
+  .section-main {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-main {
+    padding-top: 20px;
+    padding-bottom: 23px;
+  }
+}

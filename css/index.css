@@ -2,10 +2,13 @@
 @import 'style.css';
 @import 'normalize.css';
 @import 'header/header.css';
+@import 'header/menu-but.css';
+@import 'header/logo.css';
 @import 'header/__container/header__container.css';
 @import 'header/__list/header__list.css';
 @import 'header/__item/header__item.css';
 @import 'header/button/callback.css';
+@import 'main/section-main.css';
 @import 'main/main.css';
 @import 'main/__title-go/main__title-go.css';
 @import 'main/__text-img/main__text-img.css';
@@ -17,6 +20,7 @@
 @import 'main/button/book.css';
 @import 'main/button/down-button-block.css';
 @import 'main/button/down-button.css';
+@import 'wehave/section-wehave.css';
 @import 'wehave/__title/wehave__title.css';
 @import 'wehave/__list/wehave__list.css';
 @import 'wehave/__item/wehave__item.css';
@@ -36,7 +40,7 @@
 @import 'booking/booking__container.css';
 @import 'booking/__title/booking__title.css';
 @import 'booking/__fildset/booking__fieldset.css';
-@import 'booking/__legend/booking__legend.css';
+@import 'booking/__choose-hall/booking__choose-hall-title.css';
 @import 'booking/__choose-hall/booking__choose-hall.css';
 @import 'booking/__choose-hall/booking__btn.css';
 @import 'booking/__set/booking__set.css';
@@ -46,17 +50,17 @@
 @import 'booking/__set/input-console.css';
 @import 'booking/__set/input-checkbox.css';
 @import 'booking/__data/booking__data.css';
-
 @import 'booking/__data/block-data__data.css';
 @import 'booking/__data/container-data__human.css';
-
 @import 'booking/__data/block-data.css';
 @import 'booking/__data/container-data.css';
 @import 'booking/__name/booking__name.css';
 @import 'booking/__name/input-name.css';
+@import 'booking/__name/container-name-wrap.css';
 @import 'booking/__name/container-name.css';
 @import 'booking/__phone/input-phone.css';
 @import 'booking/booking-btn.css';
+@import 'about-us/about-us-wrap.css';
 @import 'about-us/__title/about-us__title.css';
 @import 'about-us/__text-block/__text/about-us__text.css';
 @import 'about-us/__text-block/about-us__text-block.css';
@@ -65,10 +69,20 @@
 @import 'about-us/__quote/__quote-creator/about-us__quote-creator.css';
 @import 'about-us/__quote/__quote-arcady-foto/about-us__quote-arcady-foto.css';
 @import 'about-us/__quote/__quote-arcady/about-us__quote-arcady.css';
+@import 'reviews/title/reviews__title.css';
+@import 'reviews/reviews-img/reviews__img.css';
+@import 'reviews/text/reviews__text.css';
+@import 'reviews/list/reviews__list.css';
+@import 'reviews/item/reviews__item.css';
+@import 'reviews/name/reviews__name.css';
+@import 'reviews/people/reviews__people.css';
+@import 'questions/section-question.css';
 @import 'questions/__title/questions__title.css';
 @import 'questions/__list/questions__list.css';
 @import 'questions/__item/questions__item.css';
+@import 'contact/section-contact.css';
 @import 'contact/contact__container.css';
+@import 'contact/__adress/contact__block.css';
 @import 'contact/map.css';
 @import 'contact/block.css';
 @import 'contact/footer-block.css';
@@ -83,10 +97,3 @@
 @import 'contact/navigation/__link/navigation__link.css';
 @import 'about-us/__img/about-us__img.css';
 @import 'about-us/__block/about-us__block.css';
-@import 'reviews/title/reviews__title.css';
-@import 'reviews/reviews-img/reviews__img.css';
-@import 'reviews/text/reviews__text.css';
-@import 'reviews/list/reviews__list.css';
-@import 'reviews/item/reviews__item.css';
-@import 'reviews/name/reviews__name.css';
-@import 'reviews/people/reviews__people.css';

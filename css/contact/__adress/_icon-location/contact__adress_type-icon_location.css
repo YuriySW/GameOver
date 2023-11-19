@@ -1,6 +1,26 @@
 .contact__adress_type-icon_location {
   margin-bottom: 38px;
-  background: url('../../../../image/icon/location.svg');
+  background-image: url('../../../../image/icon/location.svg');
   background-repeat: no-repeat;
   background-position: left;
+}
+
+@media (max-width: 1090px) {
+  .contact__adress_type-icon_location {
+    background-image: url('../../../../image/icon/location-1024.svg');
+  }
+}
+
+@media (max-width: 975px) {
+  .contact__adress_type-icon_location {
+    background-position: top left 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact__adress_type-icon_location {
+    background-image: url('../../../../image/icon/location-320.svg');
+    margin: 0;
+    background-position: top left 5px;
+  }
 }

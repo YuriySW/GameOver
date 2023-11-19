@@ -7,3 +7,25 @@
   object-position: top;
   vertical-align: middle;
 }
+
+@media (max-width: 1090px) {
+  .about-us__quote-arcady-foto {
+    height: 70px;
+    width: 70px;
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 896px) {
+  .about-us__quote-arcady-foto {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-us__quote-arcady-foto {
+    margin-right: 11px;
+    width: 56px;
+    height: 56px;
+  }
+}

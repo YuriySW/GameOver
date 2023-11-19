@@ -1,0 +1,21 @@
+.hall-text-pg {
+  color: var(--color-white);
+  text-align: center;
+  font-family: Arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  max-width: 1000px;
+}
+
+@media (max-width: 1090px) {
+  .hall-text-pg {
+    font-size: 20px;
+  }
+}
+@media (max-width: 896px) {
+  .hall-text-pg {
+    font-size: 16px;
+  }
+}

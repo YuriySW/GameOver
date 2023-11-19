@@ -1,42 +1,50 @@
-.book{
-   border-radius: 10px;
-   background: var(--color-button);
-   color: var(--color-white);
-   font-family: Arial;
-   font-size: 26px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 30px; 
-   text-transform: uppercase;
-   padding: 25px 69px;
+.book {
+  border-radius: 10px;
+  background: var(--color-button);
+  color: var(--color-white);
+  font-family: Arial;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 25px 69px;
 }
 
-.book:hover, .book:focus{
-   border-radius: 10px;
-   background: #840AA3;
-   color: var(--color-white);
-   font-family: Arial;
-   font-size: 26px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 30px; 
-   text-transform: uppercase;
-   padding: 25px 69px;
-   transition-duration: 0.4s;
-   transition-property: background-color;
+.book:hover,
+.book:focus {
+  background: #840aa3;
+  transition-duration: 0.4s;
+  transition-property: background-color;
 }
 
-.book:active{
-   border-radius: 10px;
-   background: #640AA3;
-   color: var(--color-white);
-   font-family: Arial;
-   font-size: 26px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 30px; 
-   text-transform: uppercase;
-   padding: 25px 69px;
-   transition-duration: 0.4s;
-   transition-property: background-color;
+.book:active {
+  background: #640aa3;
+  transition-duration: 0.4s;
+  transition-property: background-color;
+}
+
+@media (max-width: 1090px) {
+  .book {
+    position: relative;
+    left: 39px;
+    font-size: 22px;
+    padding: 17px 48px;
+  }
+}
+
+@media (max-width: 896px) {
+  .book {
+    border-radius: 4px;
+    left: 0;
+    font-size: 16px;
+    padding: 11px 35px;
+  }
+}
+
+@media (max-width: 640px) {
+  .book {
+    font-size: 10px;
+    padding: 8px 13px;
+  }
 }

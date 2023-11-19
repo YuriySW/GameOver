@@ -3,8 +3,36 @@
   color: var(--color-white);
   font-size: 20px;
   line-height: 28px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .about-us__text:last-child {
   margin: 0;
+}
+
+@media (max-width: 1090px) {
+  .about-us__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 444px;
+  }
+}
+
+@media (max-width: 896px) {
+  .about-us__text {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 444px;
+  }
+}
+
+@media (max-width: 690px) {
+  .about-us__text {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: none;
+  }
 }

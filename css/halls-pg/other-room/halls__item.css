@@ -1,0 +1,37 @@
+.halls__item {
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 36px */
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10% 28%;
+  min-height: 15.9vw;
+}
+.halls__item:hover {
+  transform: scale(1.06);
+  transition: 0.5s;
+  box-shadow: 0 0 3px 1px #fff;
+}
+@media (max-width: 896px) {
+  .halls__item {
+    font-size: 20px;
+    min-height: 17.45vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .halls__item {
+    font-size: 20px;
+    min-height: 43.75vw;
+    line-height: 24px;
+    justify-content: center;
+    padding: 20% 41%;
+  }
+}

@@ -1,9 +1,21 @@
-.booking__fieldset{
-   border: 0 none;
-   padding: 0;
-   margin-bottom: 60px;
+.booking__fieldset {
+  border: 0 none;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
-.booking__fieldset:last-child{
- margin: 0;
+.booking__fieldset:last-child {
+  margin: 0;
+}
+
+@media (max-width: 896px) {
+  .booking__fieldset {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .booking__fieldset {
+    margin-bottom: 30px;
+  }
 }

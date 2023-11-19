@@ -1,9 +1,31 @@
-.reviews__item{
-   margin-bottom: 50px;
-   display: inline-block;
- 
+.reviews__item {
+  margin-bottom: 50px;
+  display: inline-block;
 }
 
-.reviews__item:last-child{
-   margin: 0;
+.reviews__item:last-child {
+  margin: 0;
+}
+
+@media (max-width: 1090px) {
+  .reviews__item {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 896px) {
+  .reviews__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .reviews__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* ffffffff */
+    row-gap: 35px;
+    /* margin-bottom: 20px; */
+  }
 }

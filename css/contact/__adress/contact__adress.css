@@ -4,23 +4,65 @@
   font-weight: 700;
   line-height: 28px;
   padding: 0 0 0 66px;
-  max-width: 330px;
+
   font-style: normal;
   display: block;
 }
+.contact__adress_type-icon_location {
+  max-width: 270px;
+}
+.contact__adress_effects:hover {
+  color: #eadeed;
+}
 
-
-.contact__adress_effects:hover{
-  color: #EADEED;
-  
-} 
-
- .contact__adress_effects:active{
-  color: #CD06FF;
+.contact__adress_effects:active {
+  color: #cd06ff;
   transition-duration: 0.5s;
-  
-} 
+}
 
-.contact__adress_effects:focus{
-  outline:  1px solid #CD06FF;
+.contact__adress_effects:focus {
+  outline: 1px solid #cd06ff;
+}
+
+@media (max-width: 1090px) {
+  .contact__adress {
+    padding-left: 46px;
+
+    /* background-size: 26px; */
+  }
+}
+@media (max-width: 975px) {
+  .contact__adress {
+    text-align: center;
+  }
+  .contact__adress_type-icon_location {
+    max-width: 250px;
+  }
+}
+@media (max-width: 896px) {
+  .contact__adress {
+    max-width: 280px;
+  }
+  .adress-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact__adress {
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+    max-width: 200px;
+    padding: 0;
+  }
+  .contact__adress:first-child {
+    max-width: 130px;
+  }
+  .adress-wrap {
+    row-gap: 10px;
+    margin-bottom: 10px;
+  }
 }

@@ -23,54 +23,152 @@
   background-color: var(--color-white);
 }
 
+.questions__item_svg-purple:hover svg circle {
+  stroke: #6c0287;
+}
 
-.questions__item_svg-purple:hover svg circle{
-  stroke: #6C0287;
- 
- }
- 
- .questions__item_svg-purple:hover svg path{
-   fill: #fff;
-   transition: 0.6s;
- }
- 
+.questions__item_svg-purple:hover svg path {
+  fill: #fff;
+  transition: 0.6s;
+}
 
- .questions__item_svg-purple:hover svg{
-   background-image: url('../../../image/icon/open-hover.svg');
-   transition: 0.6s;
-   transform: rotate(360deg) scale(1.2); 
-  
- }
- 
- .questions__item_svg-purple:active svg {
+.questions__item_svg-purple:hover svg {
+  background-image: url('../../../image/icon/open-hover.svg');
+  transition: 0.6s;
+  transform: rotate(360deg) scale(1.2);
+}
+
+.questions__item_svg-purple:active svg {
+  background-image: url('../../../image/icon/open-active.svg');
+  transition: 0.6s;
+  transform: rotate(-1deg) scale(1.2);
+}
+
+.questions__item_svg-purple:active svg path {
+  opacity: 0;
+}
+
+.questions__item_svg-white:hover svg path {
+  fill: #6c0287;
+  transition: 0.6s;
+}
+
+.questions__item_svg-white:hover svg {
+  background-image: url('../../../image/icon/open-hover-even.svg');
+  transition: 0.6s;
+  transform: rotate(360deg) scale(1.2);
+}
+
+.questions__item_svg-white:active svg {
+  background-image: url('../../../image/icon/open-active-even.svg');
+  transition: 0.6s;
+  transform: rotate(-1deg) scale(1.2);
+}
+
+.questions__item_svg-white:active svg path {
+  opacity: 0;
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+@media (max-width: 1090px) {
+  .questions__item {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 23px 20px 23px 25px;
+  }
+  .questions__item:nth-child(even) {
+    color: #1c1a1a;
+    background-color: var(--color-white);
+  }
+  /* ///////////////////////////////////////////////////////////////////////// */
+  .questions__item_svg-white svg circle {
+    stroke: #6c0287;
+  }
+
+  .questions__item_svg-white svg path {
+    fill: #6c0287;
+  }
+  /* ///////////////////////////////////////////////////////////////////////// */
+  .questions__item_svg-white:hover svg circle {
+    stroke: #6c0287;
+  }
+
+  .questions__item_svg-white:hover svg path {
+    fill: #fff;
+    transition: 0.6s;
+  }
+
+  .questions__item_svg-white:hover svg {
+    background-image: url('../../../image/icon/open-hover.svg');
+    transition: 0.6s;
+    transform: rotate(360deg) scale(1.2);
+  }
+
+  .questions__item_svg-white:active svg {
     background-image: url('../../../image/icon/open-active.svg');
-    transition: 0.6s;
-    transform: rotate(-1deg) scale(1.2); 
- }
- 
- .questions__item_svg-purple:active svg path{
-    opacity: 0;
-  }
- 
- .questions__item_svg-white:hover svg path{
-   fill: #6C0287;
-   transition: 0.6s;
-
- }
- 
-  .questions__item_svg-white:hover svg{
-    background-image: url('../../../image/icon/open-hover-even.svg');
-    transition: 0.6s;
-   transform: rotate(360deg) scale(1.2); 
-
-  }
- 
-  .questions__item_svg-white:active svg{
-    background-image: url('../../../image/icon/open-active-even.svg');
     transition: 0.6s;
     transform: rotate(-1deg) scale(1.2);
   }
- 
-  .questions__item_svg-white:active svg path{
+
+  .questions__item_svg-white:active svg path {
     opacity: 0;
   }
+  /* ///////////////////////////////////////////////////////////////////////// */
+  .questions__item:last-child {
+    display: none;
+  }
+  .questions__item-sub {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 896px) {
+  .questions__item {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 23px 65px 24px 54px;
+  }
+  .questions__item:not(.questions__item-sub) {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .questions__item {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 7px 13px;
+  }
+  .questions__item:not(.questions__item-sub) {
+    margin-bottom: 10px;
+  }
+  .questions__item svg {
+    width: 30px;
+    height: 30px;
+  }
+  .questions__item {
+    /* pointer-events: none; */
+  }
+  .questions__item_svg-white:hover svg {
+    background-image: none;
+    transition: 0.6s;
+    transform: none;
+  }
+
+  .questions__item_svg-white:active svg {
+    background-image: none;
+    transition: 0.6s;
+    transform: none;
+  }
+  .questions__item_svg-purple:hover svg {
+    background-image: none;
+    transition: 0.6s;
+    transform: none;
+  }
+
+  .questions__item_svg-purple:active svg {
+    background-image: none;
+    transition: 0.6s;
+    transform: none;
+  }
+}

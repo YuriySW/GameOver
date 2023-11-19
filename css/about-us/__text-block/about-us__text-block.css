@@ -1,3 +1,26 @@
 .about-us__text-block {
   margin-bottom: 59px;
 }
+
+@media (max-width: 1090px) {
+  .about-us__text-block {
+    margin-bottom: 69px;
+  }
+}
+
+@media (max-width: 896px) {
+  .about-us__text-block {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 278px;
+  }
+}
+
+@media (max-width: 690px) {
+  .about-us__text-block {
+    max-width: none;
+    margin-bottom: 15px;
+  }
+}

@@ -1,9 +1,16 @@
-.booking__set-legend{
-   color: var(--color-white);
-   font-family: Arial;
-   font-size: 24px;
-   font-style: normal;
-   font-weight: 700;
-   line-height: 28px; 
-   margin-bottom: 23px;
+.booking__set-legend {
+  color: var(--color-white);
+  font-family: Arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+
+@media (max-width: 640px) {
+  .booking__set-legend {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

@@ -1,0 +1,16 @@
+.contact__block {
+}
+/* @media (max-width: 1090px) {
+  .contact__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+} */
+
+@media (max-width: 896px) {
+  .contact__block {
+    width: 100%;
+    max-width: 380px;
+  }
+}

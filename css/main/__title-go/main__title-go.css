@@ -9,3 +9,25 @@
   position: relative;
   z-index: -1;
 }
+
+@media (max-width: 1090px) {
+  .main__title-go {
+    font-size: 120px;
+    letter-spacing: -12px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 896px) {
+  .main__title-go {
+    font-size: 86px;
+    letter-spacing: -8.6px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main__title-go {
+    font-size: 35px;
+    letter-spacing: -2.8px;
+  }
+}

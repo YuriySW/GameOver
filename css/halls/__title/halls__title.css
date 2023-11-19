@@ -8,3 +8,27 @@
   margin-bottom: 60px;
   margin-top: 0;
 }
+
+@media (max-width: 1090px) {
+  .halls__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 896px) {
+  .halls__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 640px) {
+  .halls__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+}

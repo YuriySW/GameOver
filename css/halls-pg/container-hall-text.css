@@ -1,0 +1,26 @@
+.container-hall-text {
+  display: flex;
+  justify-content: center;
+}
+
+.container-text-wrap {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1090px) {
+  .container-text-wrap {
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 896px) {
+  .container-text-wrap {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container-text-wrap {
+    padding-bottom: 15px;
+  }
+}

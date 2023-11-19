@@ -1,22 +1,53 @@
 .halls__item {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   color: #fff;
   display: flex;
+  align-items: center;
   font-size: 70px;
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
-  padding: 94px 164px 95px;
+  padding: 10% 30%;
   text-align: center;
-  max-width: 580px;
+  min-height: 349px;
   justify-content: center;
   transition: 0.4s;
 }
 
-.halls__item:hover{
+.halls__item:hover {
   transform: scale(1.06);
-  transition:  0.5s;
+  transition: 0.5s;
   box-shadow: 0 0 3px 1px #fff;
+}
+
+@media (max-width: 1090px) {
+  .halls__item {
+    font-size: 50px;
+    line-height: 50px;
+    min-height: 267px;
+  }
+}
+
+@media (max-width: 896px) {
+  .halls__item {
+    font-size: 40px;
+    min-height: 200px;
+    padding-top: 18%;
+  }
+}
+
+@media (max-width: 640px) {
+  .halls__item {
+    min-height: 52.5vw;
+    font-size: 26px;
+    line-height: 34px;
+    padding: 10% 39%;
+  }
+}
+@media (max-width: 395px) {
+  .halls__item {
+    padding: 10% 35%;
+  }
 }

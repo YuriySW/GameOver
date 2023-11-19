@@ -1,5 +1,13 @@
 .about-us__block {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 490px;
+  /* display: inline-block;
+  vertical-align: top; */
+  /* display: inline-block; */
+  /* width: 100%;
+  max-width: 490px; */
 }
+
+/* @media (max-width: 1090px) {
+  .about-us__block {
+    max-width: 444px;
+  }
+} */

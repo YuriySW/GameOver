@@ -1,6 +1,21 @@
-.booking__set{
-   display: flex;
-   justify-content: center;
-   gap: 175px;
-   border: 0 none;
+.booking__set {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 175px; */
+  padding: 0 100px;
+  border: 0 none;
+}
+
+@media (max-width: 1090px) {
+  .booking__set {
+    padding: 0;
+  }
+}
+
+@media (max-width: 977px) {
+  .booking__set {
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 32px 160px;
+  }
 }

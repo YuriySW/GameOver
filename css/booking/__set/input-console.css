@@ -1,9 +1,23 @@
-.input-console{
-   width: 27px;
-   height: 27px;
+.input-console {
+  width: 27px;
+  height: 27px;
 }
 
-.input-console:focus{
-   outline: 1px solid #CD06FF;
-   transition-duration: 0.2s;
+.input-console:focus {
+  outline: 1px solid #cd06ff;
+  transition-duration: 0.2s;
+}
+
+@media (max-width: 896px) {
+  .input-console {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .input-console {
+    width: 30px;
+    height: 30px;
+  }
 }

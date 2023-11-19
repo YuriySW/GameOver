@@ -1,0 +1,29 @@
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-family: Arial;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@media (max-width: 896px) {
+  .back-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .back-btn {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+  .back-btn svg {
+    width: 16px;
+  }
+}

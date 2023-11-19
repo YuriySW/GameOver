@@ -1,0 +1,11 @@
+@media (max-width: 1090px) {
+  .section-contact {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-contact {
+    padding-top: 30px;
+  }
+}

@@ -1,4 +1,8 @@
-.wehave__item_films{
-   background-image: url('../../../image/halls/netflix.jpg');
-  background-position: 10% 27%;
+.wehave__item_films {
+  background-image: url('../../../image/halls/netflix.jpg');
+}
+@media (max-width: 640px) {
+  .wehave__item_films {
+    align-items: flex-end;
+  }
 }

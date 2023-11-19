@@ -1,5 +1,18 @@
-.header__list{
+.header__list {
   display: flex;
   gap: 40px;
- 
+
+  /* max-width: 587px;
+  width: 100%; */
+}
+@media (max-width: 1090px) {
+  .header__list {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 896px) {
+  .header__list {
+    display: none;
+  }
 }

@@ -4,6 +4,27 @@
   background-position: right 30px bottom;
   line-height: 100%;
   min-height: 823px;
-  
 }
 
+@media (max-width: 1090px) {
+  .main {
+    background-image: url('../../image/halls/vr-1024.png');
+    background-position: right 60px bottom;
+    min-height: 583px;
+  }
+}
+@media (max-width: 896px) {
+  .main {
+    background-image: url('../../image/halls/vr-768.png');
+    background-position: right 40px bottom;
+    min-height: 537px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    background-image: url('../../image/halls/vr-320.png');
+    background-position: right 20px bottom;
+    min-height: 204px;
+  }
+}

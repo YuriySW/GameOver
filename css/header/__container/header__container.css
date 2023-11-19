@@ -1,5 +1,31 @@
-.header__container{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+.header__container {
+  /* display: flex; */
+  display: grid;
+  grid-template-areas: 'logo menu button';
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.header__list,
+.menu-but {
+  grid-area: menu;
+}
+
+.callback {
+  grid-area: button;
+}
+@media (max-width: 896px) {
+  .header__container {
+    grid-template-areas: ' menu logo button';
+  }
+}
+
+@media (max-width: 640px) {
+  .header__container {
+    grid-template-areas: ' menu logo';
+  }
 }

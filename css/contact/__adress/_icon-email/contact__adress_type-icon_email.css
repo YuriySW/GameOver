@@ -1,6 +1,19 @@
 .contact__adress_type-icon_email {
   margin-bottom: 39px;
-  background: url('../../../../image/icon/mail.svg');
+  background-image: url('../../../../image/icon/mail.svg');
   background-repeat: no-repeat;
   background-position: left;
+}
+
+@media (max-width: 1090px) {
+  .contact__adress_type-icon_email {
+    background-image: url('../../../../image/icon/mail-1024.svg');
+  }
+}
+@media (max-width: 640px) {
+  .contact__adress_type-icon_email {
+    background-image: url('../../../../image/icon/mail-320.svg');
+    margin: 0;
+    background-position: left center;
+  }
 }

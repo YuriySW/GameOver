@@ -1,0 +1,11 @@
+.halls__item_bg_star {
+  background-image: url(../../../image/halls/starwars.jpg);
+}
+
+.halls__item_bg_wild {
+  background-image: url(../../../image/halls/wildwest.jpg);
+}
+
+.halls__item_bg_neon {
+  background-image: url(../../../image/halls/neonstyle.png);
+}

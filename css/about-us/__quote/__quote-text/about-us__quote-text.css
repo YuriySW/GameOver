@@ -23,3 +23,34 @@
   top: -11px;
   left: 0px;
 }
+
+@media (max-width: 1090px) {
+  .about-us__quote-text {
+    font-size: 30px;
+    line-height: 36px;
+    white-space: normal;
+    max-width: 419px;
+    padding-left: 20px;
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 896px) {
+  .about-us__quote-text {
+    font-size: 32px;
+
+    max-width: 666px;
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-us__quote-text {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 666px;
+    padding-left: 10px;
+    margin-bottom: 9px;
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../var.css';
+@import '../../style.css';
+@import '../../normalize.css';
+@import '../../header/header.css';
+@import '../../header/menu-but.css';
+@import '../../header/logo.css';
+@import '../../header/__container/header__container.css';
+@import '../../header/__list/header__list.css';
+@import '../../header/__item/header__item.css';
+@import '../../header/button/callback.css';
+@import '../container-hall.css';
+@import '../star-wars-pg/container-hall_starwars-bg.css';
+@import '../star-wars-pg/halls__item_bg-starwars-pg.css';
+@import '../back-btn.css';
+@import '../container-hall-text.css';
+@import '../hall-text-pg.css';
+@import '../hall-title.css';
+@import '../in-room/in-room-wrap.css';
+@import '../in-room/in-room-text.css';
+@import '../in-room/in-room-text-wrap.css';
+
+@import '../other-room/halls__list.css';
+@import '../other-room/halls__item.css';
+
+@import '../../contact/section-contact.css';
+@import '../../contact/contact__container.css';
+@import '../../contact/__adress/contact__block.css';
+@import '../../contact/map.css';
+@import '../../contact/block.css';
+@import '../../contact/footer-block.css';
+@import '../../contact/__text/contact__text.css';
+
+@import '../../contact/__title/contact__title.css';
+@import '../../contact/__adress/contact__adress.css';
+@import '../../contact/__adress/_icon-location/contact__adress_type-icon_location.css';
+@import '../../contact/__adress/_icon-telefone/contact__adress_type-icon_telefone.css';
+@import '../../contact/__adress/_icon-email/contact__adress_type-icon_email.css';
+@import '../../contact/navigation/__social/navigation__social.css';
+@import '../../contact/navigation/__link/navigation__link.css';

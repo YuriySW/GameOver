@@ -1,0 +1,33 @@
+.menu-but {
+  display: none;
+}
+
+.menu-but:hover rect {
+  fill: #cd06ff;
+}
+
+.menu-but:active rect {
+  fill: #840aa3;
+}
+
+.menu-but:focus {
+  outline: 1px solid #840aa3;
+  padding: 10px 0;
+}
+
+@media (max-width: 896px) {
+  .menu-but {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu-but {
+    width: 39px;
+    height: 21px;
+  }
+  .menu-but:focus {
+    padding: 0;
+  }
+}

@@ -1,0 +1,20 @@
+.halls__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 896px) {
+  .halls__list {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .halls__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5px;
+  }
+}

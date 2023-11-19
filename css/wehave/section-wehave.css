@@ -1,0 +1,18 @@
+@media (max-width: 1090px) {
+  .section-wehave {
+    padding-top: 33px;
+  }
+}
+@media (max-width: 896px) {
+  .section-wehave {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-wehave {
+    padding-top: 23px;
+    padding-bottom: 15px;
+  }
+}

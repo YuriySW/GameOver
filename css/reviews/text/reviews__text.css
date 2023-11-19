@@ -1,6 +1,6 @@
 .reviews__text {
-   display: inline-block;
-  color: #FFF;
+  display: inline-block;
+  color: var(--color-white);
   font-family: Arial;
   font-size: 20px;
   font-style: normal;
@@ -9,4 +9,31 @@
   padding-top: 50px;
   vertical-align: top;
   max-width: 670px;
+}
+
+@media (max-width: 1090px) {
+  .reviews__text {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 515px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 896px) {
+  .reviews__text {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 393px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews__text {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 280px;
+    padding-top: 0;
+  }
 }

@@ -3,3 +3,10 @@
   display: flex;
   gap: 26px;
 }
+
+@media (max-width: 896px) {
+  .navigation__social {
+    /* justify-content: space-between; */
+    justify-content: center;
+  }
+}

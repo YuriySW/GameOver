@@ -1,12 +1,31 @@
-.fourhalls__new{
-   color: var(--color-pink);
-   font-family: Arial Black;
-   font-size: 75px;
-   font-style: normal;
-   font-weight: 900;
-   line-height: normal;
-   font-variant: all-small-caps;
-   text-align: center;
-   margin-bottom: 8px;
+.fourhalls__new {
+  color: var(--color-pink);
+  font-family: Arial Black;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-variant: all-small-caps;
+  text-align: center;
+  margin-bottom: 8px;
+}
 
+@media (max-width: 1090px) {
+  .fourhalls__new {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 896px) {
+  .fourhalls__new {
+    margin-bottom: 3px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .fourhalls__new {
+    margin-bottom: 1px;
+    font-size: 22px;
+  }
 }
