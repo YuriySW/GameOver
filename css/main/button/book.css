@@ -11,7 +11,7 @@
   text-transform: uppercase;
   padding: 25px 69px;
   max-width: 374px;
-  box-shadow: 0 0 20px var(--color-button);
+  box-shadow: 0 0 15px var(--color-button);
 }
 
 .book:hover,
