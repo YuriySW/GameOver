@@ -1,5 +1,8 @@
 .down-button {
   max-width: 97px;
+  position: relative;
+  bottom: 40px;
+  left: 46%;
 }
 
 .down-button:hover svg circle {
@@ -32,7 +35,7 @@
 }
 
 @media (max-width: 1090px) {
-  .down-button {
-    max-width: 67px;
+  .down-button svg {
+    width: 67px;
   }
 }
