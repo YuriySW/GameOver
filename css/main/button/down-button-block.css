@@ -1,12 +1,14 @@
 .down-button-block {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: 40px;
 }
 
 @media (max-width: 1090px) {
   .down-button-block {
     position: relative;
-    bottom: 35px;
+    bottom: 45px;
   }
 }
 
