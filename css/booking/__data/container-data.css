@@ -22,5 +22,6 @@
     grid-template-columns: 280px;
     grid-template-rows: 52px;
     margin-bottom: 35px;
+    padding-top: 0;
   }
 }
