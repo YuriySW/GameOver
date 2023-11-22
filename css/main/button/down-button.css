@@ -39,3 +39,9 @@
     width: 67px;
   }
 }
+
+@media (max-width: 896px) {
+  .down-button {
+    display: none;
+  }
+}
