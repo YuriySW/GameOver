@@ -23,5 +23,6 @@
     grid-template-rows: 52px;
     margin-bottom: 35px;
     padding-top: 0;
+    row-gap: 15px;
   }
 }

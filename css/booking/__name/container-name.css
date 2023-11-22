@@ -5,3 +5,12 @@
   max-width: 300px;
   gap: 17px;
 }
+
+@media (max-width: 685px) {
+  .container-name {
+    margin-bottom: 35px;
+  }
+  .container-name_sub {
+    margin-bottom: 0;
+  }
+}
