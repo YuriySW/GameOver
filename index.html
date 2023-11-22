@@ -138,7 +138,7 @@
                 </fieldset>
 
                 <fieldset class="set">
-                  <legend class="booking__set-legend">Настольные игры</legend>
+                  <legend class="booking__set-legend">Настольные игры:</legend>
                   <label class="set-label"><input type="checkbox" name="boardgames" value="jenga" class="input-checkbox" />Jenga</label>
                   <label class="set-label"><input type="checkbox" name="boardgames" value="monopoly" class="input-checkbox" />Monopoly</label>
                   <label class="set-label"><input type="checkbox" name="boardgames" value="manchkin" class="input-checkbox" />Манчкин</label>
@@ -152,19 +152,18 @@
                 </fieldset>
               </fieldset>
 
-              <fieldset class="booking__fieldset booking__data">
+              <fieldset class="booking__fieldset">
                 <legend class="booking__choose-hall-title booking__choose-hall-title_sub">Выбери дату и время</legend>
-
-                <div class="container-data">
-                  <div class="block-data">
-                    <input type="date" class="block-data__data" name="data" required />
-                    <input type="time" class="block-data__data block-data__data-time" name="time" required />
+                <div class="booking__data">
+                  <div class="container-data">
+                    <div class="block-data">
+                      <input type="date" class="block-data__data" name="data" required />
+                      <input type="time" class="block-data__data block-data__data-time" name="time" required />
+                    </div>
+                    <input type="number" class="container-data__human" name="number-persons" />
                   </div>
-                  <input type="number" class="container-data__human" name="number-persons" />
-                </div>
 
-                <div class="container-name-wrap booking__data">
-                  <div class="container-name">
+                  <div class="container-name container-name_name-family">
                     <div>
                       <label class="booking__name" for="name">Имя</label>
                       <input class="input-name" type="text" name="name" id="name" required />
@@ -175,7 +174,7 @@
                     </div>
                   </div>
 
-                  <div class="container-name">
+                  <div class="container-name container-name_number-email">
                     <div>
                       <label class="booking__name" for="telephone">Телефон</label>
                       <input class="input-phone" type="number" name="telephone" id="telephone" />
@@ -295,7 +294,7 @@
     </main>
 
     <footer>
-      <section class="section section-contact contact" id="contact">
+      <div class="contact" id="contact">
         <div class="contact__container">
           <div class="container">
             <h2 class="contact__title">Контакты</h2>
@@ -392,7 +391,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
     <script>
       document.addEventListener('click', (event) => {

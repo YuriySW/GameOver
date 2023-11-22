@@ -5,14 +5,17 @@
 
 @media (max-width: 710px) {
   .booking__choose-hall {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(130px, 150px));
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 14px;
+    justify-content: center;
   }
 }
 
-/* @media (max-width: 640px) {
+@media (max-width: 640px) {
   .booking__choose-hall {
-    flex-direction: wrap;
+    grid-template-columns: repeat(2, 130px);
   }
-} */
+}

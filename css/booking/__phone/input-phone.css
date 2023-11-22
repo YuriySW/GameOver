@@ -1,6 +1,6 @@
 .input-phone {
   width: 100%;
-  padding: 17px;
+  padding: 14px;
   font-size: 18px;
 }
 
@@ -11,17 +11,4 @@
 .input-phone:focus {
   outline: 2px solid #cd06ff;
   transition-duration: 0.2s;
-}
-
-@media (max-width: 896px) {
-  .input-phone {
-    width: 100%;
-    min-width: 300px;
-  }
-}
-
-@media (max-width: 710px) {
-  .input-phone {
-    min-width: 0;
-  }
 }

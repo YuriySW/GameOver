@@ -22,7 +22,7 @@
 @import '../other-room/halls__list.css';
 @import '../other-room/halls__item.css';
 
-@import '../../contact/section-contact.css';
+@import '../../contact/contact.css';
 @import '../../contact/contact__container.css';
 @import '../../contact/__adress/contact__block.css';
 @import '../../contact/map.css';

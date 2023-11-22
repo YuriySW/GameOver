@@ -1,21 +1,46 @@
 .booking__set {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  /* gap: 175px; */
-  padding: 0 100px;
+  padding: 0 100px; */
   border: 0 none;
+  display: grid;
+  grid-template-columns: 280px 300px 200px;
+  justify-content: space-between;
+  padding: 0 100px;
 }
 
 @media (max-width: 1090px) {
   .booking__set {
     padding: 0;
+    justify-content: start;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
   }
 }
 
-@media (max-width: 977px) {
+@media (max-width: 896px) {
   .booking__set {
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 32px 160px;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: 1fr 160px;
+    justify-content: center;
+    row-gap: 32px;
+    column-gap: 130px;
+  }
+}
+
+@media (max-width: 780px) {
+  .booking__set {
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 90px;
+  }
+}
+
+@media (max-width: 685px) {
+  .booking__set {
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(2, 1fr) 130px;
+    justify-content: center;
+    row-gap: 25px;
   }
 }

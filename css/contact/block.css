@@ -8,6 +8,7 @@
 @media (max-width: 1090px) {
   .block {
     margin-bottom: 95px;
+    gap: 50px;
   }
 }
 
@@ -15,6 +16,7 @@
   .block {
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
 }
 

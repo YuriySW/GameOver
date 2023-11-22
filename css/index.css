@@ -56,7 +56,6 @@
 @import 'booking/__data/container-data.css';
 @import 'booking/__name/booking__name.css';
 @import 'booking/__name/input-name.css';
-@import 'booking/__name/container-name-wrap.css';
 @import 'booking/__name/container-name.css';
 @import 'booking/__phone/input-phone.css';
 @import 'booking/booking-btn.css';
@@ -80,7 +79,8 @@
 @import 'questions/__title/questions__title.css';
 @import 'questions/__list/questions__list.css';
 @import 'questions/__item/questions__item.css';
-@import 'contact/section-contact.css';
+
+@import 'contact/contact.css';
 @import 'contact/contact__container.css';
 @import 'contact/__adress/contact__block.css';
 @import 'contact/map.css';

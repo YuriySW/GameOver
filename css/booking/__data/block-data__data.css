@@ -1,5 +1,4 @@
 .block-data__data {
-  padding: 14px;
   text-align: center;
   color: #211e1e;
   font-family: Arial;
@@ -8,11 +7,16 @@
   font-weight: 400;
   line-height: 28px;
   border: 0;
-  max-width: calc(50% - 16px);
+  min-height: 52px;
+  max-width: 134px;
+  /* max-width: calc(50% - 16px);
   flex-shrink: 0;
-  flex-grow: 1;
+  flex-grow: 1; */
 }
-
+.block-data__data-time {
+  max-width: 134px;
+  width: 100%;
+}
 .block-data__data::-webkit-calendar-picker-indicator {
   background-image: url('../../../image/icon/arrow.png');
 }
@@ -20,10 +24,4 @@
 .block-data__data:focus {
   outline: 2px solid #cd06ff;
   transition-duration: 0.2s;
-}
-
-@media (max-width: 640) {
-  .block-data__data {
-    padding: 12px 14px;
-  }
 }

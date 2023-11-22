@@ -1,10 +1,10 @@
-.input-name{
-   width: 100%;
-   padding: 17px;
-   font-size: 18px;
+.input-name {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
 }
 
-.input-name:focus{
-   outline: 2px solid #CD06FF;
-   transition-duration: 200ms;
+.input-name:focus {
+  outline: 2px solid #cd06ff;
+  transition-duration: 200ms;
 }

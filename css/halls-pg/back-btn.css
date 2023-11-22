@@ -11,6 +11,30 @@
   line-height: 28px;
 }
 
+.back-btn:hover {
+  transform: scale(102%);
+  transition-duration: 0.4s;
+  color: #eadeed;
+}
+
+.back-btn:hover svg path {
+  fill: #cd06ff;
+  transition-duration: 0.4s;
+}
+
+.back-btn:active {
+  color: #cd06ff;
+  transition-duration: 0.2s;
+}
+
+.back-btn:focus svg path {
+  fill: #eadeed;
+}
+
+.back-btn:focus {
+  outline: 1px solid #cd06ff;
+}
+
 @media (max-width: 896px) {
   .back-btn {
     font-size: 16px;

@@ -1,12 +1,50 @@
 .booking__data {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 50px; */
   border: 0 none;
+  display: grid;
+  grid-template-columns: 300px minmax(180px, 280px) minmax(180px, 300px);
+  /* grid-template-columns: repeat(3, 1fr); */
+  column-gap: 50px;
+  justify-content: center;
 }
 
 @media (max-width: 896px) {
   .booking__data {
-    flex-wrap: wrap;
+    grid-template-columns: 280px 300px;
+    grid-template-areas:
+      'data data'
+      'name phone';
+    justify-content: center;
+  }
+  .container-data {
+    grid-area: data;
+  }
+
+  .container-name_name-family {
+    grid-area: name;
+  }
+
+  .container-name_number-email {
+    grid-area: phone;
+  }
+}
+
+@media (max-width: 780px) {
+  .booking__data {
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 685px) {
+  .booking__data {
+    grid-template-columns: 280px;
+    grid-template-areas:
+      'data'
+      'name'
+      'phone';
+    justify-content: center;
   }
 }

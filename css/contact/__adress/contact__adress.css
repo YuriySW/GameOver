@@ -39,7 +39,7 @@
     max-width: 250px;
   }
 }
-@media (max-width: 896px) {
+@media (max-width: 975px) {
   .contact__adress {
     max-width: 280px;
   }

@@ -1,25 +1,10 @@
 .block-data {
   display: flex;
   gap: 32px;
-  justify-content: space-between;
 }
 
-@media (max-width: 896px) {
+@media (max-width: 685px) {
   .block-data {
-    max-width: 280px;
-  }
-}
-
-@media (max-width: 710px) {
-  .block-data {
-    max-width: none;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 640px) {
-  .block-data {
-    max-width: 280px;
-    gap: 0;
+    gap: 12px;
   }
 }

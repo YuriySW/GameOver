@@ -1,9 +1,14 @@
-.set{
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
-   padding: 0;
-   border: 0 none;
-   align-items: flex-start;
+.set {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  border: 0 none;
+  align-items: flex-start;
 }
 
+@media (max-width: 685px) {
+  .set:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
