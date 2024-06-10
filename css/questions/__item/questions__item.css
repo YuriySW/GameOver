@@ -1,24 +1,63 @@
 .questions__item {
-  font-weight: 700;
-  font-size: 24px;
   padding: 20px 70px;
-  margin-bottom: 20px;
-  display: flex;
+  display: grid;
+  grid-template-areas:
+    'text button'
+    'accText accText';
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+}
+
+.questions__items {
+  font-weight: 700;
+  font-size: 24px;
+
+  margin-bottom: 20px;
+}
+
+.questions__item {
+  grid-area: text;
+}
+
+.questions__svg {
+  grid-area: button;
+  justify-self: end;
+}
+
+.questions__text-num {
+  font-weight: 700;
+}
+
+.questions__text {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 57px 70px 69px 70px;
+}
+
+.questions__text-wrapp {
+  background-color: #fff;
+  grid-area: accText;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+}
+
+.questions__item_actv {
 }
 
 .questions__item:last-child {
   margin: 0;
 }
 
-.questions__item:nth-child(even) {
+.questions__item_purple {
   color: var(--color-white);
   background-color: #440f51;
 }
 
-.questions__item:nth-child(odd) {
+.questions__item_white {
   color: #1c1a1a;
   background-color: var(--color-white);
 }
@@ -70,6 +109,15 @@
 }
 /* ///////////////////////////////////////////////////////////////////////// */
 @media (max-width: 1090px) {
+  .questions__text,
+  .questions__text-num {
+    font-size: 20px;
+  }
+
+  .questions__text {
+    padding: 47px 20px 69px 20px;
+  }
+
   .questions__item {
     margin-bottom: 16px;
     font-size: 20px;
@@ -123,10 +171,19 @@
 }
 
 @media (max-width: 896px) {
+  .questions__text,
+  .questions__text-num {
+    font-size: 14px;
+  }
+
   .questions__item {
     font-size: 18px;
     line-height: 24px;
-    padding: 23px 65px 24px 54px;
+    padding: 23px 65px 44px 54px;
+  }
+
+  .questions__text {
+    padding: 37px 65px 60px 54px;
   }
   .questions__item:not(.questions__item-sub) {
     margin-bottom: 16px;
@@ -134,6 +191,15 @@
 }
 
 @media (max-width: 640px) {
+  .questions__text,
+  .questions__text-num {
+    font-size: 12px;
+  }
+
+  .questions__text {
+    padding: 27px 13px 40px 13px;
+  }
+
   .questions__item {
     font-size: 12px;
     line-height: 16px;
