@@ -25,37 +25,35 @@ const svgWhiteDefault = `<svg width="46" height="46" viewBox="0 0 46 46" fill="n
 
 `;
 
-// export const accOpen = () => {
-//   items.forEach((btn, index) => {
-//     btn.addEventListener('click', () => {
-//       textWrap.forEach((el, i) => {
-//         if (i !== index) {
-//           el.classList.remove('questions__item_actv');
-//           el.style.maxHeight = null;
-//         }
-//       });
+const setDefaultSVGIcons = () => {
+  svgIcons.forEach((icon) => {
+    icon.innerHTML = svgPurpleDefault;
+  });
+};
 
-//       const panel = textWrap[index];
-//       const isActive = panel.classList.toggle('questions__item_actv');
-//       if (isActive) {
-//         panel.style.maxHeight = panel.scrollHeight + 'px';
-//       } else {
-//         panel.style.maxHeight = null;
-//       }
-//     });
-//   });
+const setActiveSVGIcon = (index) => {
+  svgIcons[index].innerHTML = svgPurple;
+};
 
-//   document.addEventListener('click', (event) => {
-//     if (!event.target.closest('.questions__item')) {
-//       textWrap.forEach((el) => {
-//         el.classList.remove('questions__item_actv');
-//         el.style.maxHeight = null;
-//       });
-//     }
-//   });
-// };
+const resetSVGIcons = () => {
+  svgIcons.forEach((icon) => {
+    icon.innerHTML = svgPurpleDefault;
+  });
+};
 
-// accOpen();
+const handleResize = () => {
+  if (window.innerWidth <= 1090) {
+    setDefaultSVGIcons();
+  } else {
+    items.forEach((btn, index) => {
+      if (index % 2 === 0) {
+        svgIcons[index].innerHTML = svgPurpleDefault;
+      } else {
+        svgIcons[index].innerHTML = svgWhiteDefault;
+      }
+    });
+  }
+};
 
 export const accOpen = () => {
   items.forEach((btn, index) => {
@@ -64,10 +62,14 @@ export const accOpen = () => {
         if (i !== index) {
           el.classList.remove('questions__item_actv');
           el.style.maxHeight = null;
-          if (i % 2 === 0) {
-            svgIcons[i].innerHTML = svgPurpleDefault;
+          if (window.innerWidth > 1090) {
+            if (i % 2 === 0) {
+              svgIcons[i].innerHTML = svgPurpleDefault;
+            } else {
+              svgIcons[i].innerHTML = svgWhiteDefault;
+            }
           } else {
-            svgIcons[i].innerHTML = svgWhiteDefault;
+            svgIcons[i].innerHTML = svgPurpleDefault;
           }
         }
       });
@@ -76,17 +78,25 @@ export const accOpen = () => {
       const isActive = panel.classList.toggle('questions__item_actv');
       if (isActive) {
         panel.style.maxHeight = panel.scrollHeight + 'px';
-        if (index % 2 === 0) {
-          svgIcons[index].innerHTML = svgPurple;
+        if (window.innerWidth > 1090) {
+          if (index % 2 === 0) {
+            svgIcons[index].innerHTML = svgPurple;
+          } else {
+            svgIcons[index].innerHTML = svgWhite;
+          }
         } else {
-          svgIcons[index].innerHTML = svgWhite;
+          svgIcons[index].innerHTML = svgPurple;
         }
       } else {
         panel.style.maxHeight = null;
-        if (index % 2 === 0) {
-          svgIcons[index].innerHTML = svgPurpleDefault;
+        if (window.innerWidth > 1090) {
+          if (index % 2 === 0) {
+            svgIcons[index].innerHTML = svgPurpleDefault;
+          } else {
+            svgIcons[index].innerHTML = svgWhiteDefault;
+          }
         } else {
-          svgIcons[index].innerHTML = svgWhiteDefault;
+          svgIcons[index].innerHTML = svgPurpleDefault;
         }
       }
     });
@@ -97,14 +107,21 @@ export const accOpen = () => {
       textWrap.forEach((el, i) => {
         el.classList.remove('questions__item_actv');
         el.style.maxHeight = null;
-        if (i % 2 === 0) {
-          svgIcons[i].innerHTML = svgPurpleDefault;
+        if (window.innerWidth > 1090) {
+          if (i % 2 === 0) {
+            svgIcons[i].innerHTML = svgPurpleDefault;
+          } else {
+            svgIcons[i].innerHTML = svgWhiteDefault;
+          }
         } else {
-          svgIcons[i].innerHTML = svgWhiteDefault;
+          svgIcons[i].innerHTML = svgPurpleDefault;
         }
       });
     }
   });
+
+  window.addEventListener('resize', handleResize);
+  handleResize();
 };
 
 accOpen();
