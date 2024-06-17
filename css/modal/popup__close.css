@@ -1,0 +1,24 @@
+.popup__close {
+  height: 42px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #440f51;
+}
+
+.popup__close:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 390px) {
+  .popup__close {
+    height: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .popup__close {
+    right: 10px;
+    top: 10px;
+  }
+}

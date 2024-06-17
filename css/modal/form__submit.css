@@ -1,0 +1,21 @@
+.form__submit {
+  width: 300px;
+  height: 60px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  box-shadow: 0 0 15px var(--color-white);
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: #6c0287;
+}
+
+@media (max-width: 390px) {
+  .form__submit {
+    font-size: 18px;
+    width: 240px;
+    height: 52px;
+  }
+}

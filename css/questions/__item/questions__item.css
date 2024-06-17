@@ -136,6 +136,26 @@
   .questions__item:last-child {
     display: none;
   }
+
+  .questions__items_svg-purple:hover svg {
+    transform: rotate(360deg) scale(1);
+    transition: 0.6s;
+  }
+
+  .questions__items_svg-purple:active svg {
+    transform: rotate(180deg) scale(1);
+    transition: 0.7s;
+  }
+
+  .questions__items_svg-white:hover svg {
+    transform: rotate(360deg) scale(1);
+    transition: 0.6s;
+  }
+
+  .questions__items_svg-white:active svg {
+    transform: rotate(180deg) scale(1);
+    transition: 0.7s;
+  }
 }
 
 @media (max-width: 896px) {

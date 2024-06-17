@@ -8,6 +8,12 @@
 @import 'header/__list/header__list.css';
 @import 'header/__item/header__item.css';
 @import 'header/button/callback.css';
+@import 'modal/overlay.css';
+@import 'modal/popup.css';
+@import 'modal/popup__close.css';
+@import 'modal/popup__title.css';
+@import 'modal/form__fieldset.css';
+@import 'modal/form__submit.css';
 @import 'main/section-main.css';
 @import 'main/main.css';
 @import 'main/__title-go/main__title-go.css';

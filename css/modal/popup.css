@@ -1,0 +1,15 @@
+.popup_callback {
+  position: relative;
+  display: flow-root;
+  max-width: 600px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  background-color: #440f51;
+}
+
+@media (max-width: 320px) {
+  .popup_callback {
+    padding: 20px;
+  }
+}
