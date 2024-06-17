@@ -13,11 +13,6 @@
 @media (max-width: 390px) {
   .popup__close {
     height: 30px;
-  }
-}
-
-@media (max-width: 320px) {
-  .popup__close {
     right: 10px;
     top: 10px;
   }

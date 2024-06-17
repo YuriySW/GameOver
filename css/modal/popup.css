@@ -7,9 +7,3 @@
   margin: 0 auto;
   background-color: #440f51;
 }
-
-@media (max-width: 320px) {
-  .popup_callback {
-    padding: 20px;
-  }
-}
