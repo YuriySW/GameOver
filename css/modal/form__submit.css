@@ -12,6 +12,22 @@
   color: #6c0287;
 }
 
+.form__submit:hover,
+.form__submit:focus {
+  background: #dad8dc;
+  border: 3px solid var(--color-button);
+  transition-duration: 0.2s;
+  box-shadow: none;
+}
+
+.form__submit:active {
+  background: var(--color-white);
+  border: 3px solid #0b080d;
+  color: #0b080d;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+}
+
 @media (max-width: 390px) {
   .form__submit {
     font-size: 18px;
