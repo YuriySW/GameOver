@@ -3,27 +3,15 @@ const textWrap = document.querySelectorAll('.questions__text-wrapp');
 const purpleItems = document.querySelectorAll('.questions__items_svg-purple');
 const whiteItems = document.querySelectorAll('.questions__items_svg-white');
 
-// purpleItems.forEach((item) => {
-//   item.addEventListener('click', function () {
-//     this.classList.add('active');
-
-//     setTimeout(() => {
-//       this.classList.remove('active');
-//     }, 500);
-//   });
-// });
-
 purpleItems.forEach((item) => {
   item.addEventListener('click', function () {
-    // Удаляем класс questions__items_svg-purple
     this.classList.remove('questions__items_svg-purple');
-    // Добавляем класс questions__items_svg-white и класс active
-    this.classList.add('questions__items_svg-white', 'active', 'color');
+
+    this.classList.add('questions__items_svg-white', 'active');
 
     setTimeout(() => {
-      this.classList.remove('questions__items_svg-white', 'active', 'color');
+      this.classList.remove('questions__items_svg-white', 'active');
       this.classList.add('questions__items_svg-purple');
-      // this.classList.remove('active');
     }, 500);
   });
 });
@@ -54,8 +42,19 @@ export const accOpen = () => {
         panel.style.maxHeight = panel.scrollHeight + 'px';
       } else {
         panel.style.maxHeight = null;
-        purpleItems.forEach((item) => item.blur());
-        whiteItems.forEach((item) => item.blur());
+        // purpleItems.forEach((item) => item.blur());
+        // whiteItems.forEach((item) => item.blur());
+        purpleItems.forEach((item) => {
+          setTimeout(() => {
+            item.blur();
+          }, 700);
+        });
+
+        whiteItems.forEach((item) => {
+          setTimeout(() => {
+            item.blur();
+          }, 700);
+        });
       }
     });
   });
