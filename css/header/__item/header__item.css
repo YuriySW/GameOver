@@ -36,6 +36,22 @@
   transition-duration: 0.2s;
 }
 
+@media (max-width: 896px) {
+  .header__item:hover {
+    will-change: none;
+    transform: none;
+    transition-duration: none;
+    cursor: pointer;
+    border-bottom: none;
+  }
+
+  .header__item a:active,
+  .header__item a:focus {
+    color: none;
+    transition-duration: none;
+  }
+}
+
 @media (max-width: 1090px) {
   .header__item {
     font-size: 18px;

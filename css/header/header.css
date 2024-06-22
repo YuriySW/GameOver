@@ -5,11 +5,13 @@
 @media (max-width: 896px) {
   .header {
     padding-top: 32px;
+    height: 87px;
   }
 }
 
 @media (max-width: 640px) {
   .header {
+    height: 62px;
     padding-top: 20px;
   }
 }

@@ -2,6 +2,10 @@
   display: none;
 }
 
+.menu-but-sub {
+  display: none;
+}
+
 .menu-but:hover rect {
   fill: #cd06ff;
 }
@@ -20,6 +24,19 @@
     display: block;
     cursor: pointer;
   }
+
+  .menu-but:hover rect {
+    fill: none;
+  }
+
+  .menu-but:active rect {
+    fill: none;
+  }
+
+  .menu-but:focus {
+    outline: none;
+    padding: 0;
+  }
 }
 
 @media (max-width: 640px) {
@@ -27,6 +44,12 @@
     width: 39px;
     height: 21px;
   }
+
+  .menu-but-sub {
+    width: 31px;
+    height: 30px;
+  }
+
   .menu-but:focus {
     padding: 0;
   }
