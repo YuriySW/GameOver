@@ -37,3 +37,10 @@
 @import '../../contact/__adress/_icon-email/contact__adress_type-icon_email.css';
 @import '../../contact/navigation/__social/navigation__social.css';
 @import '../../contact/navigation/__link/navigation__link.css';
+
+@import '../../modal/overlay.css';
+@import '../../modal/popup.css';
+@import '../../modal/popup__close.css';
+@import '../../modal/popup__title.css';
+@import '../../modal/form__fieldset.css';
+@import '../../modal/form__submit.css';

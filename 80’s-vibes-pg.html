@@ -13,16 +13,57 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/halls-pg/halls-80s-pg/index.css" />
     <title>80’s vibes</title>
+    <script type="module" src="script/script.js"></script>
   </head>
   <body class="body">
     <header class="header">
       <div class="container header__container">
-        <svg class="menu-but" tabindex="0" xmlns="http://www.w3.org/2000/svg" width="54" height="29" viewBox="0 0 54 29" fill="none">
+        <svg
+          class="menu-but"
+          tabindex="0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="54"
+          height="29"
+          viewBox="0 0 54 29"
+          fill="none"
+        >
           <rect width="54" height="5" rx="2" fill="#6C0287" />
           <rect y="12" width="54" height="5" rx="2" fill="#6C0287" />
           <rect y="24" width="31" height="5" rx="2" fill="#6C0287" />
         </svg>
-        <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="120" height="66" viewBox="0 0 120 66" fill="none">
+        <svg
+          class="menu-but-sub"
+          width="54"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            y="38.1838"
+            width="54"
+            height="5"
+            rx="2"
+            transform="rotate(-45 0 38.1838)"
+            fill="#6C0287"
+          />
+          <rect
+            x="3.53564"
+            width="54"
+            height="5"
+            rx="2"
+            transform="rotate(45 3.53564 0)"
+            fill="#6C0287"
+          />
+        </svg>
+        <svg
+          class="logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="120"
+          height="66"
+          viewBox="0 0 120 66"
+          fill="none"
+        >
           <path
             d="M39.6553 40.0361V32.5898H56.7451V47.8486C53.4736 50.0784 50.5765 51.6003 48.0537 52.4141C45.5472 53.2116 42.5687 53.6104 39.1182 53.6104C34.8701 53.6104 31.4033 52.8861 28.7178 51.4375C26.0485 49.9889 23.9733 47.8324 22.4922 44.9678C21.0273 42.1032 20.2949 38.8154 20.2949 35.1045C20.2949 31.1982 21.1006 27.8047 22.7119 24.9238C24.3232 22.0267 26.6833 19.8294 29.792 18.332C32.2171 17.1764 35.4805 16.5986 39.582 16.5986C43.5371 16.5986 46.4912 16.9567 48.4443 17.6729C50.4137 18.389 52.0413 19.5039 53.3271 21.0176C54.6292 22.515 55.6058 24.4193 56.2568 26.7305L45.5879 28.6348C45.1484 27.2839 44.3997 26.2503 43.3418 25.5342C42.3001 24.818 40.9655 24.46 39.3379 24.46C36.9128 24.46 34.9759 25.3063 33.5273 26.999C32.0951 28.6755 31.3789 31.3366 31.3789 34.9824C31.3789 38.8561 32.1032 41.623 33.5518 43.2832C35.0166 44.9434 37.0511 45.7734 39.6553 45.7734C40.8923 45.7734 42.0723 45.5944 43.1953 45.2363C44.3184 44.8783 45.6042 44.2679 47.0527 43.4053V40.0361H39.6553Z"
             fill="white"
@@ -36,6 +77,31 @@
           <path d="M120 32H119V0H120V32Z" fill="#CD06FF" />
           <path d="M120 0V1H69V0H120Z" fill="#CD06FF" />
         </svg>
+        <svg
+          class="menu-but-sub"
+          width="54"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            y="38.1838"
+            width="54"
+            height="5"
+            rx="2"
+            transform="rotate(-45 0 38.1838)"
+            fill="#6C0287"
+          />
+          <rect
+            x="3.53564"
+            width="54"
+            height="5"
+            rx="2"
+            transform="rotate(45 3.53564 0)"
+            fill="#6C0287"
+          />
+        </svg>
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item"><a href="index.html#halls">Залы</a></li>
@@ -45,14 +111,61 @@
             <li class="header__item"><a href="index.html#contact">Контакты</a></li>
           </ul>
         </nav>
-        <button class="callback" type="button">Заказать звонок</button>
+        <button class="callback callback_off" type="button">Заказать звонок</button>
       </div>
+      <!-- /////////////////////// -->
+      <div class="container burger-menu">
+        <div class="overlay-burger-menu">
+          <nav class="header__navigation">
+            <ul class="header__list header__list-burger-menu">
+              <li class="header__item"><a href="#halls">Залы</a></li>
+              <li class="header__item"><a href="#aboutUs">О нас</a></li>
+              <li class="header__item"><a href="#booking">Бронь</a></li>
+              <li class="header__item"><a href="#reviews">Отзывы</a></li>
+              <li class="header__item"><a href="#contact">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="callback callback_burger-menu" type="button">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="overlay overlay_show">
+        <div class="popup popup_callback">
+          <button class="popup__close" type="button">
+            <img class="popup__close-img" src="image/icon/close-modal.svg" alt="" />
+          </button>
+          <h2 class="popup__title">Заказать звонок</h2>
+          <form
+            class="popup__form form"
+            action="https://jsonplaceholder.typicode.com/posts"
+            method="POST"
+          >
+            <fieldset class="form__fieldset">
+              <div class="form__item-name">
+                <label class="form__label" for="name">Имя</label>
+                <input class="form__input" type="text" name="name" id="name" required />
+
+                <label class="form__label" for="phone">Телефон</label>
+                <input class="form__input" type="number" name="phone" id="phone" required />
+              </div>
+            </fieldset>
+
+            <button class="form__submit" type="submit">Позвонить мне</button>
+          </form>
+        </div>
+      </div>
+      <!-- /////////////////// -->
     </header>
     <main>
       <div class="container-wrap">
         <div class="container">
           <a href="index.html#halls" class="back-btn"
-            ><svg xmlns="http://www.w3.org/2000/svg" width="31" height="16" viewBox="0 0 31 16" fill="none">
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="31"
+              height="16"
+              viewBox="0 0 31 16"
+              fill="none"
+            >
               <path
                 d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM31 7L1 7V9L31 9V7Z"
                 fill="white"
@@ -68,7 +181,9 @@
       <div class="container-text-wrap">
         <div class="container container-hall-text">
           <p class="hall-text-pg">
-            Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилевая музыка, кассеты и магнитофоны. Одевайтесь ярко, берите с собой хорошее настроение и устройте большую вечеринку!
+            Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилевая музыка, кассеты и
+            магнитофоны. Одевайтесь ярко, берите с собой хорошее настроение и устройте большую
+            вечеринку!
           </p>
         </div>
       </div>
@@ -79,8 +194,13 @@
             <img class="in-room-img" src="image/halls-pg/80s-1440.jpg" alt="80s" />
 
             <div class="in-room-text-wrap">
-              <p class="in-room-text">В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини кинотеатр.</p>
-              <p class="in-room-text">Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.</p>
+              <p class="in-room-text">
+                В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини
+                кинотеатр.
+              </p>
+              <p class="in-room-text">
+                Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.
+              </p>
             </div>
           </div>
         </div>
@@ -89,9 +209,21 @@
         <div class="container">
           <h2 class="hall-title">Другие комнаты</h2>
           <ul class="halls__list">
-            <li><a class="halls__item halls__item_bg_wild" href="wild-west-pg.html#wildwest">wild west</a></li>
-            <li><a class="halls__item halls__item_bg_star" href="star-wars-pg.html#startwars">star wars</a></li>
-            <li><a class="halls__item halls__item_bg_neon" href="neon-style-pg.html#neonstyle">neon style</a></li>
+            <li>
+              <a class="halls__item halls__item_bg_wild" href="wild-west-pg.html#wildwest"
+                >wild west</a
+              >
+            </li>
+            <li>
+              <a class="halls__item halls__item_bg_star" href="star-wars-pg.html#startwars"
+                >star wars</a
+              >
+            </li>
+            <li>
+              <a class="halls__item halls__item_bg_neon" href="neon-style-pg.html#neonstyle"
+                >neon style</a
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -104,16 +236,32 @@
             <div class="block">
               <div class="contact__block">
                 <address class="adress-wrap">
-                  <p class="contact__adress contact__adress_type-icon_location">г. Москва ул.Усачёва, 29 к3</p>
-                  <a class="contact__adress contact__adress_effects contact__adress_type-icon_telefone" href="tel:89509302893">8(950)930-28-93</a>
-                  <a class="contact__adress contact__adress_effects contact__adress_type-icon_email" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
+                  <p class="contact__adress contact__adress_type-icon_location">
+                    г. Москва ул.Усачёва, 29 к3
+                  </p>
+                  <a
+                    class="contact__adress contact__adress_effects contact__adress_type-icon_telefone"
+                    href="tel:89509302893"
+                    >8(950)930-28-93</a
+                  >
+                  <a
+                    class="contact__adress contact__adress_effects contact__adress_type-icon_email"
+                    href="mailto:gameover@gmail.com"
+                    >GameOver@gmail.com</a
+                  >
                 </address>
 
                 <nav class="navigation">
                   <ul class="navigation__social">
                     <li class="navigation__link" tabindex="0">
                       <a href="vk.com" class="navigation__link-ico" target="_blank" tabindex="-1"
-                        ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="50"
+                          height="50"
+                          viewBox="0 0 50 50"
+                          fill="none"
+                        >
                           <path
                             d="M25 0C11.1927 0 0 11.1927 0 25C0 38.8073 11.1927 50 25 50C38.8073 50 50 38.8073 50 25C50 11.1927 38.8073 0 25 0ZM34.6146 28.2057C34.6146 28.2057 36.8255 30.388 37.3698 31.401C37.3854 31.4219 37.3932 31.4427 37.3984 31.4531C37.6198 31.8255 37.6719 32.1146 37.5625 32.3307C37.3802 32.6901 36.7552 32.8672 36.5417 32.8828H32.6354C32.3646 32.8828 31.7969 32.8125 31.1094 32.3385C30.5807 31.9687 30.0599 31.362 29.5521 30.7708C28.7943 29.8906 28.138 29.1302 27.4766 29.1302C27.3925 29.1301 27.309 29.1432 27.2292 29.1693C26.7292 29.3307 26.0885 30.0443 26.0885 31.9453C26.0885 32.5391 25.6198 32.8802 25.2891 32.8802H23.5C22.8906 32.8802 19.7161 32.6667 16.9036 29.7005C13.4609 26.0677 10.362 18.7812 10.3359 18.7135C10.1406 18.2422 10.5443 17.9896 10.9844 17.9896H14.9297C15.4557 17.9896 15.6276 18.3099 15.7474 18.5937C15.888 18.9245 16.4036 20.2396 17.25 21.7188C18.6224 24.1302 19.4635 25.1094 20.138 25.1094C20.2645 25.1079 20.3887 25.0757 20.5 25.0156C21.3802 24.526 21.2161 21.388 21.1771 20.737C21.1771 20.6146 21.1745 19.3333 20.724 18.7187C20.401 18.2734 19.8516 18.1042 19.5182 18.0417C19.6531 17.8555 19.8309 17.7045 20.0365 17.6016C20.6406 17.2995 21.7292 17.2552 22.8099 17.2552H23.4115C24.5833 17.2708 24.8854 17.3464 25.3099 17.4531C26.1693 17.6589 26.1875 18.2135 26.112 20.112C26.0885 20.651 26.0651 21.2604 26.0651 21.9792C26.0651 22.1354 26.0573 22.3021 26.0573 22.4792C26.0312 23.4453 26 24.5417 26.6823 24.9922C26.7713 25.048 26.8741 25.0778 26.9792 25.0781C27.2161 25.0781 27.9297 25.0781 29.862 21.763C30.4579 20.696 30.9758 19.5872 31.4115 18.4453C31.4505 18.3776 31.5651 18.1693 31.7005 18.0885C31.8005 18.0376 31.9113 18.0117 32.0234 18.013H36.6615C37.1667 18.013 37.513 18.0885 37.5781 18.2839C37.6927 18.5937 37.5573 19.5391 35.4401 22.4062L34.4948 23.6536C32.5755 26.1693 32.5755 26.2969 34.6146 28.2057Z"
                             fill="white"
@@ -122,8 +270,18 @@
                       </a>
                     </li>
                     <li class="navigation__link" tabindex="0">
-                      <a href="telegram.org" class="navigation__link-ico" target="_blank" tabindex="-1"
-                        ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <a
+                        href="telegram.org"
+                        class="navigation__link-ico"
+                        target="_blank"
+                        tabindex="-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="50"
+                          height="50"
+                          viewBox="0 0 50 50"
+                          fill="none"
+                        >
                           <g clip-path="url(#clip0_1864_5)">
                             <path
                               d="M49.9999 25C49.9999 31.6304 47.366 37.9893 42.6775 42.6777C37.9891 47.3661 31.6303 50 24.9999 50C18.3695 50 12.0106 47.3661 7.32221 42.6777C2.6338 37.9893 -0.00012207 31.6304 -0.00012207 25C-0.00012207 18.3696 2.6338 12.0107 7.32221 7.32233C12.0106 2.63392 18.3695 0 24.9999 0C31.6303 0 37.9891 2.63392 42.6775 7.32233C47.366 12.0107 49.9999 18.3696 49.9999 25ZM25.8968 18.4563C23.4655 19.4688 18.603 21.5625 11.3155 24.7375C10.1343 25.2062 9.51238 25.6687 9.45613 26.1187C9.36238 26.8781 10.3155 27.1781 11.6124 27.5875L12.1593 27.7594C13.4343 28.175 15.153 28.6594 16.0436 28.6781C16.8561 28.6969 17.7593 28.3656 18.7561 27.6781C25.5655 23.0813 29.0811 20.7594 29.2999 20.7094C29.4561 20.6719 29.6749 20.6281 29.8186 20.7594C29.9655 20.8875 29.9499 21.1344 29.9343 21.2C29.8405 21.6031 26.0999 25.0781 24.1655 26.8781C23.5624 27.4406 23.1343 27.8375 23.0468 27.9281C22.8541 28.125 22.6582 28.3188 22.4593 28.5094C21.2718 29.6531 20.3843 30.5094 22.5061 31.9094C23.528 32.5844 24.3468 33.1375 25.1624 33.6937C26.0499 34.3 26.9374 34.9031 28.0874 35.6594C28.378 35.8469 28.6593 36.05 28.9311 36.2437C29.9655 36.9812 30.8999 37.6437 32.0468 37.5375C32.7155 37.475 33.4061 36.85 33.7561 34.975C34.5843 30.5469 36.2124 20.9562 36.5874 17.0031C36.6103 16.6745 36.5966 16.3444 36.5468 16.0187C36.5173 15.756 36.3902 15.5139 36.1905 15.3406C35.9062 15.1443 35.5672 15.0427 35.2218 15.05C34.2843 15.0656 32.8374 15.5688 25.8968 18.4563Z"
@@ -138,8 +296,18 @@
                       ></a>
                     </li>
                     <li class="navigation__link" tabindex="0">
-                      <a href="pinterest.com" class="navigation__link-ico" target="_blank" tabindex="-1"
-                        ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <a
+                        href="pinterest.com"
+                        class="navigation__link-ico"
+                        target="_blank"
+                        tabindex="-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="50"
+                          height="50"
+                          viewBox="0 0 50 50"
+                          fill="none"
+                        >
                           <g clip-path="url(#clip0_1864_8)">
                             <path
                               d="M25.0005 0C11.1947 0 -0.00012207 11.1936 -0.00012207 25.0006C-0.00012207 35.2378 6.15565 44.0314 14.9646 47.8981C14.8941 46.1526 14.9512 44.0558 15.3999 42.159C15.8806 40.1282 18.6165 28.5359 18.6165 28.5359C18.6165 28.5359 17.8178 26.9397 17.8178 24.5808C17.8178 20.8763 19.9653 18.1077 22.6383 18.1077C24.9121 18.1077 26.0108 19.8154 26.0108 21.8609C26.0108 24.1468 24.5537 27.5635 23.8037 30.7327C23.1768 33.3859 25.1339 35.5481 27.7499 35.5481C32.4864 35.5481 35.6762 29.4647 35.6762 22.2558C35.6762 16.7782 31.9864 12.6769 25.2742 12.6769C17.6903 12.6769 12.9659 18.3321 12.9659 24.6487C12.9659 26.8282 13.6082 28.3635 14.6146 29.5513C15.0768 30.0981 15.1409 30.318 14.9736 30.9462C14.8537 31.4058 14.5781 32.5128 14.4646 32.9519C14.2986 33.5853 13.7858 33.8109 13.2127 33.5776C9.71975 32.1513 8.09283 28.3263 8.09283 24.0263C8.09283 16.9237 14.0819 8.40898 25.9601 8.40898C35.5056 8.40898 41.7877 15.316 41.7877 22.732C41.7877 32.5378 36.3351 39.8647 28.298 39.8647C25.5999 39.8647 23.0608 38.4051 22.1909 36.7487C22.1909 36.7487 20.7396 42.5077 20.4326 43.6218C19.9024 45.5494 18.8646 47.4763 17.9159 48.9769C20.2162 49.6571 22.6024 50.0025 25.0012 50.0026C38.8063 50.0013 49.9999 38.8071 49.9999 25.0006C49.9999 11.1936 38.8063 0 25.0005 0Z"
@@ -154,8 +322,18 @@
                       ></a>
                     </li>
                     <li class="navigation__link" tabindex="0">
-                      <a href="stumbleupon.com" class="navigation__link-ico" target="_blank" tabindex="-1"
-                        ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <a
+                        href="stumbleupon.com"
+                        class="navigation__link-ico"
+                        target="_blank"
+                        tabindex="-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="50"
+                          height="50"
+                          viewBox="0 0 50 50"
+                          fill="none"
+                        >
                           <g clip-path="url(#clip0_1864_10)">
                             <path
                               fill-rule="evenodd"

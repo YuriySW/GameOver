@@ -55,14 +55,17 @@
     padding-top: 59px;
     padding-bottom: 59px;
     background-color: #1b1a1b;
+    display: none;
   }
 
   .overlay-burger-menu {
     top: 1px;
     position: relative;
-    z-index: 0;
+    z-index: 1;
     text-align: center;
     transition: top 0.5s ease;
+    opacity: 0;
+    display: none;
   }
 }
 

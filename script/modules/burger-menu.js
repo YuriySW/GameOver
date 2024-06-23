@@ -1,38 +1,11 @@
-// let menuBut = document.querySelector('.menu-but');
-// const headerListBurgerMenu = document.querySelector('.header__list-burger-menu');
-// const svgCloseBut = document.querySelector('.menu-but-sub');
-// const main = document.querySelector('main');
-// const callbackBurgerMenu = document.querySelector('.callback_burger-menu');
-// const overlayBurgerMenu = document.querySelector('.overlay_burger-menu');
-
-// const closedMenu = () => {
-//   svgCloseBut.style.display = 'none';
-//   menuBut.style.display = 'block';
-//   headerListBurgerMenu.style.display = 'none';
-//   callbackBurgerMenu.style.display = 'none';
-// };
-
-// menuBut.addEventListener('click', () => {
-//   menuBut.style.display = 'none';
-//   svgCloseBut.style.display = 'block';
-//   headerListBurgerMenu.style.display = 'block';
-//   overlayBurgerMenu.style.display = 'block';
-
-//   overlayBurgerMenu.style.opacity = '1';
-//   callbackBurgerMenu.style.display = 'block';
-// });
-
-// svgCloseBut.addEventListener('click', () => closedMenu());
-
-// main.addEventListener('click', () => closedMenu());
-
-const menuBut = document.querySelector('.menu-but');
-const headerListBurgerMenu = document.querySelector('.header__list-burger-menu');
-const svgCloseBut = document.querySelector('.menu-but-sub');
-const main = document.querySelector('main');
-const callbackBurgerMenu = document.querySelector('.callback_burger-menu');
-const overlayBurgerMenu = document.querySelector('.overlay-burger-menu');
-const callbackBtnUp = document.querySelector('.callback_off');
+export const menuBut = document.querySelector('.menu-but');
+export const svgCloseBut = document.querySelector('.menu-but-sub');
+export const headerListBurgerMenu = document.querySelector('.header__list-burger-menu');
+export const callbackBurgerMenu = document.querySelector('.callback_burger-menu');
+export const main = document.querySelector('main');
+export const callbackBtnUp = document.querySelector('.callback_off');
+export const overlayBurgerMenu = document.querySelector('.overlay-burger-menu');
+const menuButUp = document.querySelector('.menu-but-up');
 
 export const animate = (element, property, startValue, endValue, duration, callback) => {
   let start = null;
@@ -56,7 +29,15 @@ export const animate = (element, property, startValue, endValue, duration, callb
 
 const closedMenu = () => {
   svgCloseBut.style.display = 'none';
-  menuBut.style.display = 'block';
+
+  if (window.innerWidth >= 896) {
+    menuBut.style.display = 'none';
+  }
+
+  if (window.innerWidth < 896) {
+    menuBut.style.display = 'block';
+  }
+
   animate(overlayBurgerMenu, 'opacity', 1, 0, 600, () => {
     headerListBurgerMenu.style.display = 'none';
     overlayBurgerMenu.style.display = 'none';
@@ -64,19 +45,31 @@ const closedMenu = () => {
   });
 };
 
-menuBut.addEventListener('click', () => {
+const openMenu = () => {
   menuBut.style.display = 'none';
   svgCloseBut.style.display = 'block';
+
   headerListBurgerMenu.style.display = 'block';
   overlayBurgerMenu.style.display = 'block';
 
   animate(overlayBurgerMenu, 'opacity', 0, 1, 600, () => {
     callbackBurgerMenu.style.display = 'block';
   });
+};
+
+document.addEventListener('click', (event) => {
+  const target = event.target;
+
+  // Проверяем, является ли элемент, на который кликнули, частью меню overlay
+  if (!overlayBurgerMenu.contains(target) && target !== menuBut) {
+    closedMenu();
+  }
 });
 
 svgCloseBut.addEventListener('click', () => closedMenu());
 
-main.addEventListener('click', () => closedMenu());
+// main.addEventListener('click', () => closedMenu());
 
-callbackBtnUp.addEventListener('click', () => closedMenu());
+menuBut.addEventListener('click', () => openMenu());
+
+// callbackBtnUp.addEventListener('click', () => closedMenu());
