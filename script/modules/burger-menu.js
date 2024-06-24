@@ -2,7 +2,6 @@ export const menuBut = document.querySelector('.menu-but');
 export const svgCloseBut = document.querySelector('.menu-but-sub');
 export const headerListBurgerMenu = document.querySelector('.header__list-burger-menu');
 export const callbackBurgerMenu = document.querySelector('.callback_burger-menu');
-export const main = document.querySelector('main');
 export const callbackBtnUp = document.querySelector('.callback_off');
 export const overlayBurgerMenu = document.querySelector('.overlay-burger-menu');
 const menuButUp = document.querySelector('.menu-but-up');
@@ -60,7 +59,6 @@ const openMenu = () => {
 document.addEventListener('click', (event) => {
   const target = event.target;
 
-  // Проверяем, является ли элемент, на который кликнули, частью меню overlay
   if (!overlayBurgerMenu.contains(target) && target !== menuBut) {
     closedMenu();
   }
@@ -68,8 +66,6 @@ document.addEventListener('click', (event) => {
 
 svgCloseBut.addEventListener('click', () => closedMenu());
 
-// main.addEventListener('click', () => closedMenu());
-
 menuBut.addEventListener('click', () => openMenu());
 
-// callbackBtnUp.addEventListener('click', () => closedMenu());
+callbackBtnUp.addEventListener('click', () => closedMenu());
