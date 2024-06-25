@@ -64,8 +64,14 @@ document.addEventListener('click', (event) => {
   }
 });
 
+overlayBurgerMenu.addEventListener('click', (event) => {
+  const target = event.target;
+
+  if (target === overlayBurgerMenu) {
+    closedMenu();
+  }
+});
+
 svgCloseBut.addEventListener('click', () => closedMenu());
-
 menuBut.addEventListener('click', () => openMenu());
-
 callbackBtnUp.addEventListener('click', () => closedMenu());
