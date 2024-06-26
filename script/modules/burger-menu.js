@@ -37,7 +37,7 @@ const closedMenu = () => {
     menuBut.style.display = 'block';
   }
 
-  animate(overlayBurgerMenu, 'opacity', 1, 0, 600, () => {
+  animate(overlayBurgerMenu, 'opacity', 1, 0, 400, () => {
     headerListBurgerMenu.style.display = 'none';
     overlayBurgerMenu.style.display = 'none';
     callbackBurgerMenu.style.display = 'none';
@@ -51,7 +51,7 @@ const openMenu = () => {
   headerListBurgerMenu.style.display = 'block';
   overlayBurgerMenu.style.display = 'block';
 
-  animate(overlayBurgerMenu, 'opacity', 0, 1, 600, () => {
+  animate(overlayBurgerMenu, 'opacity', 0, 1, 400, () => {
     callbackBurgerMenu.style.display = 'block';
   });
 };
