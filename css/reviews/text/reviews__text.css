@@ -9,6 +9,7 @@
   padding-top: 50px;
   vertical-align: top;
   max-width: 670px;
+  text-align: left;
 }
 
 @media (max-width: 1090px) {
@@ -34,6 +35,5 @@
     font-size: 12px;
     line-height: 16px;
     max-width: 280px;
-    padding-top: 0;
   }
 }

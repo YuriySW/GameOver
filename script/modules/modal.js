@@ -4,11 +4,23 @@ const overlay = document.querySelector('.overlay');
 const overlayShow = document.querySelector('.overlay_show');
 const inputModal = document.querySelectorAll('.form__input');
 
+const formFieldset = document.querySelector('.form__fieldset');
+const popupTitleModal = document.querySelector('.popup__title_modal');
+
+const inputs = formFieldset.querySelectorAll(
+  '.form__input_tel, .form__input_name, .form__submit_modal'
+);
+
 export const closeModal = () => {
   overlay.addEventListener('click', (e) => {
     const target = e.target;
     if (target === overlay || target === target.closest('.popup__close-img')) {
       overlayShow.style.display = 'none';
+      //
+      inputs.forEach((input) => (input.disabled = false));
+      popupTitleModal.textContent = 'Заказать звонок';
+      formFieldset.setAttribute('aria-disabled', 'false');
+      //
     }
   });
 };

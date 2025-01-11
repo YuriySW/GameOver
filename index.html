@@ -13,7 +13,12 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Game Over</title>
-    <script type="module" src="script/script.js"></script>
+    <script defer src="script/swiper-bundle.min.js"></script>
+    <script defer src="script/just-validate.production.min.js"></script>
+    <script defer src="script/inputmask.min.js"></script>
+    <script defer src="script/axios.min.js"></script>
+    <link rel="stylesheet" href="./script/swiper-bundle.min.css" />
+    <script defer type="module" src="script/script.js"></script>
   </head>
 
   <body class="body">
@@ -126,7 +131,7 @@
           <button class="popup__close" type="button">
             <img class="popup__close-img" src="image/icon/close-modal.svg" alt="" />
           </button>
-          <h2 class="popup__title">Заказать звонок</h2>
+          <h2 class="popup__title popup__title_modal">Заказать звонок</h2>
           <form
             class="popup__form form"
             action="https://jsonplaceholder.typicode.com/posts"
@@ -135,14 +140,26 @@
             <fieldset class="form__fieldset">
               <div class="form__item-name">
                 <label class="form__label" for="name">Имя</label>
-                <input class="form__input" type="text" name="name" id="name" required />
+                <input
+                  class="form__input form__input_name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                />
 
                 <label class="form__label" for="phone">Телефон</label>
-                <input class="form__input" type="number" name="phone" id="phone" required />
+                <input
+                  class="form__input form__input_tel"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                />
               </div>
             </fieldset>
 
-            <button class="form__submit" type="submit">Позвонить мне</button>
+            <button class="form__submit form__submit_modal" type="submit">Позвонить мне</button>
           </form>
         </div>
       </div>
@@ -244,6 +261,7 @@
           <div class="container">
             <h2 class="booking__title">Забронировать зал просто</h2>
             <form
+              class="booking__form"
               name="bookingHall"
               action="https://jsonplaceholder.typicode.com/posts"
               method="POST"
@@ -422,7 +440,7 @@
                   <div class="container-name container-name_number-email">
                     <div>
                       <label class="booking__name" for="telephone">Телефон</label>
-                      <input class="input-phone" type="number" name="telephone" id="telephone" />
+                      <input class="input-phone" type="tel" name="telephone" id="telephone" />
                     </div>
                     <div>
                       <label class="booking__name" for="email">E-mail</label>
@@ -481,49 +499,114 @@
       <section class="section reviews" id="reviews">
         <div class="container">
           <h2 class="reviews__title">Отзывы посетителей</h2>
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <figure class="reviews__people reviews__people_gradient-img">
-                <img src="image/visitors/maks.jpeg" alt="maks" class="reviews__img" />
-                <figcaption class="reviews__name">Макс Самойлов</figcaption>
-              </figure>
 
-              <p class="reviews__text">
-                Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это
-                просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на
-                высоте!
-              </p>
-            </li>
+          <div class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide reviews__item">
+                <div class="reviews__people-wrap">
+                  <figure class="reviews__people reviews__people_gradient-img">
+                    <img src="image/visitors/maks.jpeg" alt="maks" class="reviews__img" />
+                    <figcaption class="reviews__name">Макс Самойлов</figcaption>
+                  </figure>
+                  <p class="reviews__text">
+                    Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки
+                    это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис
+                    на высоте!
+                  </p>
+                </div>
+              </li>
 
-            <li class="reviews__item">
-              <figure class="reviews__people reviews__people_gradient-img">
-                <img src="image/visitors/oksana.jpeg" class="reviews__img" alt="oksana" />
-                <figcaption class="reviews__name">Оксана Григорьева</figcaption>
-              </figure>
+              <li class="swiper-slide reviews__item">
+                <div class="reviews__people-wrap">
+                  <figure class="reviews__people reviews__people_gradient-img">
+                    <img src="image/visitors/oksana.jpeg" class="reviews__img" alt="oksana" />
+                    <figcaption class="reviews__name">Оксана Григорьева</figcaption>
+                  </figure>
+                  <p class="reviews__text">
+                    Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился
+                    корпоратив! У нас в городе больше нет подобных заведений.
+                  </p>
+                </div>
+              </li>
 
-              <p class="reviews__text">
-                Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился
-                корпоратив! У нас в городе больше нет подобных заведений
-              </p>
-            </li>
-            <li class="reviews__item">
-              <figure class="reviews__people reviews__people_gradient-img">
-                <img
-                  src="image/visitors/nikita.jpeg"
-                  class="reviews__img reviews__img_nikita"
-                  alt="nikita"
-                />
-                <figcaption class="reviews__name">Никита Ященко</figcaption>
-              </figure>
+              <li class="swiper-slide reviews__item">
+                <div class="reviews__people-wrap">
+                  <figure class="reviews__people reviews__people_gradient-img">
+                    <img
+                      src="image/visitors/nikita.jpeg"
+                      class="reviews__img reviews__img_nikita"
+                      alt="nikita"
+                    />
+                    <figcaption class="reviews__name">Никита Ященко</figcaption>
+                  </figure>
+                  <p class="reviews__text">
+                    Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в
+                    стиле звездных войн, попал в атмосферу космоса.
+                  </p>
+                </div>
+              </li>
+            </ul>
 
-              <p class="reviews__text">
-                Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле
-                звездных войн, попал в атмосферу космоса
-              </p>
-            </li>
-          </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </section>
+
+      <!-- <section class="section reviews" id="reviews">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы посетителей</h2>
+
+          <div class="swiper">
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__item swiper-slide">
+                <figure class="reviews__people reviews__people_gradient-img">
+                  <img src="image/visitors/maks.jpeg" alt="maks" class="reviews__img" />
+                  <figcaption class="reviews__name">Макс Самойлов</figcaption>
+                </figure>
+
+                <p class="reviews__text">
+                  Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это
+                  просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на
+                  высоте!
+                </p>
+              </li>
+
+              <li class="reviews__item swiper-slide">
+                <figure class="reviews__people reviews__people_gradient-img">
+                  <img src="image/visitors/oksana.jpeg" class="reviews__img" alt="oksana" />
+                  <figcaption class="reviews__name">Оксана Григорьева</figcaption>
+                </figure>
+
+                <p class="reviews__text">
+                  Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился
+                  корпоратив! У нас в городе больше нет подобных заведений
+                </p>
+              </li>
+              <li class="reviews__item swiper-slide">
+                <figure class="reviews__people reviews__people_gradient-img">
+                  <img
+                    src="image/visitors/nikita.jpeg"
+                    class="reviews__img reviews__img_nikita"
+                    alt="nikita"
+                  />
+                  <figcaption class="reviews__name">Никита Ященко</figcaption>
+                </figure>
+
+                <p class="reviews__text">
+                  Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в
+                  стиле звездных войн, попал в атмосферу космоса
+                </p>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section> -->
 
       <section class="section section-question questions">
         <div class="container">

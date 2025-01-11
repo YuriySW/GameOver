@@ -3,12 +3,3 @@
   margin-right: 20px;
   display: inline-block;
 }
-
-@media (max-width: 640px) {
-  .reviews__people {
-    margin-right: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-}
