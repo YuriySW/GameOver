@@ -50,7 +50,7 @@ const justValidate = new JustValidate('.popup__form', {
     color: '#fff',
     fontSize: '14px',
   },
-  errorFieldCssClass: 'form__error', // Добавляем класс для контейнера ошибки
+  errorFieldCssClass: 'form__error',
 });
 
 justValidate
