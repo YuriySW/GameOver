@@ -22,7 +22,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-
+  margin-bottom: 10px;
   color: #ffffff;
 }
 
@@ -51,3 +51,27 @@
     margin-bottom: 50px;
   }
 }
+
+.form__error-field {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 52px;
+}
+
+.form__error-field:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.form__error-label {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* .testt {
+  margin-bottom: 40px;
+} */

@@ -3,10 +3,8 @@ const callbackBtn = document.querySelectorAll('.callback, .callback_burger-menu'
 const overlay = document.querySelector('.overlay');
 const overlayShow = document.querySelector('.overlay_show');
 const inputModal = document.querySelectorAll('.form__input');
-
 const formFieldset = document.querySelector('.form__fieldset');
 const popupTitleModal = document.querySelector('.popup__title_modal');
-
 const inputs = formFieldset.querySelectorAll(
   '.form__input_tel, .form__input_name, .form__submit_modal'
 );
@@ -21,6 +19,10 @@ export const closeModal = () => {
       popupTitleModal.textContent = 'Заказать звонок';
       formFieldset.setAttribute('aria-disabled', 'false');
       //
+      const justValidateError = document.querySelectorAll('.just-validate-error-label');
+      justValidateError.forEach((errorLabel) => {
+        errorLabel.remove();
+      });
     }
   });
 };
@@ -32,7 +34,7 @@ const openModal = () => {
 
       setTimeout(() => {
         overlay.style.display = 'block';
-      }, 500);
+      }, 400);
     });
   });
 };

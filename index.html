@@ -140,22 +140,43 @@
             <fieldset class="form__fieldset">
               <div class="form__item-name">
                 <label class="form__label" for="name">Имя</label>
+
+                <div class="form__error-field">
+                  <input
+                    class="form__input form__input_name"
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                  />
+                </div>
+
+                <!-- <label class="form__label form__label-test" for="name">Имя</label>
                 <input
                   class="form__input form__input_name"
                   type="text"
                   name="name"
                   id="name"
                   required
-                />
-
-                <label class="form__label" for="phone">Телефон</label>
+                /> -->
+                <!-- <label class="form__label" for="phone">Телефон</label>
                 <input
                   class="form__input form__input_tel"
                   type="tel"
                   name="phone"
                   id="phone"
                   required
-                />
+                /> -->
+                <label class="form__label" for="phone">Телефон</label>
+                <div class="form__error-field">
+                  <input
+                    class="form__input form__input_tel"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    required
+                  />
+                </div>
               </div>
             </fieldset>
 
