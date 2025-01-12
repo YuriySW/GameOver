@@ -45,6 +45,7 @@ import {closeModal} from './modal.js';
 const popupTitleModal = document.querySelector('.popup__title_modal');
 const inputTel = document.querySelector('.form__input_tel');
 const formFieldset = document.querySelector('.form__fieldset');
+const submitButton = document.querySelector('.form__submit');
 const justValidate = new JustValidate('.popup__form', {
   errorLabelStyle: {
     color: '#fff',
@@ -103,6 +104,11 @@ justValidate
   .onSuccess(async (event) => {
     const target = event.target;
 
+    const isDisabled = formFieldset.querySelector('input').disabled;
+    if (isDisabled) {
+      return;
+    }
+
     try {
       const response = await axios.post('https://jsonplaceholder.typicode.com/posts', {
         name: target.name.value,
@@ -111,20 +117,24 @@ justValidate
       target.reset();
 
       formFieldset.querySelectorAll('input, button').forEach((input) => (input.disabled = true));
-
       formFieldset.setAttribute('aria-disabled', 'true');
 
       popupTitleModal.textContent = `Номер заявки ${response.data.id}!`;
       closeModal();
     } catch (err) {
       console.error(err);
-      target.reset();
 
-      formFieldset.querySelectorAll('input, button').forEach((input) => (input.disabled = false));
-
-      formFieldset.setAttribute('aria-disabled', 'false');
+      formFieldset.querySelectorAll('input, button').forEach((input) => (input.disabled = true));
+      formFieldset.setAttribute('aria-disabled', 'true');
 
       popupTitleModal.textContent = `Ошибка!`;
-      closeModal();
     }
   });
+
+submitButton.addEventListener('click', (event) => {
+  const isDisabled = formFieldset.querySelector('input').disabled;
+  if (isDisabled) {
+    event.preventDefault();
+    return;
+  }
+});
