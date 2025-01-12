@@ -54,7 +54,6 @@ const justValidate = new JustValidate('.popup__form', {
 });
 
 justValidate
-
   .addField(
     '.form__input_name',
     [
@@ -80,7 +79,6 @@ justValidate
       errorFieldCssClass: 'form__error-field',
     }
   )
-
   .addField(
     '.form__input_tel',
     [
