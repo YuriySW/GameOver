@@ -67,6 +67,13 @@ justValidate
         rule: 'required',
         errorMessage: 'Введите имя',
       },
+      {
+        rule: 'function',
+        validator: (value) => {
+          return value.trim().length >= 2;
+        },
+        errorMessage: 'Имя не должно состоять из пробелов в начале и конце',
+      },
     ],
     {
       errorLabelCssClass: 'form__error-label',

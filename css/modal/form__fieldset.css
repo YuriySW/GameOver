@@ -27,9 +27,9 @@
 }
 
 .form__input {
-  width: 280px;
-  height: 52px;
-  padding: 10px;
+  width: 280px !important;
+  height: 52px !important;
+  padding: 10px !important;
 }
 
 .form__input:not(:last-child) {
