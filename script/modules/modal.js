@@ -13,7 +13,8 @@ export const closeModal = () => {
   overlay.addEventListener('click', (e) => {
     const target = e.target;
     if (target === overlay || target === target.closest('.popup__close-img')) {
-      overlayShow.style.display = 'none';
+      // overlayShow.style.display = 'none';
+      overlay.classList.remove('overlay_show-visibility');
       //
       inputs.forEach((input) => (input.disabled = false));
       popupTitleModal.textContent = 'Заказать звонок';
@@ -27,14 +28,23 @@ export const closeModal = () => {
   });
 };
 
+// const openModal = () => {
+//   callbackBtn.forEach((callbackBtn) => {
+//     callbackBtn.addEventListener('click', (e) => {
+//       inputModal.forEach((input) => (input.value = ''));
+
+//       setTimeout(() => {
+//         overlay.style.display = 'block';
+//       }, 400);
+//     });
+//   });
+// };
+
 const openModal = () => {
   callbackBtn.forEach((callbackBtn) => {
     callbackBtn.addEventListener('click', (e) => {
       inputModal.forEach((input) => (input.value = ''));
-
-      setTimeout(() => {
-        overlay.style.display = 'block';
-      }, 400);
+      overlay.classList.add('overlay_show-visibility');
     });
   });
 };
