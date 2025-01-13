@@ -60,16 +60,12 @@
 }
 
 .form__error-field:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .form__error-label {
   position: absolute;
-  top: -60px;
+  top: 60px;
   left: 0;
   font-size: 14px;
 }
-
-/* .testt {
-  margin-bottom: 40px;
-} */

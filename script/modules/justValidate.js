@@ -48,8 +48,8 @@ const formFieldset = document.querySelector('.form__fieldset');
 const submitButton = document.querySelector('.form__submit');
 const justValidate = new JustValidate('.popup__form', {
   errorLabelStyle: {
-    color: '#fff',
-    fontSize: '14px',
+    color: 'f0ffff',
+    fontSize: '17px',
   },
   errorFieldCssClass: 'form__error',
 });
@@ -130,6 +130,8 @@ justValidate
       popupTitleModal.textContent = `Ошибка!`;
     }
   });
+
+///
 
 submitButton.addEventListener('click', (event) => {
   const isDisabled = formFieldset.querySelector('input').disabled;
